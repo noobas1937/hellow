@@ -1,0 +1,71 @@
+{
+  "pages": [
+    
+    "pages/test/test",
+    "pages/identity/identity",
+    "pages/setphone/setphone",
+    "pages/list/list",
+    "pages/application/application",
+    "pages/myswards/myswards",
+    "pages/myswardsdetail/raise/raise",
+    "pages/myswardsdetail/noprize/noprize",
+    "pages/myswardsdetail/waitprize/waitprize",
+    "pages/myswardsdetail/getprize/getprize",
+    "pages/myswardsdetail/failprize/failprize",
+    "pages/goodluckprize/goodluckprize",
+    "pages/swardshistory/swardshistory",
+    "pages/goodluckdetail/goodluckdetail",
+    "pages/applications/mywages/mywages",
+    "pages/applications/myintegration/myintegration",
+    "pages/applications/mycredit/mycredit",
+    "pages/applications/myconvertibility/myconvertibility",
+    "pages/newyearaward/newyearaward",
+    "pages/allhistory/allhistory",
+    "pages/newyears/newyearlist/newyearlist",
+    "pages/newyears/newyearrule/newyearrule",
+    "pages/applications/wdeposit/wdeposit",
+    "pages/applications/myluckynumber/myluckynumber",
+    "pages/applications/myreward/myreward",
+    "pages/applications/mypersoninfo/mypersoninfo",
+    "pages/applications/resetnumber/resetnumber",
+    "pages/applications/usproblem/usproblem",
+    "pages/applications/mywagedel/mywagedel",
+    "pages/newestactivity/newindex/newindex",
+    "pages/newestactivity/newrule/newrule",
+    "pages/applications/result/result",
+    "pages/templates/modals/modals",
+    "pages/guide/guide",
+    "pages/templates/norecord/norecord"
+   
+  ],
+  "window": {
+    "defaultTitle": "积分大抽奖",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "textColor": "#666",
+    "selectedColor": "#ffa800",
+    "backgroundColor": "#eee",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/test/test",
+        "text": "奋斗夺宝",
+        "iconPath": "image/home1.png",
+        "selectedIconPath": "image/home2.png"
+      },
+      {
+        "pagePath": "pages/newestactivity/newindex/newindex",
+        "text": "最新活动",
+        "iconPath": "image/act1.png",
+        "selectedIconPath": "image/act2.png"
+      },
+      {
+        "pagePath": "pages/application/application",
+        "text": "我的",
+        "iconPath": "image/apps1.png",
+        "selectedIconPath": "image/apps2.png"
+      }
+    ]
+  }
+}

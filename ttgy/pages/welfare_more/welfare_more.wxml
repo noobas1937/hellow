@@ -1,0 +1,34 @@
+<import src="../../components/footer/footer.wxml" />
+<!--pages/welfare_more/welfare_more.wxml-->
+<view class='container'>
+  <view class='activity-body'>
+    <view class='activity-process'>
+      <text>夺宝攻略</text>
+      <view class='process-list'>
+        <block wx:for='{{process}}'>
+          <view class='process-item'>
+            <text class='process-index'>{{index+1}}</text>
+            <text>{{item}}</text>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class='activity-goods'>
+      <text>热门宝物</text>
+      <view class='welfare-list'>
+        <block wx:for='{{goods}}'>
+          <view class='welfare-item'>
+            <image src='{{item.img_url}}' mode='widthFix'></image>
+            <view class='welfare-details'>
+              <text>{{item.name}}</text>
+              <text>距离开奖还需{{item.person}}人次</text>
+            </view>
+            <text class='btn-welfare'>去夺宝</text>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+
+  <template is='footer' data='{{navbar}}' />
+</view>

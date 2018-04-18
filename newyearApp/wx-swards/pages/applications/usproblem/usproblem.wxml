@@ -1,0 +1,66 @@
+
+<view class="upm" wx:for="{{myinfo}}" wx:key="index" bindtap="showCon" data-info="{{index}}" hidden="{{true}}">
+
+ <view class="upm-1"> 
+   <text class="lef upm-1a fs-5 cr-2">{{item.title}}</text>
+   <image class="rig  upm-1b" src="{{sid==index?img[0]:img[1]}}"></image>
+ </view>
+
+ <view class="upm-2 fs-3 cr-6" hidden="{{sid==index&&flag==true?false:true}}">
+   <text class="upm-2a">{{item.content}}</text>
+ </view>
+
+</view>
+
+
+<view  class="rpm">
+
+  <view class="rpm-1">
+    <text class="fs-4 cr-12">1、什么是奋斗金？</text>
+    <text class="fs-4 cr-2">答：奋斗金是踢踢骑手每月辛勤工作的价值体现。每月15日前，员工上月所得将以奋斗金的形式发放至个人账户。奋斗金可等额兑换成现金并提现至工资卡或者参与奋斗夺宝活动。</text>
+    <text class="fs-4 cr-2">提现：奋斗金兑换成现金后才能提现至工资卡，每1奋斗金可等额兑换成1元现金。</text>
+    <text class="fs-4 cr-2">夺宝：夺宝活动只能使用账户中的奋斗金参与，已经兑换成现金余额的部分无法使用。</text>
+  </view>
+
+  <view class="rpm-1">
+    <text class="fs-4 cr-12">2、奋斗金可以提现吗？提现后什么时候可以到账？</text>
+    <text class="fs-4 cr-2">答：奋斗金兑换成现金后是可以提现的，点击“我的”——“我的奋斗金”，进行兑换现金。</text>
+    <text class="fs-4 cr-2">现金余额”提现时间限定为每个月10日至18日。</text>
+    <text class="fs-4 cr-2">10日到13日之间申请的提现金额将于15日到账；</text>
+    <text class="fs-4 cr-2">14日到18日之间申请的提现金额将于20日到账；</text>
+    <text class="fs-4 cr-2">所有提现金额均发放至个人工资卡账户。</text>
+  </view>
+
+   <view class="rpm-1">
+    <text class="fs-4 cr-12">3、奋斗金可以充值吗？</text>
+    <text class="fs-4 cr-2">答：个人用户是不可以充值奋斗金的。每月10日，公司将统一发放“我的工资（奋斗金）”到个人账户。个人用户确认以后等待财务审核，审核通过后可申请奋斗金兑换现金进行提现，或奋斗金直接参与夺宝活动 。</text>
+  </view>
+
+   
+ <view class="rpm-1">
+    <text class="fs-4 cr-12">4、奋斗夺宝中奖后，会有奖品通知吗？在哪里领取奖品？</text>
+    <text class="fs-4 cr-2">所有中奖记录均可在“我的”——“我的抽奖”中查询，客服会在第一时间联系中奖用户。1000元以下的奖品，以快递的形式发放给中奖用户；1000元以上的奖品，需中奖用户上门自提并办理领奖手续（奖品自提地址：武汉市洪山区民族大道一号光谷资本大厦3楼，踢踢科技办公室）。</text>
+  </view>
+
+   <view class="rpm-1">
+    <text class="fs-4 cr-12">5、如何激活员工身份？</text>
+    <text class="fs-4 cr-2">答：踢踢员工首次进入小程序时，需手动输入自己的身份证号码，系统将自动匹配身份，绑定好手机号后身份验证成功，即可参与各项活动。本小程序仅供踢踢内部员工使用，外部人员无法通过身份验证。</text>
+  </view>
+
+   <view class="rpm-1">
+    <text class="fs-4 cr-12">6、如何更换已经绑定好的手机号？</text>
+    <text class="fs-4 cr-2">答：点击“我的”——“我的信息”，即可以修改已经绑定的手机号。</text>
+  </view>
+
+   <view class="rpm-1">
+    <text class="fs-4 cr-12">7、如何查看我的工资（奋斗金）额度，如有疑问怎么解决？</text>
+    <text class="fs-4 cr-2">答：每月10日，公司将统一发放“我的工资（奋斗金）”到个人账户。可点击“我的”——“我的工资”页面查看具体数据，如有疑问，可拨打客服热线18062640522咨询（客服工作时间：周一至周六，早上9:30—中午12:00，下午1:30—5:30）。</text>
+  </view>
+
+   <view class="rpm-1">
+    <text class="fs-4 cr-12">8、为什么我的账户中部分奋斗金显示无法提现和使用？</text>
+    <text class="fs-4 cr-2">答：个人账户中，奋斗金由“我的工资”和“我的奖励”两部分组成。“我的工资”中的奋斗金可在指定时间内（每月10至18日）兑换成现金进行提现或使用；“我的奖励”中的奋斗金，到达“可使用时间”时即可使用，或者兑换成现金进行提现。</text>
+  </view>
+
+
+</view>

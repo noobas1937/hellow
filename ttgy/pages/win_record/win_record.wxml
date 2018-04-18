@@ -1,0 +1,33 @@
+<import src="../../components/footer/footer.wxml" />
+<!--pages/win_record/win_record.wxml-->
+<view class='container'>
+  <view class='record-header'>
+    <image src='../../public/images/adminor.png'></image>
+    <view class='adminor'>
+      <text>康师傅</text>
+      <text>积分：600</text>
+    </view>
+  </view>
+  <view class='awards-record'>
+    <view class='record-title'>恭喜你获得以下奖品：</view>
+    <view class='record-list'>
+      <block wx:for='{{records}}' wx:key='id'>
+        <view class='record-item clearfix' wx:if='{{item.award_id!=0}}'>
+          <image src='../../public/images/goods_list_01.png'></image>
+          <view class='item-content'>
+            <text>{{item.award_name}}</text>
+            <text class='font-color-2'>领取时间：2018.01.05</text>
+            <view class='record-result'>
+              <text class='btn btn-color-1'>立即领</text>
+              <text class='font-color-1'>10份已领</text>
+            </view>
+          </view>
+
+          <!-- <text wx:if='{{item.is_receive==1}}' class='receive'>已领取</text>
+          <text wx:if='{{item.is_receive==0}}' data-index='{{index}}' data-record='{{item.id}}' data-awards='{{item.award_id}}' bindtap="{{item.type==2?'getAwards':''}}">{{item.type==2?'立即领奖':'前台领奖'}}</text> -->
+        </view>
+      </block>
+    </view>
+  </view>
+  <template is='footer' data='{{navbar}}' />
+</view>

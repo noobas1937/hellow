@@ -1,0 +1,123 @@
+<import src="../templates/modals/modals.wxml"/>
+<view class="raise-container">
+
+  <view class="rsc-1">
+    <image src="{{swdel.award[0].img_id}}"  class="rsc-1a"/>
+    <text class="rsc-1b cr-1 fs-1 bg-9">第{{swdel.award[0].lucky_draw_id}}期</text>
+    <view class="rsc-1c">
+    
+    </view>
+     <text class="rsc-2a fs-6 cr-2 bg-1">{{swdel.award[0].name}}</text>
+  </view>
+
+  <view  class="rsc-2">
+    
+
+    <text class="rsc-2b fs-1 cr-6" hidden="{{true}}">满所需奋斗金，即抽取1人获取奖品</text>
+
+    <view class="rsc-2c">
+      <text class="rsc-2c-1 fs-3">筹集中</text>
+      <text class="rsc-2c-2 cr-6 fs-3" hidden="{{false}}">集满所需总份数，即抽取1个中奖幸运码</text>
+    </view>
+
+    <progress percent="{{swdel.apply_people/swdel.with_people*100}}" activeColor="#ffa800"   stroke-width="6" active />
+
+    <view class="rsc-2d" hidden="{{true}}">
+      <text class="cr-6 fs-2 rsc-2d-1">已参与<text class="cr-2">{{swdel.apply_people}}</text>份</text>
+      <text class="cr-6 fs-2 rsc-2d-2">剩余<text class="cr-5">{{swdel.with_people-swdel.apply_people}}</text>份</text>
+    </view>
+
+  </view>
+
+  <view  class="rsc-3">
+    <view  class="rsc-3a fs-2 cr-2">
+       <text  class="rsc-3a-1">开奖时间：{{swdel.draw.end_date}}</text>
+       <text  class="rsc-3a-2">目前可用奋斗金{{swdel.points}}</text>
+    </view>
+    
+  </view>
+  <view class="fs-1 cr-2" style="text-align:right;padding:0 30rpx;">可用夺宝券*{{swdel.ticketnumber}}</view>
+  <view  class="rsc-4">
+   <view  class="rsc-4a fs-5">
+    <view  class="rsc-4a-1">我参与</view>
+
+    <view hidden="{{true}}" class="rsc-4a-2 {{idx==ids?'rsc-4a-2s':''}}" wx:for="{{snum}}" wx:for-index="idx" data-info="{{idx}}" bindtap="getidx">
+      <text>{{item}}</text>  
+      <view class="my-sw-chance fs-1 cr-5" hidden="{{idx==ids?false:true}}">
+        中奖概率{{item/100}}%
+      </view> 
+    </view>
+
+     
+          <text class="cr-11">{{swdel.draw.credits}}奋斗金</text>
+          <text class="cr-6" style="margin:0 10rpx;">X</text>
+          <view class="sub fs-6" bindtap='sub'>-</view>
+          <input class="sa-input" bindinput='getNumInput' bindblur='getNumShare' value="{{nid}}"></input>
+          <view class="add fs-6" bindtap='add'>+</view>
+         
+      
+    <text style="margin:0 10rpx;">份</text>
+    
+  </view> 
+   </view>
+   <view   class="rsc-4b cr-1 fs-6 bg-9" bindtap="rnGetSward" style="{{swdel.draw.start_time-timestr>0?'pointer-events:none;background:#bdbdbd;':''}}" wx:if="{{swdel.draw.start_time-timestr<0}}">立即夺宝</view>
+    
+   <view   class="rsc-4b cr-1 fs-6 bg-9" bindtap="rnGetSward" style="{{swdel.draw.start_time-timestr>0?'pointer-events:none;background:#bdbdbd;':''}}" wx:elif="{{swdel.draw.start_time-timestr>=0}}">即将开始</view>
+ 
+   
+
+  <view  class="rsc-5" bindtap="goMyluckyNumber" hidden="{{false}}">
+    <view class="bg-8 rsc-5a">
+       <text class="cr-6 rsc-5a-1 fs-3 lef">您拥有幸运夺宝号<text class="cr-11">{{swdel.luckynumbers?swdel.luckynumbers:0}}      </text> </text>
+       <text class="rsc-5a-31 fs-3 rig cr-11" >查看</text>
+    </view> 
+  </view>
+
+  <view class="cover" hidden="{{flag1}}">
+      <view class="cover-1"></view>
+      <view class="cover-2">
+       <image src="../../image/cha.png" class="close-img" bindtap="closePay"></image>
+       <view class="cover-head">
+        <view class="coh-1 fs-4">购买1份</view>
+        <view class="coh-2">
+          <view class="coh-2c" bindtap='sub'>－</view>
+          <view class="coh-2b"><input bindinput='getNumInput' bindblur='getNumShare' value="{{nid}}"></input></view>
+          <view class="coh-2a" bindtap="add">＋</view>
+        </view>
+        <view class="coh-3 fs-3 cr-5">需支付{{cost}}奋斗金</view>
+       </view>
+
+       <view class="cover-section bg-8" wx:if="{{mid.length>0}}">
+        <text class="cos-1 fs-2">您有{{swdel.ticketnumber}}张优惠券可用</text>
+        <view  class="cos-con">
+         <view class="cos-2 fs-2 bg-1" wx:for="{{mid}}" wx:key="index" bindtap='selectMyCoupon' data-info="{{index}}">
+           <view class="cos-2a lef fs-1">
+              <text class="cos-2a1 bg-5 cr-1">夺宝优惠券</text>
+              <text class="cos-2a2">可抵用1奋斗金</text>
+           </view>
+           <view class="cos-2b rig">
+              <image src="../../image/gou.png" class="cos-a" hidden="{{!item}}"></image>
+           </view>
+        </view>
+        </view>
+        
+       </view>
+
+       <view class="cover-foot">
+        <view class="cof-1 fs-4 cr-1 bg-9" bindtap="msMyPayment">确认支付{{cost}}奋斗金</view>
+         <text class="cof-2 fs-3">使用后您还剩余{{left}}奋斗金</text>
+       </view>
+      </view>
+  </view>
+  
+  
+
+ 
+
+
+ 
+ 
+ 
+ <template is="modals" data="{{modalshow}}"></template> 
+    
+</view>

@@ -1,0 +1,138 @@
+page{
+  background: #f5f5f5;
+}
+.conver-container{
+  width:100%;
+}
+.cvc-1{
+  display: flex;
+  flex-direction: column;
+  padding:0 30rpx;
+  margin-top:30rpx;
+  margin-bottom: 45rpx;
+}
+.cvc-1a{
+  padding:36rpx 0;
+}
+.cvc-1b{
+  border-bottom:1rpx solid #bdbdbd;
+  padding:50rpx 0;
+ 
+}
+.cvc-1b-1{
+  float:left;
+  line-height: 60rpx;
+  margin-right:6rpx;
+}
+.cvc-1b-2{
+  float:left;
+  width:240rpx;
+  line-height: 80rpx;
+  margin-top:6rpx;
+}
+.cvc-1b-3{
+  float:left;
+  line-height: 60rpx;
+}
+.cvc-1b-4{
+  margin-left:6rpx;
+  float:right;
+  line-height: 60rpx;
+}
+.cvc-2{
+  width:690rpx;
+  height:88rpx;
+  background:#e3bf6b;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 88rpx;
+  border-radius: 12rpx;
+}
+
+.cover{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 9999;
+
+}
+.cover-1{
+    width:100%;
+    height:100%;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    left:0;
+    top:0;
+     z-index: 9999;
+}
+.cover-2{
+    width:606rpx;
+    height:800rpx;
+    background: #fff;
+    border-radius: 14rpx;
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin:-400rpx 0 0 -303rpx;
+    z-index: 9999;
+    padding:20rpx;
+}
+.cover-2a{
+  
+}
+.cover-2d{
+
+  display: block;
+  width:200rpx;
+  height:80rpx;
+  background:#e1b858;
+  margin-right:40rpx;
+   border-radius: 12rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin-top:80rpx;
+}
+.cover-2ds{
+  display: block;
+  height:80rpx;
+  width:200rpx;
+  background:#bdbdbd;
+  margin-left:40rpx;
+  border-radius: 12rpx;
+  line-height: 80rpx;
+  text-align: center;
+   margin-top:80rpx;
+}
+.c-2b{
+  
+}
+.toexplain{
+   padding:30rpx;
+   display: inline-block;
+   display: flex;
+   flex-direction: column;
+   line-height: 45rpx;
+   margin-bottom:40rpx;
+}
+.c2-c{
+  margin:60rpx  0;
+  text-align: center;
+}
+.c2-l{
+  text-align: left;
+  margin-left:40rpx;
+  font-size: 34rpx;
+  line-height: 60rpx;
+}
+.c2-r{
+  text-align: left;
+  max-width:530rpx;
+  display: inline-block;
+  margin:20rpx 0 0 30rpx;
+}

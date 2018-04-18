@@ -1,0 +1,62 @@
+<view class="sort-container bg-1">
+  <view class="sh-search">
+     <view class="h-sr">
+       <input type="" placeholder="请输入商品名称" auto-focus text/>
+     </view>
+  </view>
+
+  <view class="sh-con">
+     <view class="shc-l bg-8 fs-2 cr-6">
+       <view class="shc-1a {{itid==idx?'bg-1':'bg-8'}} {{itid==idx?'cr-5':'cr-6'}}" a:for="{{sortname}}" a:for-index="idx" data-inf="{{idx}}" onTap="getSortItem">{{item}}</view>
+     </view>
+     <view class="shc-r bg-1">
+       <block a:for="{{nav}}">
+         <view class="hot-item"  onTap="goItemDel">
+          <image src="../../img/hotf.png" mode="aspectFit" class="hot-imgs"/>
+          <view class="hot-del">
+           <text class="hd-1 fs-7 cr-2">美国进口红布林</text>
+           <text class="hd-2 fs-2 cr-6">酸酸甜甜的小鲜肉</text>
+           <view class="ntf-4s">
+             <text class="fs-1 cr-5">￥</text>
+             <text class="fs-7 cr-5">6.9</text>
+             <text class="fs-1 cr-6">/1斤</text>
+           </view>
+         </view>
+       <image src="../../img/carts.png" mode="aspectFit" class="hot-cart" onTap="addCart"/>
+       </view>
+      </block>
+     </view>
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <view class="navbar">
+    <view class="{{navid==idx?'nb-2':'nb-1'}}{{item.id}}  nb-1" a:for="{{nav}}" a:for-index="idx" data-info="{{idx}}" onTap="changeBg">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="cartnum">
+      <text>{{cartnum}}</text>
+    </view>
+  </view>
+
+</view>

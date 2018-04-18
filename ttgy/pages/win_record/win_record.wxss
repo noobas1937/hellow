@@ -1,0 +1,76 @@
+/* pages/win_record/win_record.wxss */
+.container{
+  background-color: #320c55;
+}
+.record-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50rpx 0;
+  flex-direction:column;
+}
+.record-header>image{
+  display: block;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.record-header .adminor>text:first-of-type{
+  display: block;
+  color: #efc94a;
+  margin: 20rpx auto;
+  text-align: center;
+}
+.record-header .adminor>text:last-of-type{
+  display: inline-block;
+  background-color: rgba(0,0,0,.6);
+  color: #ffffff;
+  padding: 10rpx 50rpx;
+  border-radius: 50rpx;
+}
+.awards-record{
+  padding: 0 30rpx 100rpx;
+}
+.record-title{
+  background-color: rgba(255,255,255,.6);
+  border-radius: 8rpx;
+  color: #ffffff; 
+  padding: 20rpx 0 20rpx 20rpx;
+}
+.record-list{
+  margin-top: 20rpx;
+}
+.record-item{
+  position: relative;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  background-color: #ffffff;
+  border-radius: 8rpx;
+}
+.record-item>image{
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  border: 1rpx solid #d9d9d9;
+}
+.record-item .item-content{
+  position: relative;
+  padding: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.record-item .item-content>text:first-of-type{
+  display: block;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  font-weight: 400;
+}
+.record-item .item-content .record-result{
+  position: absolute;
+  top:6rpx;
+  right: 0;
+}
+.record-result>text:first-of-type{
+  display: block;
+  margin-bottom: 20rpx;
+}

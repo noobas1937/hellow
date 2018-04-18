@@ -1,0 +1,58 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-site_id" class="control-label col-xs-12 col-sm-2">{:__('Site_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site_id" data-rule="required" data-source="site/index" class="form-control selectpage" name="row[site_id]" type="text" value="{$row.site_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-shop_id" class="control-label col-xs-12 col-sm-2">{:__('Shop_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-shop_id" data-rule="required" data-source="shop/index" class="form-control selectpage" name="row[shop_id]" type="text" value="{$row.shop_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-data_type" class="control-label col-xs-12 col-sm-2">{:__('Data_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-data_type" class="form-control" name="row[data_type]" type="number" value="{$row.data_type}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-sn2" class="control-label col-xs-12 col-sm-2">{:__('Sn2')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sn2" class="form-control" name="row[sn2]" type="text" value="{$row.sn2}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-status" class="control-label col-xs-12 col-sm-2">{:__('Status')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-status" class="form-control" name="row[status]" type="number" value="{$row.status}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-remark" class="control-label col-xs-12 col-sm-2">{:__('Remark')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-remark" class="form-control" name="row[remark]" type="text" value="{$row.remark}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-update_date" class="control-label col-xs-12 col-sm-2">{:__('Update_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[update_date]" type="text" value="{$row.update_date}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-order_id" class="control-label col-xs-12 col-sm-2">{:__('Order_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-order_id" data-rule="required" data-source="order/index" class="form-control selectpage" name="row[order_id]" type="text" value="{$row.order_id}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

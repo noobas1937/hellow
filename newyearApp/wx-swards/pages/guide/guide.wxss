@@ -1,0 +1,29 @@
+
+page{
+  background:url('https://open.connect-city.com.cn/wxappimg/guide.jpg')no-repeat;
+  background-size:cover;
+}
+
+.guide{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+.gd-1{
+  width:200rpx;
+  height:80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: absolute;
+  left:100rpx;
+  top:900rpx;
+}
+.gd-2{
+  width:200rpx;
+  height:80rpx;
+  text-align: center;
+  line-height: 80rpx;
+  position: absolute;
+  right:100rpx;
+  top:900rpx;
+}

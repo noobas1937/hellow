@@ -1,0 +1,49 @@
+<view class="mrate">
+  <view class="mr-header">
+    <view class="mrh-1">
+      <image src="../../../img/ratepic.png" mode="aspectFit"/>
+      <text>精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+    </view>
+    <view class="mrh-2">
+      <textarea placeholder="您的评价会让我们做的更好哦！" rows="3" cols="20" maxlength="60" auto-height="false" onBlur="getTextArea"/>
+    </view>
+    <view class="mrh-3">
+      <view class="mrh-3a">
+        <image src="../../../img/ratepic1.png" mode="aspectFit" />
+      </view>
+      <view class="mrh-3b" onTap="chooseImg">
+       
+      </view>
+    </view>
+    <view class="mrh-4">
+      <text class="mrh-4b">商品评价</text>
+      <view class="mrh-4a">
+        <view a:for="{{bgcolors}}" class="{{item.name}}" onTap="getRateScore" data-info="{{item.id}}"></view>
+      </view>
+    </view>
+  </view>
+  <view class="mr-section">
+   <view class="mrh-4">
+      <text class="mrh-4b">物流评价</text>
+      <view class="mrh-4a">
+        <view a:for="{{bgcolors}}" class="{{item.name}}" onTap="getRateScore" data-info="{{item.id}}"></view>
+      </view>
+    </view>
+    <view class="mrh-4">
+      <text class="mrh-4b">服务评价</text>
+      <view class="mrh-4a">
+        <view a:for="{{bgcolors}}" class="{{item.name}}" onTap="getRateScore" data-info="{{item.id}}"></view>
+      </view>
+    </view>
+  </view>
+
+ 
+
+
+
+  <view class="mr-footer">
+      <view class="mrf-1" onTap="fRate">
+        <text>发表评价</text>
+      </view>
+  </view>
+</view>

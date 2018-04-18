@@ -1,0 +1,138 @@
+.ap-container{
+    width:100%;
+    background-color: #eeeeee;
+    overflow: hidden;
+}
+.ap-header{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.aph-1{
+    width:100%;
+    height:295rpx;
+    background: url('../../img/apbg.png')no-repeat;
+    background-size: cover;
+}
+.aph-2{
+    width:100%;
+    height:96rpx;
+    padding:0 30rpx;
+    border-bottom:solid 1rpx #cccccc;
+     display: flex;
+    flex-direction: row;
+}
+.aph-3{
+   width:100%;
+   padding:32rpx 0 26rpx 0;
+   display: flex;
+   flex-direction: row;
+}
+.aph-11{
+    width:100%;
+    
+    padding:30rpx 30rpx 0 30rpx;
+    overflow: hidden;
+}
+.aph-11 image{
+    width:48rpx;
+    height:48rpx;
+    
+}
+.aph-11img1{
+   margin-left:530rpx; 
+}
+.aph-11img2{
+   margin-left:66rpx; 
+   
+}
+.aph-12{
+    padding:0 30rpx;
+    display: flex;
+    flex-direction: row;
+}
+.aph-12 image{
+    height:102rpx;
+    width:102rpx;
+    border-radius: 50%;
+}
+.aph-121{
+    margin:18rpx 0 0 26rpx;
+}
+.aph-1211{
+    font-size: 34rpx;
+    color:#fff;
+}
+.aph-121b{
+    width:130rpx;
+    height:40rpx;
+    margin: 14rpx 0 0 0;
+    border: 1rpx solid #fff;
+    text-align: center;
+    color:#fff;
+    line-height: 40rpx;
+    font-size: 28rpx;
+}
+.aph-imgs{
+    width:58rpx;
+    height:58rpx;
+    margin-top:24rpx;
+    
+}
+.aph-next{
+    width:28rpx;
+    height:28rpx;
+   
+    margin-top:34rpx;
+}
+.aph-t1{
+   
+    color:#000;
+    line-height:96rpx;
+    margin:0 278rpx 0 24rpx;
+}
+.aph-t2{
+    
+    color:#999999;
+     line-height:96rpx;
+      
+    }
+.aph-3a{
+    width:25%;
+    box-sizing: border-box;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.aph-3a image{
+   width:62rpx;
+   height:54rpx;
+   margin:0 auto;
+}
+.aph-3a text{
+    margin:26rpx 0 0 0;
+    font-size:28rpx;
+    color:#5a5757;
+}
+
+.ap-section{
+    width:100%;
+    background-color: #fff;
+    margin:36rpx 0 0 0 ;
+}
+.aph-t1s{
+    width:56%;
+    line-height:106rpx;
+    padding-left:24rpx;
+    
+    overflow: hidden;
+}
+.aph-next1{
+    width:28rpx;
+    height:28rpx;
+    display: block;
+    float:right;
+    margin:34rpx 0 0 170rpx;
+    
+}

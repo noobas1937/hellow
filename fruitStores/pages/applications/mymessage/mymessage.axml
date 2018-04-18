@@ -1,0 +1,15 @@
+<view class="msg-container bg-8">
+ <view class="msg-1 fs-3 cr-4">
+   <text>全部删除</text>
+  </view>
+  <view class="msg-2 bg-1">
+    <text class="msg-2a fs-3 cr-2">双十二疯狂抢购通知</text>
+    <text class="msg-2b fs-1 cr-4">2017-12-12</text>
+    <text class="msg-2c fs-2 cr-6">双十二给力活动，一言不合就发红包，抢到红包全场抵扣，
+      疯狂购买无上限，买得越多返的越多，分享好友还能再赢抽奖机会，
+      根本停不下来,双十二给力活动，一言不合就发红包，抢到红包全场抵扣，
+      疯狂购买无上限！每个老用户均可领取，
+      详情请点击活动链接——双十二疯狂购红包抢不停......</text>
+    <image src="../../../img/delete.png" mode="aspectFit" class="msg-img"/>
+ </view>
+</view>

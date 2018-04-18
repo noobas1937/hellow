@@ -1,0 +1,40 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group sr-only">
+        <label for="c-package_id" class="control-label col-xs-12 col-sm-2">{:__('Package_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-package_id" data-rule="required" data-source="package/index" class="form-control selectpage" name="row[package_id]" type="text" value="{$row.package_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-date" class="control-label col-xs-12 col-sm-2">{:__('Date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-date" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[date]" type="text" value="{$row.date}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-dishes_id" class="control-label col-xs-12 col-sm-2">{:__('Dishes_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dishes_id" data-rule="required" data-source="dishes/dishes/index" class="form-control selectpage" name="row[dishes_id]" type="text" value="{$row.dishes_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-dishes1_id" class="control-label col-xs-12 col-sm-2">{:__('Dishes1_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dishes1_id" data-rule="required" data-source="dishes/dishes/index" class="form-control selectpage" name="row[dishes1_id]" type="text" value="{$row.dishes1_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-dishes2_id" class="control-label col-xs-12 col-sm-2">{:__('Dishes2_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-dishes2_id" data-rule="" data-source="dishes/dishes/index" class="form-control selectpage" name="row[dishes2_id]" type="text" value="{$row.dishes2_id}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

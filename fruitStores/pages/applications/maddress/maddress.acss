@@ -1,0 +1,107 @@
+.maddress{
+   width:100%;
+   background: #eeeeee; 
+}
+.ma-uesrinfo{
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-bottom:22rpx;
+}
+.mau-1{
+    padding:30rpx;
+    border-bottom: solid 1rpx #cccccc;
+}
+.mau-1a1{
+   
+    font-size:30rpx;
+    color:#000;
+}
+.mau-1a2{
+    float:right;
+    font-size:24rpx;
+    color:#c3c3c3;
+     line-height: 30rpx;
+}
+.mau-1b{
+    display: block;
+    margin:28rpx 0 32rpx 0;
+    font-size:26rpx;
+    color:#c3c3c3;
+}
+.mau-2{
+    display: flex;
+    flex-direction: row;
+    padding:30rpx;
+}
+.mau-2a1{
+   width:48rpx;
+    height:48rpx;
+    border-radius: 50%;
+    border: 1rpx solid #cccccc;
+    position: relative;
+    top: 50%;
+    margin:-30rpx 0 0 0;
+}
+.mau-2a2{
+    margin-left:20rpx;
+    font-size: 28rpx;
+    line-height: 56rpx;
+    color:#c3c3c3;
+}
+
+.mau-2b image{
+    width:48rpx;
+    height: 48rpx;
+   
+}
+.mau-2b1{
+  margin-left:360rpx;
+}
+.mau-2b2{
+    margin-left:48rpx;
+}
+.checkbox1{
+    width:48rpx;
+    height:48rpx;
+    border-radius: 50%;
+    border: 1rpx solid #cccccc;
+    position: relative;
+    top: 50%;
+    margin:-24rpx 0 0 0;
+}
+.checkbox2{
+    width:48rpx;
+    height:48rpx;
+    border-radius: 50%;
+    border: 1rpx solid #cccccc;
+    background: red;
+    position: relative;
+    top: 50%;
+    margin:-24rpx 0 0 0;
+    background: url('../../../img/msure.png')no-repeat center;
+    background-size: 48rpx;
+}
+.mau-2a21{
+    margin-left:20rpx;
+    font-size: 28rpx;
+    line-height: 56rpx;
+    color:#e72142;
+}
+.newaddress{
+    width:100%;
+    height:96rpx;
+    background:#e72142;
+    color:#ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 96rpx;
+    font-size: 34rpx;
+
+}
+.procover{
+    width:100%;
+    height:300rpx;
+}

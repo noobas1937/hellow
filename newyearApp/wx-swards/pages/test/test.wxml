@@ -1,0 +1,115 @@
+<view class="ml-container">
+
+ <view class="my-luck">
+  
+  </view>
+
+  <view class="go-new-view cr-1">
+   <view bindtap="gotest" class='begin-awards fs-6 bga-1 lef' bindtap='historySwards'>历史开奖</view>
+   <view bindtap="goMyPrize" class='begin-awards fs-6 bga-2 rig'>我的夺宝</view>
+  </view>
+
+  <view class="my-cot">
+  <view   class="new-line" style="margin-top:34rpx;"></view>
+  <view class="gb fs-2" >
+		 <image src="../../image/vol.png" mode="aspectFill" class="lef"/>
+		  <text class="cr-1 gb-1 lef">{{lkn[0].employee_name}}</text>
+		  <text class="cr-1 gb-2 lef">抽中了{{lkn[0].award_name}}</text>
+      <text class="gb-3 rig cr-1" wx:if="{{lkn[0].day>0}}">{{lkn[0].day}}天前</text>
+      <text class="gb-3 rig cr-1" wx:elif="{{lkn[0].day==0&&lkn[0].hour>0}}">{{lkn[0].hour}}小时前</text>
+      <text class="gb-3 rig cr-1" wx:elif="{{lkn[0].day==0&&lkn[0].minute==0}}">{{lkn[0].minute}}分钟前</text>
+  </view>
+  <view  class="new-line"></view> 
+  <view class="ml-del">
+    <view class="ml-new-title">
+      <view class="ml-new-line lef"></view>
+      <view class="ml-title cr-1 fs-2 lef">夺宝攻略</view>
+      <view class="ml-new-line rig"></view>
+    </view>
+
+     <view class="ml-content2">
+        
+        <image src='../../image/setup.jpg' style="height:112rpx;"></image>
+       
+       
+     </view>
+  </view>
+
+  <view class="ml-del ml-dels1">
+     
+  
+
+
+
+
+     <view class="ml-new-swards">
+       <text class="ml-new-swardstit cr-1 fs-2 bg-9">最新开奖</text>
+       <view class="new-col-line1"></view>
+       <view class="new-col-line2"></view>
+     </view>
+     <view class="ml-content">
+       
+      <view class="ml-new" style="margin:0 auto;" wx:if="{{glswd[1]}}">
+       <view class="mlc-con bg-1" wx:for="{{glswd}}" wx:for-index="idx" bindtap='goNewSwards' data-info="{{item.award[0].lucky_draw_id}}">
+         <image src="{{item.award[0].img_id}}" class="mlc1-img" mode="aspectFill"/>
+         <text class="cr-2 fs-1 mlcc-tit">{{item.award[0].name}}
+         </text>
+          <progress percent="{{item.apply_people/item.with_people*100}}" activeColor="#ffa800" backgroundColor="#bdbdbd" stroke-width="6" active show-info="{{false}}" class="mlc-pro"/>
+         <text class="mlc1-times fs-1" wx:if="timestr>item.draw.start_time">开奖时间:{{item.draw.end_date1}}</text>
+         <text class="mlc1-times fs-1" wx:else>开始时间:{{item.draw.start_date1}}</text>
+         <view class="go-swards fs-2 cr-1">去夺宝</view>
+        </view>
+      </view>
+      
+       <view class="ml-new" style="margin:0 auto;" wx:else>
+       <view class="mlc-new-con bg-1" wx:for="{{glswd}}" wx:for-index="idx" bindtap='goNewSwards' data-info="{{item.award[0].lucky_draw_id}}">
+          <image src="{{item.award[0].img_id}}" class="new-mlc1-img" mode="aspectFill"/>
+         <view class="new-mlcc-con">
+          <text class="cr-2 fs-3 new-mlcc-tit">{{item.award[0].name}}</text>
+           <progress percent="{{item.apply_people/item.with_people*100}}" activeColor="#ffa800" backgroundColor="#bdbdbd" stroke-width="6" active show-info="{{false}}" class="mlc-pro"/>
+          <text class="mlc1-times fs-1" wx:if="{{timestr>item.draw.start_time}}">开奖时间:{{item.draw.end_date1}}</text>
+          <text class="mlc1-times fs-1" wx:else>开始时间:{{item.draw.start_date1}}</text>
+          <view class="new-go-swards fs-2 cr-1">去夺宝</view>
+         </view>
+        </view>
+      </view>
+      
+
+       <view class="ml-all cr-1 fs-5"  bindtap='goSwards'>
+       <text>查看全部</text>
+      </view>
+     
+      </view>
+     
+     
+
+    </view>
+    
+  <view class="ml-del">
+      <view class="ml-new-title">
+      <view class="ml-new-line lef"></view>
+      <view class="ml-title cr-1 fs-2 lef">夺宝规则</view>
+      <view class="ml-new-line rig"></view>
+    </view>
+     
+
+
+     <view class="ml-content1 cr-1 fs-2">
+        <text>欢迎您参与奋斗夺宝，为了保证您的利益，请阅读以下夺宝规则内容：</text>
+        <text>1、夺宝活动只能使用账户中的奋斗金参与，已经兑换成现金余额的部分无法使用。</text>
+        <text>2、夺宝奖品依据实际价值设置开奖总份数，不同价值奖品单份参与金额不同，具体以各夺宝页面实际描述为准，同一奖品每人的参与份数不设上限。</text>
+        <text>3、夺宝奖品参与份数满额，可在对应的时间内开奖；如遇份数不够，未开奖的情况，奋斗金将退还到个人账户。</text>
+        <text>4、开奖后，客服会在7个工作日之内联系中奖者，请确保账户绑定手机畅通，夺宝奖品将在年后以快递或者自提的形式发放。</text>
+        <text>5、更多疑问，点击“我的”——“常见问题”或联系客服。</text>
+        <text>6、夺宝活动的最终解释权归本平台所有。</text>
+     </view>
+  </view>
+    
+  </view>  
+
+  
+
+   
+</view>
+
+

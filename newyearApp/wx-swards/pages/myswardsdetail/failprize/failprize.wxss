@@ -1,0 +1,32 @@
+/* pages/myswardsdetail/failprize/failprize.wxss */
+page{
+  background:#f5f5f5;
+}
+
+
+
+.fp-container{
+  padding:30rpx 20rpx;
+}
+.fp-2{
+   padding:30rpx 70rpx;
+   display: flex;
+   flex-direction: column;
+}
+.fp-2-img{
+   width:86rpx;
+   height:86rpx;
+   margin:0 auto;
+}
+.fp-2-sta{
+  text-align:center;
+  margin-top:12rpx;
+}
+.fp-2-tit{
+  text-align: center;
+  margin-top:20rpx;
+}
+.fp-3{
+  padding:20rpx;
+}
+.gointer{}

@@ -1,0 +1,101 @@
+<view class="m-cart">
+  <view class="mc-header">
+     <view class="mch-1">
+       <text>免运费</text>
+      </view>
+      <text class="mch-2">满20元即可免5元运费，去凑单</text>
+      <image src="../../img/next.png" mode="aspectFit" class="aph-next2"/>
+  </view>
+    
+  <view class="mc-section" a:for="{{cartlist}}"  a:for-index="idx">
+    <view class="checkboxs" onTap="goBlance" data-pri="{{idx}}">
+      <view class="{{item.del_flag?'checkbox1':'checkbox2'}}"></view>
+    </view>
+
+     <view class="mc-item">
+       <image src="{{item.img.img_url}}" mode="aspectFit" class="mci-img"/>
+       <view class="mci-1">
+          <text class="mci-1a">
+            {{item.item.subtitle}}
+          </text>
+          <view class="mci-1b">
+            <text class="mci-1b1">￥{{item.item.price_original}}</text>
+            <text class="mci-1b2">￥{{item.item.price_single}}</text>
+          </view>
+          <view class="mci-1c">
+            <view class="{{flag1?'mci-1c-sub1':'mci-1c-sub'}}" onTap="numSub" data-info="{{idx}}">
+              
+            </view>
+            <text class="mci-1c-num">{{item.number}}</text>
+            <view class="mci-1c-add" onTap="numAdd" data-info="{{idx}}">
+
+            </view>
+
+            <view class="mci-1d" hidden="{{flags1}}">
+              <text class="mci-1d1"  onTap="delCartItem" data-info="{{idx}}">删除</text>
+              <text class="mci-1d2">完成</text>
+            </view>
+            <view class="mci-1da" hidden="{{flags2}}">
+              
+              <text class="mci-1d2" onTap="changeCart">编辑</text>
+            </view>
+          </view>
+       </view>
+     </view>
+
+   
+  </view>
+
+  <view class="may-love">
+     <view class="nt-header">
+      <view class="nt-1">
+       <view class="nt-line"></view>
+       <image src="../../img/heart.png" mode="aspectFit" class="nt-img"/>
+       <text>猜你喜欢</text>
+       <view class="nt-line"></view>
+      </view>
+    </view>
+    
+    <view class="myl-con">
+     <block a:for="{{item1}}">
+      <view class="myc-1">
+         <image src="../../img/mlove1.png" mode="aspectFit"  class="myc-img"/>
+         <text class="owf-2a1">美国原产车厘子保险速递高品质为你准备</text>
+         <view class="owf-2a5">
+           <text class="owf-2a2">￥39.9</text>
+           <text class="owf-2a3">￥49</text>
+           <image src="../../img/mcart.png" mode="aspectFit" class="owf-2a4" catchTap="addCart"/>
+        </view>
+      </view>
+      </block>
+    </view>
+  </view>
+  
+  <view class="mc-footer">
+     <view class="checkboxs">
+      <view class="{{allItem?'checkbox1s':'checkbox2s'}}" onTap="allSelected"></view>
+    </view>
+    <text class="mcf-1">全选{{allItem}}</text>
+    <view class="mcf-2 fs-1">
+      <text class="mcf-2a">合计:</text>
+      <text class="mcf-2b cr-5">￥{{totalprice?totalprice:0.00}}</text>
+    </view>
+    <text class="mcf-2c fs-1">不含运费</text>
+    <view>
+    <view class="mcf-3" onTap="goMsOrder">
+      <text>结算({{totalnum?totalnum:0}})</text>
+    </view>
+    </view>
+  </view>
+
+   <view class="navbar">
+    <view class="{{navid==idx?'nb-2':'nb-1'}}{{item.id}}  nb-1" a:for="{{nav}}" a:for-index="idx" data-info="{{idx}}" onTap="changeBg">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="cartnum">
+      <text>{{cartnum}}</text>
+    </view>
+  </view>
+
+
+</view>

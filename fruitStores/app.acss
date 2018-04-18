@@ -1,0 +1,158 @@
+page {
+  font-family: 'Microsoft Yahei';
+  flex: 1;
+  display: flex;
+}
+
+
+
+.navbar{
+    width:100%;
+    height: 100rpx;
+    display: flex;
+    flex-direction: row;
+    background: #f5f5f5;
+    position: fixed;
+    left:0;
+    bottom:0;
+}
+.nb-1{
+    width:25%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 160rpx;
+    font-size: 24rpx;
+    color:#888888;
+    border-top: 1rpx solid #cccccc;
+}
+.nb-10{
+    background: url('../../../img/home.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-11{
+    background: url('../../../img/sort.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-12{
+    background: url('../../../img/cart.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-13{
+    background: url('../../../img/my.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-20{
+    background: url('../../../img/homeon.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-21{
+    background: url('../../../img/sorton.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-22{
+    background: url('../../../img/carton.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+.nb-23{
+    background: url('../../../img/myon.png')no-repeat;
+    background-position: center 15rpx;
+    background-size: 48rpx;
+}
+
+.cartnum{
+   width:40rpx;
+   height:40rpx;
+   border-radius: 50%;
+   background:#ff3f34;
+   color:#ffffff;
+   position: absolute;
+   top:3rpx;
+   right:29%;
+   text-align: center;
+   line-height: 40rpx; 
+  }
+  
+  .fs-1{
+    font-size:24rpx;
+  }
+  .fs-2{
+    font-size:26rpx;
+  }
+  .fs-3{
+    font-size:28rpx;
+  }
+  .fs-4{
+    font-size:30rpx;
+  }
+  .fs-5{
+    font-size:32rpx;
+  }
+  .fs-6{
+    font-size:34rpx;
+  }
+ .fs-7{
+    font-size:36rpx;
+  }
+  .cr-1{
+    color:#ffffff;
+    }
+  .cr-2{
+    color:#000000;
+   }
+  .cr-3{
+    color:#ff3f34;
+  }
+  .cr-4{
+    color:#707070;
+  }
+  .cr-5{
+    color:#e72142;
+  }
+  .cr-6{
+    color:#999999;
+  }
+  .cr-7{
+    color:#d9d9d9;
+  }
+  .cr-8{
+    color:#f5f5f5;
+  }
+
+  .bg-1{
+    background-color:#ffffff;
+  }
+  .bg-2{
+    background-color:#000000;
+  }
+  
+  .bg-3{
+    background-color:#ff3f34;
+  }
+  
+  .bg-4{
+    background-color:#707070;
+  }
+  
+  .bg-5{
+    background-color:#e72142;
+  }
+  
+  .bg-6{
+    background-color:#999999;
+  }
+  
+  .bg-7{
+    background-color:#d9d9d9;
+  }
+  
+  .bg-8{
+    background:#f5f5f5;
+  }
+  

@@ -1,0 +1,29 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="" class="control-label col-xs-12 col-sm-2">活动类型:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[type]', ['1'=>'场内活动', '2'=>'场外活动'],$row['type'])}
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="" class="control-label col-xs-12 col-sm-2">开始/暂停:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[status]', ['0'=>'暂停', '1'=>'开始'],$row['status'])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-draw_id" class="control-label col-xs-12 col-sm-2">{:__('Draw_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-draw_id" data-rule="" data-source="lucky/luckydraw" data-field="title" class="form-control selectpage" name="row[draw_id]" type="text" value="{$row['draw_id']}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

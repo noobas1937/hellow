@@ -1,0 +1,73 @@
+page{
+    font-size: 24rpx;
+}
+.track-rcol{
+    width: 100%; 
+    border: 1rpx solid #eee;
+}
+.track-list{
+    margin: 20rpx; 
+    padding-left: 5rpx;
+    position: relative;
+    }
+.fir1{
+    position: relative;
+    padding: 50rpx 0 0 20rpx;
+    line-height: 24rpx;
+    border-left: 1rpx solid #d9d9d9;
+    color: #999;
+}
+.first{
+   
+    padding-top: 0;
+    border-left-color: #fff;
+}
+
+.fir1 .node-icon{
+    position: absolute;
+    left: -24rpx;
+    top: 50%;
+    width: 50rpx;
+    height: 50rpx;
+    
+    background: url('../../../img/point.png')no-repeat;
+    background-size: 48rpx;
+    background-position:40% 8rpx;
+    z-index:99999;
+}
+.second{
+   color:#e72142;
+}
+.second  .node-icon{
+   
+    position: absolute;
+    left: -24rpx;
+    top: 50%;
+    width: 50rpx;
+    height: 50rpx;
+    background: url('../../../img/point1.png')no-repeat;
+    background-size: 48rpx;
+    background-position:40% 8rpx;
+    z-index:99999;
+}
+.first .node-icon{
+    background-position:40% -18rpx;
+}
+.time{
+    margin-right: 20rpx;
+    position: relative;
+    top: 4rpx;
+    display: inline-block;
+    vertical-align: middle;
+    }
+.txt{
+    min-width: 420rpx;
+    position: relative;
+    top: 4rpx;
+    display: inline-block;
+    vertical-align: middle;
+    }
+.first .time{
+    margin-right: 20rpx; }
+.first .txt{
+    min-width: 420rpx; }

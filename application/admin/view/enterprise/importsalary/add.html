@@ -1,0 +1,31 @@
+<form id="add-form" class="form-horizontal" role="" enctype="multipart/form-data" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group" id="year">
+        <label for="c-year" class="control-label col-xs-12 col-sm-2">年份:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-year" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY" data-use-current="true" name="year" type="text" value="{:date('Y')}">
+        </div>
+    </div>
+
+    <div class="form-group" id="month">
+        <label for="c-month" class="control-label col-xs-12 col-sm-2">月份:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-month" data-rule="required" class="form-control datetimepicker" data-date-format="M" data-use-current="true" name="month" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group" id="file">
+        <label for="c-file" class="control-label col-xs-12 col-sm-2">选择EXCEl:</label>
+        <input type="file" id="exampleInputFile" name="file">
+    </div>
+
+
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed ">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>
+

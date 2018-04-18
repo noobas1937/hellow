@@ -1,0 +1,157 @@
+<view class="orderdel">
+   <view class="or-header" a:if="{{ostatus==3}}">
+     <text class="orh-1">订单已完成 ></text>
+     <text class="orh-2">感谢你对连城商城的信任，期待再次光临</text>
+     <view class="orh-3">
+       <text>去评价</text>
+     </view>
+    </view>
+    
+    <view class="or-header2" a:if="{{ostatus==2}}">
+      <view >
+        <map id="map" class="or-map" longitude="{{longitude}}" latitude="{{latitude}}" scale="{{scale}}" controls="{{controls}}" markers="{{markers}}">
+        </map>
+      </view>
+    <view class="or-time" >
+      <view class="wrap">
+        <canvas class="cir" style="width:148px; height:148px;" id="canvasArc">
+        </canvas>
+        <view class="cc">{{times}}</view>
+        <view class="tit">送达时间</view>
+      </view>
+    </view>
+      <text class="or-status">商家已接单 ></text>
+      <text class="or-rider" onTap="gomap">联系骑手(张小三)</text>
+    </view>
+    
+    <view class="or-header4" a:if="{{ostatus==4}}">
+     <view class="orh4-1">
+       <text class="orh4-1a">申请退款时间</text>
+       <text class="orh4-1b">2017-11-30 17:07</text>
+     </view>
+     <view class="orh4-2">
+       <image src="../../../img/ric.png" mode="aspectFit"  class="orh4-2a"/>
+       <text class="orh4-2b">已退款</text>
+       <text class="orh4-2c">￥6666</text>
+     </view>
+     <view class="orh4-3">
+       <text class="orh4-3a">退回至银行卡(尾号1100)</text>
+       <text class="orh4-3b">￥66</text>
+     </view>
+    </view>
+
+   <view class="or-info">
+     <view class="ori-tit">
+       <text>商品详情</text>
+      </view>
+   
+       <view class="owf-2" onTap="orderdel">
+           <image src="{{odel.item.img_url}}" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1a">{{odel.item.subtitle}}</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥{{odel.item.price_single}}</text>
+             <text class="owf-2a3">￥{{odel.item.price_original}}</text>
+             <text class="owf-2a4">x{{odel.order.item_num}}</text>
+            </view>
+           </view>
+          </view>
+    
+    </view>
+    
+   <view class="or-price">
+      <view class="orp-1">
+        <view class="orp-1a">
+          <text class="orp-1a1">商品总额</text>
+          <text class="orp-1a2">￥{{odel.record.total_money}}</text>
+        </view>
+        <view class="orp-1b">
+          <text class="orp-1b1">+运费</text>
+          <text class="orp-1b2">￥{{odel.record.freight?odel.record.freight:0}}</text>
+        </view>
+      </view>
+      <view class="orp-2">
+         <view class="orp-2a" onTap="returnCall">
+          <image src="../../../img/ophone.png" mode="aspectFit" />
+          <text>联系客服</text>
+         </view>
+        <text class="orp-2b">实付款：￥{{total}}</text>
+      </view>
+    </view>
+    
+   <view class="or-info">
+      <view class="ori-tit">
+        <text>配送信息</text>
+      </view>
+      <view class="send-del">
+        <view class="sdd-1">
+          <text class="sdd-1a">送达时间</text>
+          <text class="send-way">2017-11-16 15:06</text>
+        </view>
+        <view class="sdd-1">
+           <text class="sdd-1a">收货地址</text>
+           <view class="sdd-1b">
+             <text>{{odel.order.name}} {{odel.order.mobile}}</text>
+             <text class="sdd-1b1">{{odel.order.address}}</text>
+           </view>
+           
+        </view>
+        <view class="sdd-1">
+          <text class="sdd-1a">配送方式</text>
+          <text class="send-way">连城专送</text>
+        </view>
+      </view>
+    </view>
+    
+   <view class="or-info">
+     <view class="ori-tit">
+       <text>订单信息</text>
+      </view>
+      
+      <view class="send-del">
+        <view class="sdd-1">
+          <text class="sdd-1a">订单编号</text>
+          <text class="send-way">{{odel.order.pay_no}}</text>
+        </view>
+        <view class="sdd-1  sdd-1as">
+          <text class="sdd-1a">支付方式</text>
+          <text class="send-way">在线支付</text>
+        </view>
+        <view class="sdd-1 sdd-1as">
+          <text class="sdd-1a">下单时间</text>
+          <text class="send-way">{{odel.order.create_date}}</text>
+        </view>
+        <view class="sdd-1 sdd-1as">
+          <text class="sdd-1a">订单备注</text>
+          <text class="send-way">{{odel.order.memo}}</text>
+        </view>
+      </view>
+
+    </view>
+    
+   <view class="may-love">
+     <view class="nt-header">
+      <view class="nt-1">
+       <view class="nt-line"></view>
+       <image src="../../../img/heart.png" mode="aspectFit" class="nt-img"/>
+       <text>猜你喜欢</text>
+       <view class="nt-line"></view>
+      </view>
+    </view>
+    
+    <view class="myl-con">
+     <block a:for="{{item1}}">
+      <view class="myc-1">
+         <image src="../../../img/mlove1.png" mode="aspectFit"  class="myc-img"/>
+         <text class="owf-2a1">美国原产车厘子保险速递高品质为你准备</text>
+         <view class="owf-2a5">
+           <text class="owf-2a2">￥39.9</text>
+           <text class="owf-2a3">￥49</text>
+           <image src="../../../img/mcart.png" mode="aspectFit" class="owf-2a4" />
+        </view>
+      </view>
+      </block>
+    </view>
+
+   </view>
+</view>

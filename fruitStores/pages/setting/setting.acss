@@ -1,0 +1,120 @@
+.setting{
+  width:100%;
+}
+.st-1{
+  width:100%;
+  padding:64rpx 0;
+}
+.st-1a{
+   width:210rpx;
+   height:210rpx;  
+   border-radius: 50%;
+   margin:0 auto;
+   position: relative;
+}
+.st-1a image{
+   width:210rpx;
+   height:210rpx;
+   border-radius: 50%;
+}
+.st-1a1{
+    width:62rpx;
+    height:62rpx;
+    border-radius:50%;
+    position: absolute;
+    right:0rpx;
+    bottom:0rpx;
+    
+    background:url('../../img/camera1.png')no-repeat center;
+    background-color:#e72142;
+    background-size:40rpx;
+}
+.st-2{
+
+}
+.st-2a{
+    height:98rpx;
+    padding:0 30rpx;
+    line-height: 98rpx;
+    border-top:solid 1px #cccccc;
+}
+.st-2a2 {
+    float:right;
+}
+.st-2a2 image{
+    width:30rpx;
+    height:30rpx;
+    vertical-align: middle;
+}
+.st-3{
+    margin:20rpx 0 0 0;
+}
+
+
+
+.ms-cover{
+    width:100%;
+    height:100%;
+}
+.ms-color{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#000;
+    opacity:0.4;
+
+}
+.ms-select{
+    width:540rpx;
+    height:300rpx;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin:-128rpx 0 0 -270rpx;
+    background:#ffffff;
+   
+    display: flex;
+    flex-direction: column;
+    font-size:30rpx;
+    overflow: hidden;
+
+}
+.ms-selects{
+    width:540rpx;
+    height:400rpx;
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin:-128rpx 0 0 -270rpx;
+    background:#ffffff;
+   
+   
+    font-size:30rpx;
+    overflow: hidden;
+
+}
+.mss-1{
+    padding-left:30rpx;
+    height:33.3%;
+    box-sizing: border-box;
+    border-bottom: solid 1rpx #cccccc;
+    line-height: 100rpx;
+
+}
+.mss-2{
+   border-bottom:none;
+ 
+}
+.mss-3{
+   height:100rpx;
+   border-top: solid 1rpx #cccccc;
+   text-align: center;
+}
+.mss-4{
+   height:100rpx;  
+}
+.mss-5{
+  height:200rpx; 
+}

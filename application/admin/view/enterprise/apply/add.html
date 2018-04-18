@@ -1,0 +1,214 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-sector_id" class="control-label col-xs-12 col-sm-2">{:__('Sector_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sector_id" data-rule="required" data-source="sector/index" class="form-control selectpage" name="row[sector_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-tb_user_id" class="control-label col-xs-12 col-sm-2">{:__('Tb_user_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-tb_user_id" data-rule="required" data-source="tb/user/index" class="form-control selectpage" name="row[tb_user_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">{:__('Contact_moblie')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contact_moblie" data-rule="required" class="form-control" name="row[contact_moblie]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_date" class="control-label col-xs-12 col-sm-2">{:__('Create_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_date]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_name" class="control-label col-xs-12 col-sm-2">{:__('Create_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_name" class="form-control" name="row[create_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-update_date" class="control-label col-xs-12 col-sm-2">{:__('Update_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[update_date]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-update_name" class="control-label col-xs-12 col-sm-2">{:__('Update_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_name" class="form-control" name="row[update_name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-identity_id" class="control-label col-xs-12 col-sm-2">{:__('Identity_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-identity_id" data-rule="required" data-source="identity/index" class="form-control selectpage" name="row[identity_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-enterprise_id" class="control-label col-xs-12 col-sm-2">{:__('Enterprise_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-enterprise_id" data-rule="required" data-source="enterprise/index" class="form-control selectpage" name="row[enterprise_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-points" class="control-label col-xs-12 col-sm-2">{:__('Points')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-points" data-rule="required" class="form-control" name="row[points]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-describe" class="control-label col-xs-12 col-sm-2">{:__('Describe')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-describe" class="form-control" name="row[describe]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-name" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" class="form-control" name="row[name]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-idcard" class="control-label col-xs-12 col-sm-2">{:__('Idcard')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-idcard" data-rule="required" class="form-control" name="row[idcard]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d1" class="control-label col-xs-12 col-sm-2">{:__('D1')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d1" class="form-control" name="row[d1]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d2" class="control-label col-xs-12 col-sm-2">{:__('D2')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d2" class="form-control" name="row[d2]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d3" class="control-label col-xs-12 col-sm-2">{:__('D3')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d3" class="form-control" name="row[d3]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d4" class="control-label col-xs-12 col-sm-2">{:__('D4')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d4" class="form-control" name="row[d4]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d5" class="control-label col-xs-12 col-sm-2">{:__('D5')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d5" class="form-control" name="row[d5]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-site" class="control-label col-xs-12 col-sm-2">{:__('Site')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site" class="form-control" name="row[site]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-sex" class="control-label col-xs-12 col-sm-2">{:__('Sex')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sex" class="form-control" name="row[sex]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-type" class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-type" class="form-control" name="row[type]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-join_date" class="control-label col-xs-12 col-sm-2">{:__('Join_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-join_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD" data-use-current="true" name="row[join_date]" type="text" value="{:date('Y-m-d')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-bank_card" class="control-label col-xs-12 col-sm-2">{:__('Bank_card')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-bank_card" data-rule="required" class="form-control" name="row[bank_card]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-bank_name" class="control-label col-xs-12 col-sm-2">{:__('Bank_name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-bank_name" data-rule="required" class="form-control" name="row[bank_name]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d3n" class="control-label col-xs-12 col-sm-2">{:__('D3n')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d3n" class="form-control" name="row[d3n]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d4n" class="control-label col-xs-12 col-sm-2">{:__('D4n')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d4n" class="form-control" name="row[d4n]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-d5n" class="control-label col-xs-12 col-sm-2">{:__('D5n')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d5n" class="form-control" name="row[d5n]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-id_card_positive_imgid" class="control-label col-xs-12 col-sm-2">{:__('Id_card_positive_imgid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-id_card_positive_imgid" class="form-control" name="row[id_card_positive_imgid]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-id_card_opposite_imgid" class="control-label col-xs-12 col-sm-2">{:__('Id_card_opposite_imgid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-id_card_opposite_imgid" class="form-control" name="row[id_card_opposite_imgid]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-id_card_hold_imgid" class="control-label col-xs-12 col-sm-2">{:__('Id_card_hold_imgid')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-id_card_hold_imgid" class="form-control" name="row[id_card_hold_imgid]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-privilege_level" class="control-label col-xs-12 col-sm-2">{:__('Privilege_level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-privilege_level" data-rule="required" class="form-control" name="row[privilege_level]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-site_employee_id" class="control-label col-xs-12 col-sm-2">{:__('Site_employee_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site_employee_id" data-rule="required" data-source="site/employee/index" class="form-control selectpage" name="row[site_employee_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-hr_employee_id" class="control-label col-xs-12 col-sm-2">{:__('Hr_employee_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-hr_employee_id" data-rule="required" data-source="hr/employee/index" class="form-control selectpage" name="row[hr_employee_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-remark" class="control-label col-xs-12 col-sm-2">{:__('Remark')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-remark" class="form-control" name="row[remark]" type="text">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

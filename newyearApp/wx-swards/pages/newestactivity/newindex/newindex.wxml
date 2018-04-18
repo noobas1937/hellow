@@ -1,0 +1,34 @@
+<!--
+<view  class="fs-4 nac-1" hidden="true">
+
+  <view  class="fs-4 nac-1a lef"  hidden="{{flagt==false?false:true}}">{{txt}}：<text class="cr-11">{{t1<10?('0'+t1):t1}}</text>：<text class="cr-11">{{t2<10?('0'+t2):t2}}</text>：<text class="cr-11">{{t3<10?('0'+t3):t3}}</text></view>
+
+  <view class="fs-4 nac-1a lef" hidden="{{flagt==true?false:true}}">
+     <text class="fs-5 cr-5" >活动已结束</text>
+  </view>
+
+  <view  class="fs-4 nac-1b lef cr-11" bindtap='goNewRule'>活动规则</view>
+</view>
+
+<view  class="fs-6 nac-2 cr-11">已抢奋斗金：{{scount}}</view>
+
+<view   class="nac-3 {{flagy==false?'fas':''}}" bindtap='getCredits'></view>
+
+
+
+ <view class="cover" hidden="{{true}}">
+      <view class="cover-1"></view>
+      <view class="cover-2" catchtap='close'>
+         <text class="cr-5 fs-8 cov-2">{{swinfo.msg}}</text>
+         <view class="cov-3"></view>
+      </view>
+ </view>
+-->
+<view>
+ <image src="{{oimg+'a1.jpg'}}" class="n-imgs" mode="aspectFill"></image>
+ <image src="{{oimg+'a2.jpg'}}" class="n-imgs"></image>
+ <image src="{{oimg+'a3.jpg'}}" class="n-imgs"></image>
+ <image src="{{oimg+'a4.jpg'}}" class="n-imgs"></image>
+ <image src="{{oimg+'a5.jpg'}}" class="n-imgs"></image>
+ <image src="{{oimg+'a6.jpg'}}" class="n-imgs" bindtap='catchMySwards'></image>
+</view>

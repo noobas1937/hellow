@@ -1,0 +1,59 @@
+.set-phone{
+    width:100%;
+}
+.sep-1{
+    width:100%;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+.sep-1a{
+    width:100%;
+    height:98rpx;
+    position: relative;
+    padding:2rpx 0;
+}
+.sep-1a input{
+    height:98rpx;
+    width:100%;
+    border:none;
+    padding-left:160rpx;
+}
+.sep-1a1{
+    line-height: 98rpx;
+   position: absolute;
+   left: 30rpx;
+   top:0;
+}
+.sep-1b{
+    border-bottom: 3rpx solid #cccccc;
+    
+}
+.sep-1a2{
+   height:62rpx;
+   width:160rpx;
+   position: absolute;
+   right: 30rpx;
+   top:18rpx;
+   text-align: center;
+   line-height: 62rpx;
+   border-radius: 10rpx;
+}
+.stp-ms{
+    height:98rpx;
+    margin:30rpx;
+    line-height: 98rpx;
+    text-align: center;
+}
+.stp-codes{
+   height:80rpx;
+   line-height: 80rpx;
+   text-align: right;
+   padding-right:30rpx;
+}
+.stp-codes image{
+    width: 30rpx;
+    height:30rpx;
+    vertical-align: middle;
+    margin-right:18rpx;
+   
+}

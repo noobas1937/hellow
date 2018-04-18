@@ -1,0 +1,246 @@
+.morder{
+    width:100%;
+    background-color: #eeeeee;
+    overflow: hidden; 
+}
+.mo-nav{
+   width:100%;
+   height:98rpx;
+   background:#ffffff;
+   display: flex;
+   flex-direction: row;
+}
+.mon-1{
+    width:20%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 40rpx;
+
+}
+.mon-1 text{
+    display: block;
+    height:20px;
+    width:100%;
+    border-right:solid 1rpx #d9d9d9;
+    font-size:30rpx;
+    
+    margin-top:22rpx;  
+}
+.mon-ac{
+    color:#e72142;
+    border-bottom:solid 4rpx #e72142;
+}
+.waitfund{
+    margin-top:26rpx;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+.owf-1{
+    width:100%;
+    height:70rpx;
+    
+    line-height: 70rpx;
+    background:#fff;
+    display: block;
+}
+.owf-1a{
+  float:left;
+  font-size:24rpx;
+  margin-left:30rpx;
+  color:#b0b0b0;
+}
+.owf-1b{
+    float:right;
+    font-size:30rpx;
+    margin-right:30rpx;
+    color:#e72142;
+}
+.owf-2{
+    width:100%;
+    padding:16rpx 0 16rpx 0;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: row;
+}
+.owf-2img{
+   margin-left: 30rpx;
+   width:160rpx;
+   height:160rpx;
+}
+.owf-2a{
+    margin-left: 30rpx;
+    margin-right: 30rpx;
+    margin-top: 24rpx;
+}
+.owf-2a1{
+   display: block;
+   font-size:28rpx;
+   max-width:500rpx;
+   height:60rpx;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   white-space: nowrap;
+   color:#7a7a7a;
+}
+.owf-2a2{
+    font-size:28rpx;
+    color:#fe6828;
+}
+.owf-2a3{
+    font-size:26rpx;
+    text-decoration:line-through;
+     color:#7a7a7a;
+     margin-left:22rpx;
+}
+.owf-2a4{
+    font-size:28rpx;
+     color:#7a7a7a;
+     float:right;
+    }
+.owf-2a5{
+    margin:10rpx 0 0 0;
+  
+}
+.owf-3{
+    width:100%;
+    height:70rpx;
+    background:#ffffff;
+    line-height:70rpx;
+     border-bottom:solid 1rpx #cccccc;
+}
+.owf-3 text{
+    float:right;
+    margin-right:30rpx;
+    font-size:30rpx;
+}
+.owf-4{
+   display: flex;
+   flex-direction: row-reverse;
+   padding:16rpx 0;
+   background-color: #ffffff;
+}
+.cancelorder,.gopay,.gopay1,.hrorder{
+  
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  border-radius:12rpx;
+  font-size:30rpx;
+}
+.cancelorder{
+    background:#ffffff;
+    color:#999999;
+    margin-right:10rpx;
+}
+.hrorder{
+     background:#ffffff;
+    color:#999999;
+    margin-right:30rpx;
+}
+.gopay{
+   width:164rpx;
+   height:60rpx;
+   background:#e72142;
+   margin-right:30rpx;
+   color:#ffffff;
+}
+.gopay1{
+   width:164rpx;
+   height:60rpx;
+    background:#ffffff;
+    color:#999999;
+   margin-right:30rpx;
+   border: solid 1rpx #cccccc;
+}
+.ms-cover{
+    width:100%;
+    height:100%;
+}
+.ms-color{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    background:#000;
+    opacity:0.4;
+
+}
+.ms-select{
+    width:540rpx;
+   
+    position:fixed;
+    left:50%;
+    top:50%;
+    margin:-128rpx 0 0 -270rpx;
+    background:#ffffff;
+    border-radius: 28rpx;
+    display: flex;
+    flex-direction: column;
+    font-size:30rpx;
+    overflow: hidden;
+
+}
+.mss-top{
+   width:100%;
+   height:152rpx;
+   text-align: center;
+   line-height: 162rpx;
+   border-bottom:solid 1rpx #cccccc;
+   
+}
+.mss-bottom{
+   width:100%;
+   height:108rpx;
+   display: flex;
+   flex-direction: row;
+}
+.mss-b1{
+  width:50%;
+  height:100%;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 108rpx;
+}
+.mss-b2{
+ color:#666666;
+ border-right:solid 1rpx #cccccc;
+}
+.mss-b3{
+ color:#e72142;
+}
+.mss-top1{
+   width:100%;
+   height:152rpx;
+   text-align: center;
+  
+   border-bottom:solid 1rpx #cccccc;
+   display: flex;
+   flex-direction: column;
+
+}
+.mss-top1a{
+    font-size:38rpx;
+    margin-top:30rpx;
+    color:#000;
+}
+.mss-top1b{
+    font-size:26rpx;
+    margin-top:20rpx;
+    color:#000;
+}
+.mss-top2a{
+    font-size:36rpx;
+    margin-top:20rpx;
+    color:#000;
+}
+.mss-top2b{
+    font-size:26rpx;
+    margin-top:10rpx;
+    color:#000;
+    padding:0 20rpx;
+}
+.returnMoney{
+    color:#e72142;
+}

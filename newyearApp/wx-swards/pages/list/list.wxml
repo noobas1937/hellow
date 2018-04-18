@@ -1,0 +1,33 @@
+<view class="list-header">
+	<view class="header-pic">
+		<image class="userinfo-avatar" src="{{avatarUrl}}" background-size="cover"></image>
+		<text class="uname fs-5">{{nickname}}</text>
+		<text class="uscore fs-2">积分：1122</text>
+	</view>
+
+	<view class="list-btn fs-4" bindtap="gotoLottery">
+		<block wx:if="{{awardsList.length > 0}}">恭喜你获得以下奖品：</block>
+		<block wx:else>您还未中奖，快去抽奖吧。</block>
+	</view>
+
+	
+
+	<view class="list-container" wx:for="{{awardsList}}" wx:for-index="index">
+		<view class="award-list">
+			<image src="{{item.award_img}}" mode="aspectFill" />
+			<view class="al-name">
+				<text class="aln-1 fs-5 cr-2">{{item.award_name}}</text>
+				<text class="aln-2 fs-3 cr-9">领取时间:2018.01.03</text>
+			</view>
+			<view class="al-num">
+				<text class="aln-3 cr-1 fs-3">立即领</text>
+				<text class="aln-4 fs-1 cr-6">112份已领</text>
+			</view>
+
+		</view>
+		
+	</view>
+
+	<view bindtap="gotest" class='begin-awards fs-6'>开始抽奖</view>
+</view>
+

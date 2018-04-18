@@ -1,0 +1,44 @@
+<view class="mrate">
+
+ <view class="mr-header">
+    <view class="mrh-1">
+      <image src="../../../img/ratepic.png" mode="aspectFit" class="mrh-1img"/>
+      <view class="mrh-1a">
+        <text class="mrh-1a1">精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+        <text class="mrh-1a2">这次的水果真的非常棒，用踢踢买水果特别好，当天配送，最新鲜了。</text>
+        <text class="mrh-1a3">2017-12-01 14:18</text>
+      </view> 
+    </view>
+  </view>
+
+<view class="mr-header">
+    <view class="mrh-1">
+      <image src="../../../img/ratepic.png" mode="aspectFit" class="mrh-1img"/>
+      <view class="mrh-1a">
+        <text class="mrh-1a1">精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+        <text class="mrh-1a2">这次的水果真的非常棒，用踢踢买水果特别好，当天配送，最新鲜了。</text>
+        <image src="../../../img/ratepic1.png" mode="aspectFit"  class="mrh-1a4"/>
+        <text class="mrh-1a3">2017-12-01 14:18</text>
+      </view> 
+    </view>
+  </view>
+
+  <view class="mr-header">
+    <view class="mrh-1">
+      <image src="../../../img/ratepic.png" mode="aspectFit" class="mrh-1img"/>
+      <view class="mrh-1a">
+        <text class="mrh-1a1">精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+        <text class="mrh-1a2">这次的水果真的非常棒，用踢踢买水果特别好，当天配送，最新鲜了。</text>
+        <image src="../../../img/ratepic1.png" mode="aspectFit"  class="mrh-1a4"/>
+        <text class="mrh-1a3">2017-12-01 14:18</text>
+        <view class="mrh-1a5">
+          <text class="mrh-1a5a">客服回复：谢谢您的评价，我们一定继续努力，为您提
+                 供更好的服务客服回复：谢谢您的评价，我们一定继续努力，为您提
+                 供更好的服务客服回复：谢谢您的评价，我们一定继续努力，为您提
+                 供更好的服务</text>
+        </view>
+      </view> 
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,109 @@
+
+<view class="h-container">
+   <scroll-view scroll-y="{{true}}" onScroll="scroll" scroll-top="{{scrollTop}}" style="position:absolute; top:0; left:0; right:0; bottom:0;">
+   <view class='h-banner'>
+
+     <swiper indicator-dots="true" autoplay="true" interval="4000" duration="1000" circular="true">
+       <swiper-item a:for="{{itemdel.img}}">
+        <image src="{{item.img_url}}" mode="aspectFit"  class="banimg"/>
+      </swiper-item>
+     
+    </swiper>
+    
+  </view>
+
+  <view class="items-con">
+     <text class="itc-1 fs-5 cr-2">{{itemtit[0]}}</text>
+     <view class="itc-2 fs-1">
+       <text class="fs-2 cr-3">{{itemdel.title}}</text>
+      </view>
+      <view class="itc-3">
+        <text class="fs-3 cr-3">￥</text>
+        <text class="fs-7 cr-3">{{itemdel.price_single}}</text>
+        <text class="fs-3 cr-4">（下单后7天内，每天按时配送1份)</text>
+      </view>
+      <text class="itc-4 fs-3 cr-4">累计销量：{{itemdel.sale_num}}件</text>
+
+      <view class="itc-share fs-1" onTap="onShareAppMessage">
+         <image src="../../img/share.png" mode="aspectFit" />
+         <text>分享</text>
+      </view>
+    </view>
+    
+    <view class="setmeal">
+        <view class="sml-1 fs-3 cr-4 {{sid==idx?'a1':'b1'}}" a:for="{{[1,1]}}" a:for-index="idx" data-info="{{idx}}" onTap="changSetMeal">
+          <text>套餐体验装，一次性配送，每份特惠仅需35元</text>
+          <view  hidden="{{sid==idx?false:true}}"><image src="../../img/gou.png" mode="aspectFit"  class="sml-2"/></view>
+     </view>   
+  </view>
+  
+ <view class="navOne"> 
+  <view class="navTwo">
+    <view a:for="{{nav}}"  class="nt-1 {{navid==idx1?'a3':''}}" a:for-index="idx1" data-info1="{{idx1}}" onTap="navExchange">
+      <text>{{item}}</text>
+    </view>
+    </view>
+    <view hidden="{{navid==0?false:true}}">
+      <block a:for="{{itemdel.contentImg}}">
+        <image src="{{item.img_url}}" mode="widthFix" class="itemcontimg"/>
+      </block>
+      
+    </view>
+
+     <view  hidden="{{navid==1?false:true}}" class="nvd"  a:for="{{[1,2,3,1,2]}}">
+       <view class="nvd-1">
+         <image src="" mode="" />
+       </view>
+      
+      <view class="nvd-2 ">
+        <text class="nvd-2a fs-3 cr-3">来自星星的你</text>
+        <view class="nvd-2b"></view>
+        <text class="nvd-2c fs-1 cr-4">味道还可以，外卖小伙子服务挺好的。包装完好无损味道还可以，外卖小伙子服务挺好的。</text>
+        <image src="" mode="" class="nvd-2d"/>
+        <text class="nvd-2e fs-1 cr-4">商家回复：您家人喜欢就是我们最大的荣幸</text>
+      </view>
+    </view>
+  </view>
+  
+   <view hidden="{{flag}}" class="go-top" onTap="returnTop"></view>
+</scroll-view>
+  <view class="item-bottom">
+    <view class="itb-1 fs-1 cr-4" onTap="collect">
+      <text>收藏</text>
+    </view>
+    <view class="itb-2 fs-1 cr-4" onTap="appendCart">
+      <text>购物车</text>
+    </view>
+    <view class="itb-3 fs-6 cr-1" onTap="addCart1">
+      <text>加入购物车</text>
+      <view class="itb-31 fs-1 cr-1">{{cartnum}}</view>
+    </view>
+  </view>
+
+  <view class="nv-cover" hidden="{{flag1}}">
+    <view class="nvc-1"></view>
+    <view class="nvc-2 fs-4">
+      <view class="nvc-2a">
+        <image src="{{itemdel.cover_img}}" mode="aspectFit" class="nvc-2a1"/>
+        <view class="nvc-2a2">
+          <text class="nvc-2a2a fs-3 cr-3">￥{{itemdel.price_single}}</text>
+          <text class="nvc-2a2b fs-2 cr-4">商品编号{{itemdel.item_code}}</text>
+        </view>
+      </view>
+
+      <view class="nvc-2b">
+          <text class="nvc-2b1 fs-3 cr-4">数量</text>
+          <view class="nvc-2b2">
+             <button class="nvc-2b21 fs-4" disabled="{{numstatus}}" onTap="cartNumSub">-</button>
+             <view class="nvc-2b22">{{num}}</view>
+             <button class="nvc-2b21 fs-4" onTap="cartNumAdd">+</button>
+          </view>
+        </view>
+        
+        <view class="nvc-2c fs-5 cr-1" onTap="addCart">
+          <text>加入购物车</text>
+        </view>
+    </view>
+
+  </view>
+</view>

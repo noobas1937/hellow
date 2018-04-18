@@ -1,0 +1,50 @@
+<import src="../../templates/modals/modals.wxml"/>
+
+<view class="mwd">
+  <view class="mwd-1">
+    <view class="mwd-1a">
+      <view class="mwd-1a-1 lef">
+        <text class="fs-6 cr-2">{{wdi.head.name}} </text>
+        <text class="fs-2 cr-6"> {{wdi.head.idcard}}</text> 
+      </view>
+       <text class="mwd-1a-2 fs-5 cr-2 rig">{{wdi.tail.remark}}</text>
+    </view>
+
+    <text class="mwd-1b fs-4 cr-2">{{wdi.head.describe}}<text class="fs-2 cr-6">（{{wdi.head.join_date}}入职）</text></text>
+    <text class="mwd-1c  fs-4 cr-2">{{wdi.head.site?wdi.head.site:''}}<text class="fs-2 cr-6">{{wdi.head.d4?'('+wdi.head.d4+')': ' '}}</text></text>
+  </view>
+
+  <view class="mwd-2">
+
+    <view class="mwd-2a" wx:for="{{wdi.detail}}" wx:key="index">
+      <text class="mwd-2a-1 cr-6 fs-4" >{{item.key}}</text>
+      <text class="mwd-2a-2 cr-2 fs-4">{{item.value}}</text>
+    </view>
+ 
+  </view>
+   
+  <view  class="mwd-3">
+    <text class="mwd-3d fs-3 cr-5" bindtap='goMyOwnReward'>点击查看年终奖、值班津贴、持续贡献奖、返岗奖励。</text>
+    <text class="mwd-3c fs-1 cr-11 bg-1">如核对信息有疑问，请联系站长或者拨打客服热线电话18062640522</text>
+    <text class="mwd-3a lef fs-2 cr-2">实发工资<text class="cr-5 fs-6 wgss">{{wdi.tail.credits}}</text></text>
+    <text class="mwd-3b cr-1 fs-3 rig bg-5"  wx:if="{{wdi.tail.isconfirm==0}}" bindtap="checkWages">确认</text>
+    <text class="mwd-3b wgc-2a-3bs fs-3 cr-6 rig "  wx:elif="{{wdi.tail.isconfirm==1}}">已确认</text>
+    <text class="mwd-3b wgc-2a-3bs fs-3 cr-6 rig "  wx:elif="{{wdi.tail.isconfirm==2}}">已确认</text>
+  </view>
+
+  <view class="cover" hidden="{{flag}}">
+      <view class="cover-1"></view>
+
+      <view class="cover-2">
+         <text class="cover-2a fs-5 cr-2">请您核对工资信息</text>
+         <text class="cover-2b fs-3 cr-6">{{wdi.tail.remark}}</text>
+         <text class="cover-2c ">￥{{wdi.tail.credits}}</text>
+         <view class="cover-2d fs-6">
+           <text class="cover-2d-1 cover-2d-2" bindtap='thinkMore'>我再想想</text>
+           <text class="cover-2d-1 cover-2d-3 cr-1 bg-5" bindtap="msWages" data-info="{{wdi.tail.record_id}}">确认</text>
+          </view>
+      </view>
+
+    </view>
+  <template is="modals" data="{{modalshow}}"></template>
+</view>

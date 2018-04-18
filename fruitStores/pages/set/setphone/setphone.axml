@@ -1,0 +1,21 @@
+<view class="set-phone bg-8">
+  <view class="sep-1 bg-1">
+    <view class="sep-1a sep-1b">
+      <view class="sep-1a1 fs-3"><text>手机号码</text></view>
+      <input type="" placeholder=""  />
+
+    </view>
+    <view class="sep-1a">
+      <view class="sep-1a1 fs-3"><text>验证码</text></view>
+      <button class="sep-1a2 fs-3 bg-5 cr-1" onTap="getIcode" disabled="{{flag1}}"><text>{{num1?num1:num}}</text></button>
+      <input type="" placeholder="" auto-focus password />
+    </view>
+  </view>
+  <view class="stp-codes fs-1 cr-5">
+    <image src="../../../img/alert.png" mode="aspectFit" />
+    <text>验证码输入错误</text>
+  </view>
+  <view class="stp-ms fs-6 bg-5 cr-1">
+    <text>确定</text>
+  </view>
+</view>

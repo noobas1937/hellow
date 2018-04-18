@@ -1,0 +1,87 @@
+<view class="ap-container">
+   <view class="ap-header">
+
+     <view class="aph-1">
+       <view class="aph-11">
+         <image src="../../img/set.png" mode="aspectFit" class="aph-11img1" onTap="goSetting"/>
+         <image src="../../img/mes.png" mode="aspectFit" class="aph-11img2" onTap="goMessage"/>
+       </view>
+       <view class="aph-12">
+         <image src="{{user.avatar}}" mode="aspectFit" />
+         <view class="aph-121">
+           <text class="aph-1211">{{user.nickName}}</text>
+           <view class="aph-121b">
+             <text>绑定手机</text>
+           </view>
+         </view>
+
+       </view>
+     </view>
+
+     <view class="aph-2" onTap="toMorder">
+        <image src="../../img/order.png" mode="aspectFit" class="aph-imgs"/>
+         <text class="aph-t1 fs-5">我的订单</text>
+         <text class="aph-t2 fs-4">查看全部订单</text>
+         <image src="../../img/next.png" mode="aspectFit" class="aph-next"/>
+     </view>
+
+     <view class="aph-3">
+       <view class="aph-3a" onTap="gowaitPay">
+          <image src="../../img/pay.png" mode="aspectFit" />
+          <text>待付款</text>
+       </view>
+       <view class="aph-3a" onTap="goWaitGetGoods">
+          <image src="../../img/transport.png" mode="aspectFit" />
+          <text>待收货</text>
+       </view>
+       <view class="aph-3a"  onTap="goWaitRate">
+          <image src="../../img/evaluate.png" mode="aspectFit" />
+          <text>待评价</text>
+       </view>
+       <view class="aph-3a" onTap="goRefund">
+          <image src="../../img/refund.png" mode="aspectFit" />
+          <text>退款</text>
+       </view>
+     </view>
+    </view>
+    
+
+    <view class="ap-section">
+
+       <view class="aph-2 fs-5" onTap="toCollection">
+        <image src="../../img/collectiong.png" mode="aspectFit" class="aph-imgs"/>
+         <text class="aph-t1s">我的收藏</text>
+         <image src="../../img/next.png" mode="aspectFit" class="aph-next1"/>
+        </view>
+        
+        <view class="aph-2" onTap="toMaddress">
+        <image src="../../img/address.png" mode="aspectFit" class="aph-imgs"/>
+         <text class="aph-t1s">收货地址</text>
+         <image src="../../img/next.png" mode="aspectFit" class="aph-next1"/>
+        </view>
+        
+        <view class="aph-2" onTap="goRate">
+        <image src="../../img/rate1.png" mode="aspectFit" class="aph-imgs"/>
+         <text class="aph-t1s ">我的评价</text>
+         <image src="../../img/next.png" mode="aspectFit" class="aph-next1"/>
+        </view>
+        
+        <view class="aph-2" onTap="goAfterSale">
+        <image src="../../img/rate.png" mode="aspectFit" class="aph-imgs"/>
+         <text class="aph-t1s">售后常见问题</text>
+         <image src="../../img/next.png" mode="aspectFit" class="aph-next1"/>
+       </view>
+
+      </view>
+      
+
+  <view class="navbar">
+    <view class="{{navid==idx?'nb-2':'nb-1'}}{{item.id}}  nb-1" a:for="{{nav}}" a:for-index="idx" data-info="{{idx}}" onTap="changeBg">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="cartnum">
+      <text>{{cartnum}}</text>
+    </view>
+  </view>
+
+</view>

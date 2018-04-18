@@ -1,0 +1,52 @@
+<import src="../../templates/modals/modals.wxml"/>
+<view class="conver-container">
+
+  <view class="cvc-1 bg-1">
+    <text class="cvc-1a fs-5 cr-2">输入兑换金额</text>
+    <view class="cvc-1b">
+      <text class="cvc-1b-1  fs-7">奋斗金</text>
+      <input  class="cvc-1b-2 fs-7" bindinput='getMoney' bindblur='msMoney'></input>
+      <text class="cvc-1b-3 fw">=</text>
+      <text class="cvc-1b-4 fs-7"><text class="fs-7">{{snum}}</text>元</text>
+    </view>
+    <text class="cvc-1a fs-4 cr-6">可用奋斗金{{grainfo.total}}</text>
+  </view>
+  
+    <view class="toexplain fs-4 cr-6">
+        <text>提示：</text>
+        <text class="">1、奋斗金除了兑换成现金外，还可参与夺宝活动，抽取幸运大奖。</text>
+        
+        <text>2、<text class="cr-11">奋斗金账户余额不足时，无法充值，也无法参与夺宝活动。</text>想顺利参与活动赢取大奖，请确保账户中有足够的奋斗金，不然就只能等到下个月了哟。          </text>
+        <text>3、兑换并提现时间限定为每个月10日至18日，<text text class="cr-11">所有提现金额均发放至个人工资卡账户</text>：</text>
+        <text>10日到13日之间申请的提现金额将于15日到账</text>
+        <text>14日到18日之间申请的提现金额将于20日到账</text>
+      </view>
+     
+  <view  class="cvc-2 cr-1 fs-7" bindtap='msMyChoose'>
+    <text>确认兑换并直接提现</text>
+  </view>
+ 
+</view>
+
+  <view class="cover" hidden="{{flags}}">
+      <view class="cover-1"></view>
+      <view class="cover-2 cr-2">
+         <text class="c2-c fs-8 cr-11">确认兑换并提现</text>
+         <text class="c2-l cr-2">将<text class="cr-5">{{snum?snum:0}}奋斗金</text>兑换为{{snum?snum:0}}元</text>
+         <text  class="c2-l">并提现至您的工资卡账户:</text>
+         <text  class="c2-l cr-6">中国建设银行卡</text>
+         <text  class="c2-l ">卡号：<text class="cr-6">{{grainfo.bank_card}}</text></text>
+         <text  class="c2-l">到账时间：<text class="cr-6">2018年3月15日</text></text>
+        <view class="c-2b">
+           <text class="cover-2ds cr-1 fs-6 lef" bindtap='mCancelExchange'>取消</text>
+           <text class="cover-2d cr-1 fs-6  rig" bindtap='mSureExchange'>确认</text>
+        </view>
+        <text class="c2-r cr-11 fs-3">如银行卡信息有误，请联系站长或者拨打客服电话18062640522</text>
+      </view>
+
+     <template is="modals" data="{{modalshow}}"></template>
+  </view>
+
+
+
+     

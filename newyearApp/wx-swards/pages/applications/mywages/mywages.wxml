@@ -1,0 +1,42 @@
+<import src="../../templates/modals/modals.wxml"/>
+<view  class="wages-container">
+
+  <view class="wgc-1">
+    <image class="wgc-1a" src="../../../image/2l.png"></image>
+    <text  class="wgc-1b fs-5 cr-2">总计发放</text>
+    <text  class="wgc-1c fs-8 cr-2">{{wginfo.salary}}</text>
+  </view>
+
+  <view class="wgc-2">
+
+     <view class="wgc-2a bg-1 fs-4" wx:for="{{wginfo.record}}" bindtap='goWagesDel' data-info="{{item.record_id}}">
+       <text class="wgc-2a-1 cr-6 lef">{{item.remark}}</text>
+       <image src="../../../image/rig.png" class="wgc-2a-3img"></image> 
+       <text class="wgc-2a-2 cr-2 left">{{item.credits}}</text>
+       
+      <text class="wgc-2a-3 cr-5 rig"  wx:if="{{item.isconfirm==0}}">确认</text>
+       <text class="wgc-2a-3s cr-6 rig"   wx:elif="{{item.isconfirm==1}}">已确认</text>
+       <text class="wgc-2a-3b cr-6 rig"  wx:elif="{{item.isconfirm==2}}">已确认</text>
+     
+    <!--<text class="wgc-2a-3b cr-5" bindtap="checkWages" wx:elif="{{item.isconfirm==2}}">人事确认</text>-->
+     </view>
+
+     
+
+  </view>
+
+  <view class="cover" hidden="{{true}}">
+      <view class="cover-1"></view>
+      <view class="cover-2">
+         <text class="cover-2a fs-5 cr-2">请您核对工资信息</text>
+         <text class="cover-2b fs-3 cr-6">2018年2月工资</text>
+         <text class="cover-2c ">￥{{mnum}}</text>
+         <view class="cover-2d fs-6">
+           <text class="cover-2d-1 cover-2d-2" bindtap='thinkMore'>我再想想</text>
+           <text class="cover-2d-1 cover-2d-3 cr-1 bg-5" bindtap="msWages">确认</text>
+          </view>
+       
+      </view>
+    </view>
+  <template is="modals" data="{{modalshow}}"></template>
+</view>

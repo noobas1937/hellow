@@ -1,0 +1,10 @@
+<view class="ahs-con">
+   <view class="ahs-1 bg-1" wx:for="{{mytickets}}">
+     <image class="ahs-1a" src="{{item.award_img}}"></image>
+     <view class="ahs-1b">
+       <text class="fs-3 cr-6">中奖时间：{{item.create_date}}</text>
+       <text class="fs-4 cr-2 ahs-1b-1"><!--手机号<text class="fs-2 cr-6">{{item.mobile}}</text>-->{{item.award_name}}</text>
+     </view>
+   </view>
+</view>
+

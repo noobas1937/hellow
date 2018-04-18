@@ -1,0 +1,98 @@
+<view class="raise-container">
+
+  <view class="rsc-1">
+    <image src="../../../image/iphone.png" mode="aspectFill" class="rsc-1a"/>
+    <text class="rsc-1b cr-1 fs-1">第321480期</text>
+  </view>
+
+  <view  class="rsc-2">
+    <text class="rsc-2a fs-6 cr-2">Apple 苹果 iPhone X 全面屏手机 深空灰色 全网通 256GB</text>
+
+    <text class="rsc-2b fs-1 cr-6">满所需积分，即抽取1人获取奖品</text>
+
+    <view class="rsc-2c">
+      <text class="rsc-2c-1 fs-3">筹集中</text>
+      <text class="rsc-2c-2 cr-6 fs-3">总需10000分</text>
+    </view>
+
+    <progress percent="60" activeColor="#ffa800"   stroke-width="6" active />
+
+    <view class="rsc-2d">
+      <text class="cr-6 fs-1 rsc-2d-1">已参与<text class="cr-2">7000</text>分</text>
+      <text class="cr-6 fs-1 rsc-2d-2">剩余<text class="cr-5">1000</text>分</text>
+    </view>
+
+  </view>
+
+  <view  class="rsc-3">
+    <view  class="rsc-3a fs-1 cr-2">
+       <text  class="rsc-3a-1">开奖时间：2018-01-24</text>
+       <text  class="rsc-3a-2">目前可用积分500</text>
+    </view>
+    
+  </view>
+
+  <view  class="rsc-4">
+   <view  class="rsc-4a fs-5">
+    <view  class="rsc-4a-1">我参与</view>
+
+    <view class="rsc-4a-2 {{idx==ids?'rsc-4a-2s':''}}" wx:for="{{[10,50,100]}}" wx:for-index="idx" data-info="{{idx}}" bindtap="getidx">
+      <text>{{item}}</text>  
+      <view class="my-sw-chance fs-1 cr-5" hidden="{{idx==ids?false:true}}">
+        中奖概率{{item}}%
+      </view>
+    </view>
+    <text>分</text>
+    
+  </view> 
+  
+   <view   class="rsc-4b cr-1 fs-6" bindtap="rnGetSward">立即夺宝</view>
+  </view>
+
+  <view  class="rsc-5" bindtap="goMyluckyNumber">
+    <view class="bg-8 rsc-5a">
+       <text class="cr-6 rsc-5a-1 fs-3">您已经参与<text class="cr-11">{{glswd.costPoints}}</text>奋斗金</text>
+       <text class="cr-6 rsc-5a-2 fs-3" hidden="{{true}}">幸运夺宝号：12233255465464854454</text>
+       <view class="rsc-5a-3">
+        <text class="rsc-5a-31 fs-3" >我的本期幸运夺宝号</text>
+       </view>
+    </view>
+    
+  </view>
+
+  <view class="cover" hidden="{{flag1}}">
+      <view class="cover-1"></view>
+      <view class="cover-2">
+         <text class="cover-2a cr-2">确定使用<text class="cr-5">10积分</text>参与夺宝</text>
+         <text class="cover-2b cr-6 fs-6">Apple 苹果 iPhone X 全面屏手机 深空灰色 全网通 256GB</text>
+         <text class="cover-line"></text>
+         <text class="cover-2c fs-3">使用后您还剩余490积分</text>
+         <text class="cover-2d cr-1 fs-6" bindtap="onSureUse">确定使用</text>
+      </view>
+  </view>
+  
+  <view class="cover" hidden="{{true}}">
+      <view class="cover-1"></view>
+      <view class="cover-2s">
+        <text class="cover-2s1 cr-1 fs-6">我的第321450期夺宝幸运码</text>
+        <view class="cover-2s2 bg-1">
+          <view class="cover-2s2-1 cr-6">
+            <text class="cover-2s2-1a fs-3">2018-01-25 12:00</text>
+            <text class="cover-2s2-1b fs-3">使用20积分</text>
+          </view>
+         
+          <text class="cover-2s2-2 cr-2 fs-3">312467879683124678</text>
+          <text class="cover-2s2-3 cr-5 fs-3">312467879683124678</text>
+        </view>
+        <view class="cover-2s3 bg-1">
+           <view class="cover-2s2-1s cr-6">
+            <text class="cover-2s2-1a fs-3">2018-01-25 12:00</text>
+            <text class="cover-2s2-1b fs-3">使用20积分</text>
+          </view>
+          <text class="cover-2s2-2s cr-2 fs-3">312467879683124678</text>
+        </view>
+        <text class="cover-2s4 cr-1 fs-6" bindtap="closeMyNum">关闭</text>
+      </view>
+    </view>
+    
+</view>

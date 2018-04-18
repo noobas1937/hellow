@@ -1,0 +1,38 @@
+<import src="../../templates/modals/modals.wxml"/>
+<view class="wdespoit">
+
+  <view class="wde-1 bg-1">
+    <text class="wde-1a cr-2 fs-4">输入金额</text>
+    <view class="wde-1b cr-2 fs-6">
+     <text style="line-height:60rpx;">￥</text>
+     <input class="cr-6 fs-6 wde-1b-input" bindblur='getMyMoney' bindinput='getMyRmb'></input>
+    </view>
+    <view class="wde-1c fs-2 cr-6">
+      <text class="wde-1c-l">可提现金额 ￥{{desinfo.balance}}</text>
+      <text class="wde-1c-r" hidden="{{true}}">冻结资金 ￥{{desinfo.unfreeze}}</text>
+    </view>
+  </view>
+
+  <view class="wde-2 cr-1" bindtap='msMyDespoit'>
+    <text>确认提现</text>
+  </view>
+
+
+  <view class="explain fs-4 cr-2">
+     <text class="ex-txt">"现金余额"提现时间限定为每个月10日至18日，所有提现金额均发放至个人工资卡账户：</text>
+     <text class="ex-txt">10日到13日之间申请的提现金额将于15日到账。</text>
+     <text class="ex-txt">14日到18日之间申请的提现金额将于20日到账。</text>
+  </view>
+
+  <view class="wde-3" wx:if="{{desinfo.record.length>0}}">
+    <text class="wde-3a fs-3 cr-2">提现记录</text>
+    <view class="wde-3b" wx:for="{{desinfo.record}}">
+      <view class=" bg-1 wde-3b-1">
+        <text class="cr-6 fs-2 wde-3b-1a">{{item.create_time}}</text>
+        <text class="cr-2 fs-2 wde-3b-1b">￥{{0-item.money}}</text>
+        <text class="cr-6 fs-2 wde-3b-1c">{{item.status==0?'提现中':'已提现'}}</text>
+      </view>
+    </view>
+  </view>
+  <template is="modals" data="{{modalshow}}"></template>
+</view>

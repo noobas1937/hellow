@@ -1,0 +1,90 @@
+<view class="mso-container">
+
+  <view class="mso-1 bg-1" onTap="changeAddress">
+    <view class="mso-1a  fs-5" a:if="{{msadd}}">
+      <text class="cr-2 mso-1a1">{{msadd.name}}</text>
+      <text class="cr-2 mso-1a2">{{msadd.mobile}}</text>
+      <text class="cr-1 mso-1a3 bg-5 fs-3" a:if="{{msadd.is_default==1}}">默认</text>
+    </view>
+    <view class="mso-1b fs-3">
+      <image src="../../../img/pos1.png" mode="aspectFit" />
+      <text>{{msadd.address?msadd.address:mrtext}}</text>
+     
+      <image src="" mode="" />
+    </view>
+  </view>
+
+  <view class="mso-2 bg-1 fs-3">
+    <image src="../../../img/times.png" mode="aspectFit" class="mso-2a"/>
+    <text class="mso-2b">配送时间</text>
+    <text class="mso-2c">{{tomtime}}(周{{mycart.week}})</text>
+    <text class="mso-2d">{{ttime}}</text>
+    <image src="../../../img/xiugai.png" mode="aspectFit"  class="mso-2e" onTap="psTime"/>
+  </view>
+
+  <view class="mso-3 bg-1" onTap="goOrderList">
+    <view class="msoo-1">
+     <view class="mso-3a" a:for="{{mycart.cart.shopping}}">
+       <image src="{{item.img_url}}" mode="aspectFit" />
+       <text class="mso-3a1">1</text>
+     </view>
+    </view>
+    
+     <view class="mso-3b">
+      <view class="mso-3b1">
+         <text class="mso-3bs">共{{mycart.cart.num_count}}件</text>
+        <image src="../../../img/next.png" mode="aspectFit"  class="mso-3c"/>
+      </view>
+    </view>
+   
+  </view>
+
+  <view class="mso-4 fs-3 cr-6 bg-1">
+    <input type="text" placeholder="留言(45字以内)" auto-focus  onBlur="getMessage"/>
+  </view>
+
+  <view  class="mso-5 bg-1 fs-3">
+    <view>
+      <text class="cr-2">商品金额</text>
+      <text class="cr-5 mso-price">+￥{{mycart.cart.priceSum}}</text>
+    </view>
+    <view class="mso-price1">
+      <text class="cr-2">运费</text>
+      <text class="cr-5 mso-price" >+￥{{freight?freight:0}}</text>
+    </view>
+  </view>
+
+  <view  class="mso-6 bg-1 cr-5 fs-4">
+     <view class="mso-6a cr-1 bg-5" onTap="goPay">立即下单</view>
+    <text class="mso-6b">合计：￥{{totalPrice}}</text>
+   
+  </view>
+
+
+
+   <view class="ms-cover" hidden="{{flag1}}">
+   <view class="ms-color"></view>
+   <view class="ms-select">
+      <view class="mss-1 cr-1 fs-6"><text>配送时间</text></view>
+
+      <view class="mss-2">
+        <text class="mss-2a cr-5 fs-5">选择时间段</text>
+        <view class="bg-1 fs-4 cr-2">
+           <view a:for="{{time}}" class="mss-2b {{tid==idx?'mss-a':'mss-b'}}" a:for-index="idx" data-info="{{idx}}" onTap="setTime">
+             <text class="mss-2b1">{{item}}</text>
+             <view hidden="{{tid==idx?false:true}}" >
+                  <image  src="../../../img/gou1.png" mode="aspectFit" class="mss-2c"/>
+             </view>
+             
+          </view>
+          
+        </view>
+      </view>
+      <view class="mss-3 bg-5 fs-6 cr-1">
+         <text>确定</text>
+      </view>
+
+   </view>
+  </view>
+
+</view>

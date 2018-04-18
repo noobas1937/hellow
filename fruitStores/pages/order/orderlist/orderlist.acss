@@ -1,0 +1,157 @@
+.col-container{
+    width:100%;
+}
+.nt-header{
+    width:100%;
+    
+    display: flex;
+    flex-direction: row;
+   padding:38rpx 0 26rpx 0;
+}
+.nt-line{
+    width:46rpx;
+    height:2rpx;
+    background:#5e5e5e;
+    margin-top:20rpx;
+}
+.nt-1{
+    margin:0 auto;
+    display: flex;
+    flex-direction: row;
+}
+.nt-2{
+    width:38rpx;
+    height:38rpx;
+    border-radius:50%;
+    border:2px solid #e72142;
+    color:#e72142;
+    text-align: center;
+    line-height: 38rpx;
+    margin:0 10rpx;
+    font-size:24rpx;
+}
+.nt-header text{
+    display: block;
+    padding:4rpx;
+    color:#e72142;
+}
+.nt-img1{
+    width:100%;
+    
+    display: block;
+}
+.nt-food{
+    width:100%;
+    padding:16rpx 0 46rpx 0;
+    display: flex;
+    flex-direction: row;
+}
+.ntf-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width:33.3%;
+    box-sizing: border-box;
+    
+}
+.ntf-img{
+   width:194rpx;
+   height:144rpx; 
+   margin:0 auto;
+}
+.ntf-5{
+    width:146rpx;
+    height:40rpx;
+    background: url('../../img/ntp.png')no-repeat center;
+    background-size: cover;
+    color:#fff;
+    margin:0 auto;
+    font-size:24rpx;
+    line-height: 40rpx;
+    text-align: center;
+}
+.ntf-2{
+   margin:16rpx 0 0 0;
+   color:#4b4b4b;
+  
+    max-width: 240rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ntf-3{
+   margin:10rpx 0 0 0;
+   color:#707070; 
+ 
+     max-width: 240rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.ntf-4{
+    margin:60rpx 0 14rpx 0;
+}
+.ntf-41{
+   color:#e72142;
+   font-size:24rpx;
+}
+.ntf-42{
+   color:#e72142;
+   font-size:32rpx;
+}
+.ntf-43{
+  color:#7a7a7a;
+  font-size:24rpx;
+}
+.hot-singleItem{
+   margin-top:20rpx;
+   margin-bottom:120rpx;
+   width:100%; 
+   background-color: #ffffff;
+}
+.hot-item{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-top:1rpx solid #cccccc; 
+ 
+}
+.hot-del{
+    display: flex;
+    flex-direction: column;
+    padding:0 0 0 45rpx;
+    overflow: hidden;
+}
+.hot-cart{
+    width:48rpx;
+    height:48rpx;
+    position: absolute;
+    bottom:58rpx;
+    right:30rpx;
+}
+.hd-1{
+    margin-top:48rpx;
+    font-size:36rpx;
+    max-width: 350rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hd-2{
+    margin-top:18rpx;
+    font-size:26rpx;
+    color:#9b9b9b;
+    max-width: 350rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.hot-imgs{
+    width:298rpx;
+    height:150rpx;
+  
+}
+
+
+
+

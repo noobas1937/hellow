@@ -1,0 +1,147 @@
+page{
+ 
+  position: relative;
+}
+.set-phone{
+    width:100%;
+}
+.sep-1{
+    width:100%;
+    overflow: hidden;
+    margin-top: 20rpx;
+}
+.sep-1a{
+    width:100%;
+    height:98rpx;
+    position: relative;
+    padding:2rpx 0;
+   
+}
+.sep-1a input{
+    height:98rpx;
+    width:70%;
+    border:none;
+   
+}
+.sep-1a1{
+   line-height: 98rpx;
+   position: absolute;
+   left: 30rpx;
+   top:0;
+}
+.sep-1b{
+    border-bottom: 3rpx solid #cccccc;
+    
+}
+.sep-1a2{
+   height:52rpx;
+   width:170rpx;
+   font-size:22rpx;
+   line-height: 52rpx;
+   border-radius: 30rpx;
+   z-index:999;
+   margin-top:19rpx;
+   margin-right:20rpx;
+}
+.stp-ms{
+    height:98rpx;
+    margin:30rpx;
+    line-height: 98rpx;
+    text-align: center;
+}
+.stp-codes{
+   height:80rpx;
+   line-height: 80rpx;
+   text-align: right;
+   padding-right:30rpx;
+}
+.stp-codes image{
+    width: 30rpx;
+    height:30rpx;
+    vertical-align: middle;
+    margin-right:18rpx;
+   
+}
+
+
+.identity{
+  margin-top:300rpx;
+}
+.con-num{
+  width:100%;
+  background: #f5f5f5;
+}
+.idt-1{
+  padding:0 30rpx;
+  height:90rpx;
+  display: flex;
+  flex-direction: row;
+ 
+ 
+  line-height: 90rpx;
+ 
+  border-bottom: 1rpx solid #bdbdbd;
+}
+.idt-1a{
+  width:34rpx;
+  height:24rpx;
+  margin:33rpx 0 0rpx 28rpx;
+}
+.idt-1b{
+  width:230rpx;
+  height:90rpx;
+  line-height: 60rpx;
+  
+ 
+}
+.idt-2{
+  width:100%;
+  height:90rpx;
+ 
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 8rpx;
+  position:fixed;
+  left:0;
+  bottom:0;
+}
+.idt-1-1{
+  display: blcok;
+  margin-left:26rpx;
+  width:148rpx;
+}
+
+.cover{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:9999;
+}
+.cover-1{
+    width:100%;
+    height:100%;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index:9999;
+}
+.cover-2{
+    z-index:9999;
+    background: url('https://api.nacy.cc/wxappimg/tickets.png')no-repeat;
+    background-size: cover;
+    width:600rpx;
+    height:690rpx;
+   
+    border-radius: 14rpx;
+     display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin:-300rpx 0 0 -303rpx;
+}

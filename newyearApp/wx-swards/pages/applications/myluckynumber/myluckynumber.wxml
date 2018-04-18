@@ -1,0 +1,13 @@
+<!--pages/applications/myluckynumber/myluckynumber.wxml-->
+<import src="../../templates/norecord/norecord.wxml"/>
+<view wx:for="{{numList}}" class="lucknum">
+    <text class="lkm-1  fs-6 cr-2">第{{item.luckenumber[0].lucky_draw_id}}期</text>
+    <view class="lkm-2 bg-1">
+      <view class="lkm-2a fs-2 cr-6">
+        <text class="lkm-2a-l">{{item.date}}</text>
+        <text class="lkm-2a-r">使用{{item.cost_points}}奋斗金</text>
+      </view>
+      <text  class="lkm-2b fs-4" wx:for="{{item.luckenumber}}">{{item.lucky_number}}</text>
+   </view>
+  <template is="norecord" data="{{showr}}"></template>  
+</view>

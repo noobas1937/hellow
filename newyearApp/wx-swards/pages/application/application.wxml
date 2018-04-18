@@ -1,0 +1,194 @@
+<view class='application-container'>
+<view class="app-as">
+  <view class="app-1">
+
+     <view class="app-1" bindtap='goMyPersonInfo'>
+        <image src="{{avatarUrl}}" mode="widthFix"  class="userinfo-avatar" />
+        <view class="app-1a">
+
+           <view class="app-1a1">
+             <text class="fs-7 cr-10 fs-7">{{name}}</text>
+             <text class="cr-1 app-tel fs-4">{{mobile}}</text>
+            <!--<text class='fs-4 cr-1 app-tel' hidden="{{true}}">({{nickname}})</text>-->
+           </view>
+         
+
+            <view class="app-1a2 cr-1">
+             <text class="fs-3 app-1a2-2">{{site?site:''}}</text>
+             <text class="fs-3 app-1a2-2">{{des}}</text>
+           </view>
+           
+
+        </view>
+        
+       
+        
+         
+    
+
+
+        
+        
+     </view>
+
+  </view>    
+    
+
+  </view>
+
+  <view class="app-5" hidden="{{true}}">
+       <view  class="app-5a cr-1">
+          <image class="app-5a-img" src="../../image/app5-3.png"></image>
+          <text  class="app-5a-text fs-4">生日特权</text>
+       </view>
+
+        <view class="app-5a cr-1">
+          <image class="app-5a-img" src="../../image/app5-1.png"></image>
+          <text  class="app-5a-text fs-4">提现特权</text>
+       </view>
+
+        <view class="app-5a cr-1">
+          <image class="app-5a-img" src="../../image/app5-2.png"></image>
+          <text  class="app-5a-text fs-4">夺宝特权</text>
+       </view>
+
+        <view class="app-5a cr-1">
+          <image class="app-5a-img"></image>
+          <text  class="app-5a-text fs-4">更多特权</text>
+       </view>
+     </view>
+
+    <view class="app-4 bg-1 app-new-4" >
+
+     <view class="app-2a3" style="border-bottom:solid 1rpx #999999;" bindtap="goMyIntegration">
+       <image src="../../image/1m.png" class="app-4-img"></image>
+       <text class="app-2a2 fs-4 cr-2">我的奋斗金</text>
+       <text class='fs-2 cr-11 app-new-4-mon'>{{appinfo.point}} </text>
+       <view class="app-new-list">
+        <text class="app-new-list-1 fs-4 cr-6">兑换提现</text>
+        <image src="../../image/rig.png"  class="app-rig1 app-new-list-2" />
+       </view>
+    </view>
+
+    <view class="app-2a3" style="border-bottom:solid 1rpx #999999;" bindtap='goMyDesposit' hidden="{{true}}">
+       <image src="../../image/xj.png" class="app-4-img"></image>
+       <text class="app-2a2 fs-4 cr-2">现金余额</text>
+       <text class='fs-2 cr-11 app-new-4-mon'>￥{{appinfo.balance}}</text>
+       <view class="app-new-list">
+        <text class="app-new-list-1 fs-4 cr-6">提现</text>
+        <image src="../../image/rig.png" mode="aspectFill" class="app-rig1 app-new-list-2" />
+       </view>
+    </view>
+     
+    
+
+  </view>
+     
+
+  <view class="app-4 bg-1" style="margin-top:0;">
+
+     <view class="app-2a3" style="border-bottom:solid 1rpx #999999;" bindtap='goMyWages'>
+      <image src="../../image/2m.png" class="app-4-img"></image>
+      <text class="app-2a2 fs-4 cr-2" >我的工资</text>
+       <view class="app-new-list">
+        <text class="app-new-list-1 fs-4 cr-11"></text>
+        <image src="../../image/rig.png" mode="aspectFill" class="app-rig1 app-new-list-2" />
+       </view>
+      
+    </view>
+     <view class="app-2a3" style="border-bottom:solid 1rpx #999999;" bindtap='goMyReward'>
+      <image src="../../image/3m.png" class="app-4-img"></image>
+      <text class="app-2a2 fs-4 cr-2">我的奖励</text>
+      <view class="app-new-list">
+        <text class="app-new-list-1 fs-4 cr-11"></text>
+        <image src="../../image/rig.png" class="app-rig1 app-new-list-2" />
+       </view>
+    </view>
+     <view class="app-2a3"  hidden="{{true}}">
+      <image src="https://api.nacy.cc/wxappimg/5.png" class="app-4-img"></image>
+      <text class="app-2a2 fs-4 cr-2">我的积分</text>
+      <view class="app-new-list">
+        <text class="app-new-list-1 fs-4 cr-11">1230分</text>
+        <image src="../../image/rig.png" class="app-rig1 app-new-list-2" />
+       </view>
+    </view>
+
+  </view>
+
+  <view class="app-2 bg-1 fs-4" hidden="{{true}}">
+
+    <view class="app-2a" style="border-bottom:solid 1rpx #999999;" bindtap="toMySwards">
+      <image src="../../image/4m.png" mode="aspectFill" />
+      <text class="app-2a1">我的夺宝</text>
+    </view>
+
+    <view class="app-2a" bindtap='toMySwards1'>
+      <image src="../../image/5m.png" mode="aspectFill" />
+      <text class="app-2a1">我的抽奖</text>
+    </view>
+
+  </view>
+
+  <view class="app-4 bg-1">
+
+     <view class="app-2a3" style="border-bottom:solid 1rpx #999999;" bindtap="toMySwards">
+      <image src="../../image/4m.png" class="app-4-img"></image>
+      <text class="app-2a2 fs-4 cr-2">我的夺宝</text>
+      <image src="../../image/rig.png" mode="aspectFill" class="app-rig1"/>
+    </view>
+
+     <view class="app-2a3" bindtap='toMySwards1' hidden="{{true}}">
+      <image src="../../image/5m.png" class="app-4-img"></image>
+      <text class="app-2a2 fs-4 cr-2">我的抽奖</text>
+       <view class="app-rig2">
+         <text class="fs-4 cr-6">中奖记录</text>
+         <image src="../../image/rig.png" mode="aspectFill" class="app-rig1"/>
+       </view>
+      
+    </view>
+  </view>
+
+  <view class="app-3 bg-1" hidden="{{true}}">
+
+     <view class="app-2a3" style="border-bottom:solid 1rpx #999999;">
+      <text class="app-2a2 fs-4 cr-2">订单统计</text>
+    </view>
+
+    <view class="app-2a" style="border-bottom:solid 1rpx #999999;">
+      <text class="fs-2 cr-6">签到</text>
+      <text class="app-2a1 cr-5">6</text>
+      <image src="../../image/rig.png" mode="aspectFill" class="app-rig"/>
+    </view>
+
+    <view class="app-2a">
+      <text class="fs-2 cr-6">请假</text>
+      <text class="app-2a1 cr-5">1</text>
+      <image src="../../image/rig.png" mode="aspectFill" class="app-rig"/>
+    </view>
+
+
+  </view>
+
+  <view class="app-4 bg-1" style="margin-bottom:130rpx;padding:0;">
+
+    <view class="app-2a3" hidden="{{false}}" bindtap='usuProblem'>
+      <image src="../../image/6m.png" class="app-4-img"></image>
+      <text class="app-2a2 fs-4 cr-2">常见问题</text>
+      <image src="../../image/rig.png" mode="aspectFill" class="app-rig1"/>
+    </view>
+
+    <view class="app-2a3 bg-1" style="border-bottom:solid 1rpx #999999;padding:0;">
+     
+     <button open-type="contact" style="height:100rpx;" class="bg-1">
+      <image src="../../image/7m.png" class="app-4-img lef" style="margin-top:20rpx;"></image>
+      <text class="app-2a2 fs-4 cr-2 lef" style="line-height:100rpx;">联系客服</text>
+      <image src="../../image/rig.png" mode="aspectFill" class="app-rig1"/>
+      </button>
+    </view>
+  
+   
+  </view>
+
+  
+
+</view>

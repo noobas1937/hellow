@@ -1,0 +1,32 @@
+<view class="raise-container">
+
+ <view class="fp-1 bg-1">
+     <image class="fp-1-img" src="{{glswd.award[0].img_id}}"></image>
+     <view class="fp-1-con">
+       <text class="fp-1-con-1 bg-9 cr-1 fs-2">第{{glswd.draw.id}}期</text>
+       <text class="fp-1-con-2 cr-2 fs-5">{{glswd.award[0].name}}</text>
+     </view>
+  </view>
+
+  <view class="rsc-3">
+    <text class="rsc-3a cr-1 fs-2">已筹集{{glswd.draw.credits*(glswd.draw.with_people-glswd.draw.left_with_people)}}分 距离开奖还剩</text>
+    <view class="rsc-3b cr-1"><text class="rsc-3b-1">{{glswd.draw.day}}</text>天<text class="rsc-3b-1">{{glswd.draw.hour}}</text>时<text class="rsc-3b-1">{{glswd.draw.minute}}</text>分</view>
+  </view>
+    
+
+  
+
+   <view  class="rsc-5" bindtap="goMyluckyNumber">
+    <view class="bg-8 rsc-5a">
+       <text class="cr-6 rsc-5a-1 fs-3 lef">您拥有幸运夺宝号<text class="cr-11">{{glswd.luckynumbers?glswd.luckynumbers:0}}</text></text>
+       <text class="rsc-5a-31 fs-3 cr-11 rig" >查看</text>
+    </view>
+    
+  </view>
+
+ 
+    
+  
+ 
+    
+</view>

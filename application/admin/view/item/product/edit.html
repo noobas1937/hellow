@@ -1,0 +1,63 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-img" class="control-label col-xs-12 col-sm-2">详情图片:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="form-inline">
+                <input id="c-contentimg" data-rule="required" class="form-control" size="50" name="row[contentimg]" type="text" value="{$row.contentimg}">
+                <span><button type="button" id="plupload-contentimg" class="btn btn-danger plupload" data-input-id="c-contentimg" data-url="{:url('/admin/ajax/qiniu/act/1')} data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-contentimg"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+
+                <span class="msg-box n-right" for="c-img"></span>
+                <ul class="row list-inline plupload-preview" id="p-contentimg"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-img" class="control-label col-xs-12 col-sm-2">产品图片:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="form-inline">
+                <input id="c-img" data-rule="required" class="form-control" size="50" name="row[img]" type="text" value="{$row.img}">
+                <span><button type="button" id="plupload-img" class="btn btn-danger plupload" data-input-id="c-img" data-url="{:url('/admin/ajax/qiniu/act/1')} data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="true" data-preview-id="p-img"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+
+                <span class="msg-box n-right" for="c-img"></span>
+                <ul class="row list-inline plupload-preview" id="p-img"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-coverimage" class="control-label col-xs-12 col-sm-2">封面图片:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="form-inline">
+                <input id="c-coverimage" data-rule="required" class="form-control" size="50" name="row[coverimg]" type="text" value="{$row.coverimg}">
+                <span><button type="button" id="plupload-icon" class="btn btn-danger plupload" data-input-id="c-coverimage" data-url="{:url('/admin/ajax/qiniu/act/1')} data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-coverimage"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+
+                <span class="msg-box n-right" for="c-coverimage"></span>
+                <ul class="row list-inline plupload-preview" id="p-coverimage"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-item_nm" class="control-label col-xs-12 col-sm-2"> 产品名称:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-item_nm" data-rule="required" class="form-control" name="row[item_nm]" type="text" value="{$row.item_nm}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-seq" class="control-label col-xs-12 col-sm-2"> 排序:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-seq" data-rule="required" class="form-control" name="row[seq]" type="text" value="{$row.seq}">
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

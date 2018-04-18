@@ -1,0 +1,141 @@
+.egg-con{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left:0;
+  top:600rpx;
+}
+.egg{
+  width:190rpx;
+  height:260rpx;
+  margin-left:50rpx;
+}
+.ndc-rule{
+  width:156rpx;
+  height:64rpx;
+  position: absolute;
+  right:0;
+  top:483rpx;
+  background:#fff;
+  opacity: 0;
+}
+.ndc-begin{
+  width:410rpx;
+  height:68rpx;
+  position: absolute;
+  left:176rpx;
+  top:904rpx;
+  background:#ffe56b;
+  text-align: center;
+  line-height: 68rpx;
+  border-radius: 10rpx;
+} 
+.awardmenu{
+  width:100%;
+  position: absolute;
+  left:0;
+  top:1000rpx;
+}
+.adm-1{
+  float:left;
+  margin-left:30rpx;
+}
+.adm-2{
+  float:left;
+  margin-left:20rpx;
+}
+.adm-3{
+  float:right;
+  margin-right:30rpx;
+}
+.allegg{
+  position: relative;
+}
+.cover{
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+}
+.cover-1{
+  position: fixed;
+  left:0;
+  top:0;
+  width:100%;
+  height:100%;
+  background: #000;
+  opacity: 0.6;
+}
+.sf-sw-f1{
+  display: block;
+  margin-top:450rpx;
+  margin-bottom: 420rpx;
+}
+.sf-sw-f1s{
+  display: block;
+  margin-top:420rpx;
+ 
+}
+.sf-sw-f3{
+   display: block;
+  margin-bottom: 400rpx;
+}
+.sf-sw-f2{
+  width:190rpx;
+  height:64rpx;
+  background:#000;
+  line-height: 64rpx;
+  text-align: center;
+  margin: 0 auto;
+  border-radius: 32rpx;
+}
+.sf-sw-f4{
+  width:380rpx;
+  height:64rpx;
+  margin-top:420rpx;
+}
+.sf-sw{
+  position: fixed;
+  left:0;
+  top:0;
+  width:750rpx;
+  height:940rpx;
+  text-align: center;
+  background:url('https://api.nacy.cc/wxappimg/nybg.png')no-repeat;
+  background-size: cover;
+}
+.chuizi{
+  width:185rpx;
+  height:185rpx;
+  position: absolute;
+  left:140rpx;
+  top:-90rpx;
+  transform-origin:100%  100%;
+  background: url('https://api.nacy.cc/wxappimg/chuizi.png')no-repeat;
+  background-size: cover;
+}
+page{
+  position: relative;
+  background: url('https://api.nacy.cc/wxappimg/newyear1.png')no-repeat;
+  background-size: cover;
+}
+.juan{
+  position:absolute;
+  right:30rpx;
+  top:910rpx;
+}
+.juan-img{
+  width:60rpx;
+  height:60rpx;
+  vertical-align: middle;
+  margin-right:10rpx;
+}
+.grey1{
+   pointer-events: none;
+   display: none;
+}
+.grey2{
+   pointer-events: none;
+}
+

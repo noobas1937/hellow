@@ -1,0 +1,55 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">中奖纪录编号:</label>
+        <div class="col-xs-12 col-sm-8">
+            <span style="border:none" class="form-control">{$row.id}</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Employee_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <span style="border:none" class="form-control">{$row.employee_id}</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">所中奖品:</label>
+        <div class="col-xs-12 col-sm-8">
+            <span style="border:none" class="form-control">{$row.award_id}</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Create_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <span style="border:none" class="form-control">{$row.create_date}</span>
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">抽奖活动:</label>
+        <div class="col-xs-12 col-sm-8">
+            <span style="border:none" class="form-control">{$row.lucky_draw_id}</span>
+        </div>
+    </div>
+    {if condition="$row['lucky_draw']['type'] eq 1"}
+        <div class="form-group">
+            <label class="control-label col-xs-12 col-sm-2">{:__('Is_receive')}:</label>
+            <div class="col-xs-12 col-sm-8">
+                {:build_radios('row[is_receive]', ['0'=>'未领取', '1'=>'已领取'],$row['is_receive'])}
+            </div>
+        </div>
+    {else/}
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Is_receive')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <span style="border:none" class="form-control">虚拟物品用户自行在前台领取</span>
+        </div>
+    </div>
+    {/if}
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

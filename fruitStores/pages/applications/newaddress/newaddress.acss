@@ -1,0 +1,129 @@
+input{
+    border:none;
+    height:96rpx;
+    min-width: 400rpx;
+}
+.newaddress{
+    width:100%;
+    background: #cccccc;
+}
+.nwa-1{
+    background:#ffffff;
+    font-size:32rpx;
+}
+.nwa-1a{
+   padding: 0 30rpx 2rpx 30rpx;
+   height:98rpx;
+   
+   border-bottom: solid 1rpx #cccccc;
+  
+}
+.nwa-1a text{
+    color:#999999;
+}
+.nwa-1d{
+    padding: 38rpx 30rpx 0 30rpx;
+    display: flex;
+    flex-direction: row;
+    border-bottom: solid 1rpx #cccccc;
+}
+.nwa-1d text{
+    line-height: 40rpx;
+}
+.nwa-1d textarea{
+    width:70%;
+}
+.nwa-2{
+    width:100%;
+    height:96rpx;
+    background:#e72142;
+    color:#ffffff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    text-align: center;
+    line-height: 96rpx;
+    font-size: 34rpx;
+    z-index:1,
+}
+.nwa-1c{
+    padding:30rpx 30rpx 26rpx 30rpx;
+    color:#000;
+}
+.box{
+  
+    width:48rpx;
+    height:48rpx;
+    border-radius: 50%;
+    border: 1rpx solid #cccccc;
+    float:right;
+    margin-top:-10rpx;
+    
+}
+.box1{
+    width:48rpx;
+    height:48rpx;
+    border-radius: 50%;
+    border: 1rpx solid #cccccc;
+    float:right;
+    margin-top:-10rpx;
+     background: url('../../../img/msure.png')no-repeat center;
+    background-size: 48rpx;
+}
+.nwa-1c2{
+    display: block;
+    margin-top:26rpx;
+    font-size:26rpx;
+    color:#999999;
+}
+
+.selectarea{
+  width: 100%;
+  display: flex;
+  background-color: #fff;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 0rpx;
+  left: 0rpx;
+  height: 40vh;
+  opacity: 1;
+  z-index:100;
+}
+
+.picker-item {
+  line-height: 70rpx;
+  margin-left: 5rpx;
+  margin-right: 5rpx;
+  text-align: center;
+}
+.cancelBtn{
+    width:100rpx;
+    height:50rpx;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:200;
+    font-size: 30rpx;
+    color:#949090;
+    text-align: center;
+    line-height: 40rpx;
+}
+.msureBtn{
+    width:100rpx;
+    height:50rpx;
+    position:absolute;
+    right:0;
+    top:0;
+    z-index:200;
+    font-size: 30rpx;
+    color:#098833;
+    text-align: center;
+    line-height: 40rpx;
+}
+.a1{
+  display: block;
+}
+.a2{
+  display: none;
+}

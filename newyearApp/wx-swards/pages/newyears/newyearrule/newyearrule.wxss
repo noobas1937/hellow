@@ -1,0 +1,27 @@
+
+page{
+  background:url('https://api.nacy.cc/wxappimg/rulebg.png')no-repeat;
+  background-size: cover;
+  background-position-x: -34rpx;
+  position: relative;
+}
+.rule{
+  width:475rpx;
+   display: flex;
+   flex-direction: column;
+   position:absolute;
+   top:160rpx;
+   left:140rpx;
+}
+.rule-1{
+  text-align: center;
+}
+.rule-2{
+  margin-top:30rpx;
+   display: flex;
+   flex-direction: column;
+}
+.in-line{
+  display: inline-block;
+  line-height: 60rpx;
+}

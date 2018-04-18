@@ -1,0 +1,20 @@
+<import src="../templates/norecord/norecord.wxml"/>
+<view class="swards-history">
+
+  <view class="ssh" wx:for="{{glswd}}">
+    <view class="ssh-1 bg-1">
+     <text class="ssh-1a fs-4 cr-2">第{{item.lucky_draw_id}}期</text>
+     <text class="ssh-1b fs-2 cr-6">开奖时间：{{item.create_date}}</text>
+     <image class="ssh-1c" src="../../image/rig.png"></image>
+    </view>
+    <view class="ssh-2 bg-1">
+      <image src="{{item.award_img}}" class="ssh-2a"></image>
+      <view class="ssh-2b">
+        <text class="ssh-2b-1 fs-7 cr-2">{{item.award_name}}</text>
+        <text class="ssh-2b-2 fs-4 cr-6">获奖者：{{item.employee_name}}</text>
+        <text class="ssh-2b-3 fs-4 cr-6">幸运号：<text class="cr-5">{{item.lucky_number}}</text></text>
+      </view>
+    </view>
+  </view>
+ <template is="norecord" data="{{showr}}"></template>
+</view>

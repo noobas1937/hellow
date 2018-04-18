@@ -1,0 +1,126 @@
+page{
+  font-family: 'Microsoft YaHei'
+}
+view {
+	box-sizing: border-box;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+
+
+.red {
+	color: red;
+}
+
+ .fs-1{
+    font-size:24rpx;
+  }
+  .fs-2{
+    font-size:26rpx;
+  }
+  .fs-3{
+    font-size:28rpx;
+  }
+  .fs-4{
+    font-size:30rpx;
+  }
+  .fs-5{
+    font-size:32rpx;
+  }
+  .fs-6{
+    font-size:34rpx;
+  }
+ .fs-7{
+    font-size:36rpx;
+  }
+  .fs-8{
+    font-size:40rpx;
+  }
+  .fs-9{
+    font-size:46rpx;
+  }
+  .cr-1{
+    color:#ffffff;
+    }
+  .cr-2{
+    color:#000000;
+   }
+  .cr-3{
+    color:#ff3f34;
+  }
+  .cr-4{
+    color:#707070;
+  }
+  .cr-5{
+    color:#e72142;
+  }
+  .cr-6{
+    color:#999999;
+  }
+  .cr-7{
+    color:#d9d9d9;
+  }
+  .cr-8{
+    color:#f5f5f5;
+  }
+  .cr-9{
+    color:#d8271d;
+  }
+  .cr-10{
+    color:#f1ca49;
+  }
+  .cr-11{
+    color:#ffa800;
+  }
+  .cr-12{
+    color:#ff9900;
+  }
+  .bg-1{
+    background-color:#ffffff;
+  }
+  .bg-2{
+    background-color:#000000;
+  }
+  
+  .bg-3{
+    background-color:#ff3f34;
+  }
+  
+  .bg-4{
+    background-color:#707070;
+  }
+  
+  .bg-5{
+    background-color:#e72142;
+  }
+  
+  .bg-6{
+    background-color:#999999;
+  }
+  
+  .bg-7{
+    background-color:#d9d9d9;
+  }
+  
+  .bg-8{
+    background:#f5f5f5;
+  }
+  .fw{
+    font-weight: bold;
+  }
+  .lef{
+    float: left;
+  }
+  .rig{
+    float:right;
+  }
+  

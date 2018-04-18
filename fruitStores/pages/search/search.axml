@@ -1,0 +1,83 @@
+<view class="sort-container bg-8">
+  <view class="sh-search bg-1">
+     <view class="h-sr fs-2">
+       <input type="" placeholder="请输入商品名称" auto-focus text/>
+       <view class="sh-submit cr-1 bg-5">
+         <text>搜索</text>
+        </view>
+        <view class="sh-cancel">
+          <image src="../../img/cancel.png" mode="aspectFit" />
+       </view>
+     </view>
+  </view>
+
+  
+ <view class="his-search bg-1" >
+   <view class="his-1">
+     <text class="fs-5 cr-2 his-1a">历史搜索</text>
+      <view class="his-1b fs-1 cr-6">
+        <text>清空记录</text>
+      </view>
+   </view>
+   <view class="his-2">
+     <view class="his-2a fs-2 cr-6 {{(idx+1)%4==0?'his-2as2':'his-2as1'}}" a:for="{{[1,1,1,1,1,1,1,1,1]}}" a:for-index="idx">
+       <text>奇异果</text>
+     </view>
+   </view>
+  </view>
+  
+
+  <view class="hot-search bg-1">
+   <view>
+     <text class="fs-5 cr-2 his-1a">热门搜索</text>
+   </view>
+  <view class="his-2">
+     <view class="his-2a fs-2 cr-5 {{(idx+1)%4==0?'his-2as2':'his-2as1'}}" a:for="{{[1,1,1,1,1,1,1,1,1]}}" a:for-index="idx">
+       <text>奇异果</text>
+     </view>
+   </view>
+ </view>
+
+
+ <view class="shc-r bg-1">
+       <view class="shc-rtit fs-2 cr-6">
+         <text>搜索到111条"蓝莓"相关的商品</text>
+       </view>
+       <block a:for="{{nav}}">
+         <view class="hot-item"  onTap="goItemDel">
+          <image src="../../img/hotf.png" mode="aspectFit" class="hot-imgs"/>
+          <view class="hot-del">
+           <text class="hd-1 fs-7 cr-2">美国进口红布林</text>
+           <text class="hd-2 fs-2 cr-6">酸酸甜甜的小鲜肉</text>
+           <view class="ntf-4s">
+             <text class="fs-1 cr-5">￥</text>
+             <text class="fs-7 cr-5">6.9</text>
+             <text class="fs-1 cr-6">/1斤</text>
+           </view>
+         </view>
+       <image src="../../img/carts.png" mode="aspectFit" class="hot-cart" onTap="addCart"/>
+       </view>
+      </block>
+     </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+</view>

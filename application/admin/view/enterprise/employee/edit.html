@@ -1,0 +1,112 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" class="form-control" name="row[name]" type="text" value="{$row['name']}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">{:__('Contact_moblie')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-contact_moblie" class="form-control" name="row[contact_moblie]" type="text" value="{$row['contact_moblie']}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">岗位:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-describe" class="form-control" name="row[describe]" type="text" value="{$row['describe']}">
+        </div>
+    </div>
+    <!--<div class="form-group">-->
+        <!--<label for="c-create_date" class="control-label col-xs-12 col-sm-2">{:__('Create_date')}:</label>-->
+        <!--<div class="col-xs-12 col-sm-8">-->
+            <!--<input id="c-create_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_date]" type="text" value="{$row.create_date}">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<label for="c-update_date" class="control-label col-xs-12 col-sm-2">{:__('Update_date')}:</label>-->
+        <!--<div class="col-xs-12 col-sm-8">-->
+            <!--<input id="c-update_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[update_date]" type="text" value="{$row.update_date}">-->
+        <!--</div>-->
+    <!--</div>-->
+    <!--<div class="form-group">-->
+        <!--<label for="c-identity_id" class="control-label col-xs-12 col-sm-2">{:__('Identity_id')}:</label>-->
+        <!--<div class="col-xs-12 col-sm-8">-->
+            <!--<input id="c-identity_id" data-rule="required"  data-source="enterprise/employee/identity_list" class="form-control selectpage" name="row[identity_id]" type="text" value="{$row.identity_id}">-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="form-group">
+        <label for="c-idcard" class="control-label col-xs-12 col-sm-2">身份证号:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-idcard" data-rule="required;IDcard" class="form-control" name="row[idcard]" type="text" value="{$row.idcard}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">站点:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site" class="form-control" name="row[site]" type="text" value="{$row['site']}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-bank_card" class="control-label col-xs-12 col-sm-2">银行卡号:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-bank_card" class="form-control" name="row[bank_card]" type="text" value="{$row.bank_card}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-bank_name" class="control-label col-xs-12 col-sm-2">开户行:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-bank_name" class="form-control" name="row[bank_name]" type="text" value="{$row.bank_name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">一级部门:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d1" class="form-control" name="row[d1]" type="text" value="{$row.d1}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">二级部门:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d2" class="form-control" name="row[d2]" type="text" value="{$row.d2}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">三级部门:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d3" class="form-control" name="row[d3]" type="text" value="{$row.d3}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">四级部门:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d4" class="form-control" name="row[d4]" type="text" value="{$row.d4}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-contact_moblie" class="control-label col-xs-12 col-sm-2">五级部门:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-d5" class="form-control" name="row[d5]" type="text" value="{$row.d5}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-type" class="control-label col-xs-12 col-sm-2">审核权限级别:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select  id="c-type" data-rule="required" class="form-control selectpicker" name="row[privilege_level]">
+                <option value="1" <?php if($row['privilege_level']==1){echo "selected";} ?>>总部审核权限</option>
+                <option value="2" <?php if($row['privilege_level']==2){echo "selected";} ?>>大区审核权限</option>
+                <option value="3" <?php if($row['privilege_level']==3){echo "selected";} ?>>小区审核权限</option>
+                <option value="4" <?php if($row['privilege_level']==4){echo "selected";} ?>>站点审核权限</option>
+                <option value="0" <?php if($row['privilege_level']==0){echo "selected";} ?>>无审核权限</option>
+            </select>
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

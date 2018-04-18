@@ -1,0 +1,49 @@
+<import src="../../templates/modals/modals.wxml"/>
+<view  class="wages-container">
+
+  <view class="wgc-1">
+    <image class="wgc-1a" src="../../../image/1l.png"></image>
+    <text  class="wgc-1b fs-4 cr-2"><text class="fs-7 cr-2">{{grainfo.total}}</text>奋斗金</text>
+    <text  class="wgc-1c fs-4 cr-11" bindtap="goMyConvertibility">兑换现金并提现</text>
+  </view>
+
+  <view class="wgc-2">
+
+    <view class="app-2a3" bindtap='goConvertResult'>
+      <text class="app-2a2 fs-4 cr-2">使用记录</text>
+      <view class="app-new-list">
+        <image src="../../../image/rig.png" class="app-rig1 app-new-list-2" />
+      </view>
+    </view>
+
+     <view class="app-2a3" bindtap='goDespoitResult'>
+      <text class="app-2a2 fs-4 cr-2">提现记录</text>
+      <view class="app-new-list">
+        <image src="../../../image/rig.png" class="app-rig1 app-new-list-2" />
+      </view>
+    </view>
+
+     <view class="wgc-2a bg-1 fs-4" wx:for="{{grainfo.record}}" hidden="{{true}}">
+        <view class="wgc-2a-1">
+          <text class="cr-2">{{item.descript}}</text>
+          <text class="cr-6">{{item.create_date}}</text>
+       </view>
+       <text class="wgc-2a-2 cr-2">{{item.credits>0?'+'+item.credits:item.credits}}</text>
+     </view>   
+  </view>
+  
+  <view class="cover" hidden="{{flag}}">
+      <view class="cover-1"></view>
+      <view class="cover-2">
+         <text class="cover-2a fs-5 cr-2">请您核对工资信息</text>
+         <text class="cover-2b fs-3 cr-6">2018年2月工资</text>
+         <text class="cover-2c ">￥5708.20</text>
+         <view class="cover-2d fs-6">
+           <text class="cover-2d-1 cover-2d-2" bindtap='thinkMore'>我再想想</text>
+           <text class="cover-2d-1 cover-2d-3 cr-1 bg-5" bindtap="msWages">确认</text>
+          </view>
+       
+      </view>
+    </view>
+  <template is="modals" data="{{modalshow}}"></template>
+</view>

@@ -1,0 +1,37 @@
+	<view class="track-rcol">
+			<view class="track-list">
+				<view class="track-listul">
+					<view class="first fir1">
+						<view class="node-icon"></view>
+				
+            <text class="txt">订单已提交</text>
+            <text class="time">2016-03-10 18:07:15</text>
+					</view>
+					<view class="fir1">
+						<view class="node-icon"></view>
+						<text class="txt">支付成功</text>
+            <text class="time">2016-03-10 18:07:15</text>
+          </view>
+          <view class="fir1">
+						<view class="node-icon"></view>
+					<text class="txt">商家已接单</text>
+            <text class="time">2016-03-10 18:07:15</text>
+          </view>
+          <view class="fir1">
+						<view class="node-icon"></view>
+						<text class="txt">骑手已接单</text>
+            <text class="time">2016-03-10 18:07:15</text>
+          </view>
+          <view class="fir1">
+						<view class="node-icon"></view>
+						<text class="txt">骑手已取货</text>
+            <text class="time">2016-03-10 18:07:15</text>
+          </view>
+          <view class="fir1 second">
+						<view class="node-icon"></view>
+						<text class="txt">订单已完成</text>
+            <text class="time">2016-03-10 18:07:15</text>
+					</view>
+				</view>
+			</view>
+	</view>

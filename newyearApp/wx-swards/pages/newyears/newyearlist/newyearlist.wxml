@@ -1,0 +1,46 @@
+<view class="rule">
+  <text class="fs-8 cr-11 rule-1">中奖名单</text>
+<!-- <view class="fs-2 cr-11 rule-2">
+     <view class="r-list" wx:for="{{mytickets}}">
+        <text class="r-name">{{item.employee_name}}({{item.site}})好的哦</text>
+        <text class="r-time">{{item.minute}}分钟前</text>
+        <text class="r-item">砸中了“{{item.award_name}}”</text>
+     </view>
+  </view>
+-->
+  <swiper display-multiple-items="5" vertical='false'  autoplay='1000' duration="1000" circular="true" class="myswiper">
+  <!-- <block wx:for="{{mytickets[0]}}">-->
+    <swiper-item class="fs-2 cr-11 rule-2" wx:for="{{mytickets}}">
+      <view class="r-list">
+        
+          <text class="lef r-site">{{item.site}}-</text>
+          <text class="r-name">{{item.employee_name}}</text>
+          <text class="r-time">{{item.minute}}分钟前</text>
+          <text class="r-item rig">砸中了"{{item.award_name}}"</text>
+        
+         
+      </view>  
+      
+    </swiper-item>
+   
+  </swiper>
+
+   <text class="fs-8 cr-11 rule-1 rule-1s">抽奖记录</text>
+   <swiper display-multiple-items="{{7}}" vertical='false'  autoplay='200' duration="800" interval='800' circular="true" class="myswiper1">
+  <!-- <block wx:for="{{mytickets[0]}}">-->
+    <swiper-item class="fs-2 cr-11 rule-2" wx:for="{{mytickets1}}">
+      <view class="r-list">
+       
+          <text class="lef r-site">{{item.site}}-qq</text>
+          <text class="r-name">{{item.employee_name}}qq</text>
+          <text class="r-time">{{item.minute}}分钟前qq</text>
+          <text class="r-item rig">砸中了"{{item.award_name}}"qq</text>
+        
+         
+      </view>  
+      
+    </swiper-item>
+    
+   
+  </swiper>
+</view>

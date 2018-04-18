@@ -1,0 +1,21 @@
+<view class="col-container">
+ <view class='hot-singleItem'>
+ 
+ 
+  <view class="hot-item" a:for="{{mycart.shopping}}">
+   <image src="{{item.img_url}}" mode="widthFix" class="hot-imgs"   onTap="goItemDel"   a:for-index="{{item.id}}"  data-info="{{item.id}}"/>
+   <view class="hot-del">
+     <text class="hd-1 fs-7">{{item.subtitle}}</text>
+     <text class="hd-2 fs-2">{{item.title}}</text>
+     <view class="ntf-4">
+         <text class="ntf-41">￥</text>
+         <text class="ntf-42">{{item.price_single}}</text>
+         <text class="ntf-43">/{{item.nuits}}</text>
+     </view>
+    </view>
+    <image src="../../../img/carts.png" mode="aspectFit" class="hot-cart"  a:for-index="{{item.id}}"  data-info1="{{item.id}}" hidden="{{true}}"/>
+ </view>
+
+</view>
+
+</view>

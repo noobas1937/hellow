@@ -1,0 +1,46 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-site_id" class="control-label col-xs-12 col-sm-2">{:__('Site_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site_id" data-rule="required" data-source="site/index" class="form-control selectpage" name="row[site_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-shop_id" class="control-label col-xs-12 col-sm-2">{:__('Shop_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-shop_id" data-rule="required" data-source="shop/index" class="form-control selectpage" name="row[shop_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-data_type" class="control-label col-xs-12 col-sm-2">{:__('Data_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-data_type" class="form-control" name="row[data_type]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-topic_id" class="control-label col-xs-12 col-sm-2">{:__('Topic_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-topic_id" data-rule="required" data-source="topic/index" class="form-control selectpage" name="row[topic_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-img_id" class="control-label col-xs-12 col-sm-2">{:__('Img_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-img_id" data-rule="required" data-source="img/index" class="form-control selectpage" name="row[img_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-type" class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-type" data-rule="required" class="form-control" name="row[type]" type="number">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

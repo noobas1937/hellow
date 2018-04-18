@@ -1,0 +1,10 @@
+<template name="navs">
+  <view class="navbar">
+    <view class="{{navid==idx?'nb-2':'nb-1'}}{{item.id}}  nb-1" a:for="{{nav}}" a:for-index="idx" data-info="{{idx}}" onTap="changeBg">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="cartnum">
+      <text>21</text>
+    </view>
+  </view>
+<template>

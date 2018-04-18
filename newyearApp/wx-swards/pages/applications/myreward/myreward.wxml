@@ -1,0 +1,26 @@
+<import src="../../templates/modals/modals.wxml"/>
+<view  class="wages-container">
+
+  <view class="wgc-1">
+    <image class="wgc-1a" src="../../../image/3l.png"></image>
+    <text  class="wgc-1b fs-5 cr-2">总计发放</text>
+    <text  class="wgc-1c fs-8 cr-2">{{rginfo.salary}}</text>
+  </view>
+  <view class="wgc-1-new fs-3 cr-6">
+     <text class="wgc-1-new-1">奖项</text>
+     <text class="wgc-1-new-1">金额</text>
+     <text class="wgc-1-new-1">可使用时间</text>
+  </view>
+  <view class="wgc-2">
+
+     <view class="wgc-2a bg-1 fs-4" wx:for="{{rginfo.record}}">
+       <text class="wgc-2a-1 cr-6">{{item.remark}}</text>
+       <text class="wgc-2a-2 cr-2">{{item.credits}}</text>
+       <text class="wgc-2a-3 cr-5 fs-2">{{item.unfreeze_time}}</text>
+     </view>
+
+  </view>
+
+  <template is="modals" data="{{modalshow}}"></template>
+
+</view>

@@ -1,0 +1,37 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/sort/sort",
+    "pages/cart/cart",
+    "pages/items/items",
+    "pages/search/search",
+    "pages/setting/setting",
+    "pages/text/text",
+    "pages/application/application",
+    "pages/applications/morder/morder",
+    "pages/applications/mrate/mrate",
+    "pages/applications/orderdel/orderdel",
+    "pages/applications/ordertrack/ordertrack",
+    "pages/applications/frate/frate",
+    "pages/applications/maddress/maddress",
+    "pages/applications/newaddress/newaddress",
+    "pages/applications/aftersale/aftersale",
+    "pages/applications/obligation/obligation",
+    "pages/applications/waitgoods/waitgoods",
+    "pages/applications/waitrate/waitrate",
+    "pages/applications/refund/refund",
+    "pages/applications/waitpay/waitpay",
+    "pages/applications/map/map",
+    "pages/applications/collection/collection",
+    "pages/applications/mymessage/mymessage",
+    "pages/applications/nav/nav",
+    "pages/set/setphone/setphone",
+    "pages/set/setpwd/setpwd",
+    "pages/order/msorder/msorder",
+    "pages/order/orderlist/orderlist"
+  ],
+  "window": {
+    "defaultTitle": "果园商城"
+  }
+  
+}

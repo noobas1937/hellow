@@ -1,0 +1,26 @@
+page{
+  background:#bdbdbd;
+}
+.ahs-con{
+  width:100%;
+}
+.ahs-1{
+  padding:22rpx  30rpx;
+  margin-bottom:20rpx;
+}
+.ahs-1a{
+  width:152rpx;
+  height:92rpx;
+  float: left;
+}
+.ahs-1b{
+text-align: right;
+ float:rigt;
+ display: flex;
+ flex-direction: column;
+}
+.ahs-1b-1{
+  display: block;
+  margin-top:15rpx;
+ 
+}

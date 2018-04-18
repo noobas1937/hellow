@@ -1,0 +1,22 @@
+<view class="goodluck-list" >
+
+  <view class="gdl bg-1" wx:for="{{glswd}}" bindtap='goSwardsRN' data-info="{{item.award[0].lucky_draw_id}}" >
+     <view class="gdl-1">
+        <image src="{{item.award[0].img_id}}" mode="aspectFill" class="gdl-1a"></image>
+     </view>
+    
+     <view class="gdl-2">
+       <text class="cr-11 fs-4">第{{item.draw.id}}期</text>
+       <text class="gdl-2a fs-6 cr-2">{{item.award[0].name}}</text>
+       <text class="fs-3 cr-6" wx:if="{{item.draw.start_time-timestr<0}}">开奖时间：{{item.draw.end_date}}</text>
+       <text class="fs-3 cr-6" wx:elif="{{item.draw.start_time-timestr>=0}}">开始时间：{{item.draw.start_date}}</text>
+       <view class="gdl-2b">
+         <!--<text class="fs-3 gdl-2b-1 cr-6" >距离开奖还需<text class="cr-5">{{item.with_people-item.apply_people}}</text>人次</text>-->
+          <text class="fs-5 gdl-2b-2 cr-1" wx:if="{{item.draw.start_time-timestr<0}}">筹集中</text>
+          <text class="fs-5 gdl-2b-2s cr-1" wx:elif="{{item.draw.start_time-timestr>=0}}">即将开始</text>
+       </view>
+     </view>
+
+  </view>
+
+</view>

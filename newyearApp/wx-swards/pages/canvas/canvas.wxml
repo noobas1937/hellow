@@ -1,0 +1,131 @@
+<view class="wrapper">
+
+ 	<view class="header">
+     <text class="header-title fs-2">积分：{{point}}</text>
+  </view>
+		 
+	<view class="main">
+	 <view class="canvas-container">
+		<view class="canvas-content" animation="{{animationData}}">
+		<!-- <canvas style="width: 300px; height: 300px;" class="canvas-element" canvas-id="lotteryCanvas"></canvas>-->
+
+			<view class="canvas-line">
+				<view class="canvas-litem" wx:for="{{awardsList}}" wx:for-index="index" style="-webkit-transform: rotate({{item.lineTurn}});transform: rotate({{item.lineTurn}})"></view>
+			</view>
+
+			<view class="canvas-list">
+				<view class="canvas-item" wx:for="{{awardsList}}" wx:for-index="index" >
+					  <view class="canvas-item-text" style="-webkit-transform: rotate({{item.turn}});transform: rotate({{item.turn}})">
+						  <text class="fs-3">{{item.award}}</text>
+						  <!--{{index%2==0?'a1':'b1'}}<image src="../../image/1.png" mode="aspectFit" class="imgs"/>-->
+					  </view>
+					  
+				</view>
+			</view>
+
+				
+			</view>
+
+			<view  bindtap="getLottery" class="canvas-btn {{btnDisabled}}">
+				<text style="margin-top:20rpx;" class="fs-5">积分</text>
+				<text class="fs-5">抽奖</text>
+				<text  style="color:#ffcd00" class="fs-1">-10分</text>
+			</view>		
+			
+		</view>
+
+		<view class="main-container">
+			<view class="main-container-btn">
+				<view bindtap="gotoList" class="my-pri fs-5"><text>我的奖品</text></view>	
+			</view>
+<!--
+			<view class="main-container-rule">
+				<text class="main-rule-title">活动规则：</text>
+				<text class="main-rule-item">1. xxxxxxxxxxx</text>
+				<text class="main-rule-item">2. xxxxxxxxxxx</text>	
+				<text class="main-rule-item">3. xxxxxxxxxxx</text>	
+				<text class="main-rule-item">4. xxxxxxxxxxx</text>	
+				<text class="main-rule-item">5. xxxxxxxxxxx</text>	
+			</view>	
+-->
+		</view>
+
+  <view class="my-cot">
+   <view class="ml-del">
+   <view class="ml-row">
+     <image src="../../image/rank.png" class="ml-del-img"></image>
+     <text class="ml-title cr-11 fs-6">排行榜</text>
+   </view>
+     
+     <view class="ml-content1 cr-1 fs-2">
+        <view class="ml-name" wx:for="{{swd}}">
+          <text class="ml-name-l">{{item.employee_name?item.employee_name:'匿名用户'}}</text>
+          <!--<text class="ml-name-c"></text>-->
+          <text class="ml-name-r">获得{{item.award_name}}1个</text>
+        </view>
+       
+     </view>
+
+  </view>
+
+
+   <view class="ml-del" style="margin-bottom:40rpx;">
+     <text class="ml-title cr-11 fs-6">活动规则</text>
+     
+
+
+     <view class="ml-content1 cr-1 fs-2">
+        <text>欢迎您加入积分夺宝，为了保证您的利益，请阅读以下夺宝规则内容：</text>
+        <text>1. 您首次登录时将注册生成一个账户ID，作为参与一元夺宝的唯一身份标识；</text>
+        <text>2. 参与者通过参与积分夺宝活动获得商品后，应在7天内登录平台提交确认收货地址，否则视为放弃该奖品，因此行为造成的损失，本平台不承担任何责任；</text>
+     </view>
+
+  </view>
+ </view>
+</view>
+
+<view class="cover" hidden="{{flag1}}">
+      <view class="cover-1"></view>
+      <view class="cover-2">
+         <view class="cover-2a">
+          <text class="cover-2a-1 fs-6 cr-1">恭喜您中奖了</text> 
+         </view>
+         <view class="cover-2b cover-2bs">
+           <view class="cover-2b-1">
+               <image src="{{avatarUrl}}"  class="cover-2b-1img"></image>
+               <text>恭喜您获得了{{awardsname}}</text>
+           </view>
+           <view class="cover-2b-2">
+              <text class="cr-1 fs-5 cover-2b-2a" bindtap='findMySwards'>去查看</text>
+              <text class="cr-1 fs-5 cover-2b-2b">喊好友来抢</text>
+           </view>
+            <text class="cover-2b-3 bg-1 cr-5 fs-5" bindtap='getAgain'>再来一次</text>
+         </view>
+         <image src="../../image/cclose.png" class="cover-2b-img"></image>
+      </view>
+      
+  </view>
+
+  <view class="cover" hidden="{{flag2}}">
+      <view class="cover-1"></view>
+      <view class="cover-2">
+         <view class="cover-2a">
+          <text class="cover-2a-1 fs-6 cr-1">很遗憾未能抽中</text> 
+         </view>
+         <view class="cover-2b">
+           <view class="cover-2b-1">
+               <image src="{{avatarUrl}}"  class="cover-2b-1img"></image>
+               <text class="cr-2 fs-4 cover-2b-1a">再接再厉，五百万离你就差一步啦</text>
+           </view>
+           <view class="cover-2b-2">
+              <text class="cr-1 fs-5 cover-2b-2a" bindtap='getAgain'>再来一次</text>
+              <text class="cr-1 fs-5 cover-2b-2b">喊好友来抢</text>
+           </view>
+           
+         </view>
+         <image src="../../image/cclose.png" class="cover-2b-img" bindtap='closeMySwardsInfo'></image>
+      </view>
+      
+  </view>
+
+</view>

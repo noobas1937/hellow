@@ -1,0 +1,51 @@
+page{
+  background: #f5f5f5;
+ 
+}
+.identity{
+  
+   padding:0 30rpx;
+}
+.id-header{
+  padding:100rpx 0;
+}
+.id-img{
+  width:180rpx;
+  height:180rpx;
+  position: relative;
+  left:50%;
+  margin:0 0 0 -90rpx;
+}
+.idt-1{
+  
+  height:90rpx;
+  display: flex;
+  flex-direction: row;
+  border-radius: 14rpx;
+}
+.idt-1a{
+  width:34rpx;
+  height:24rpx;
+  margin:33rpx 0 0 28rpx;
+}
+.idt-1b{
+  width:450rpx;
+  height:90rpx;
+  line-height: 60rpx;
+  margin-left:30rpx;
+}
+.idt-2{
+ 
+  height:90rpx;
+ 
+ 
+  margin-top:92rpx;
+  text-align: center;
+  line-height: 90rpx;
+  border-radius: 8rpx;
+}
+.explain{
+  margin-top:20rpx;
+  display: inline-block;
+  text-align: left;
+}

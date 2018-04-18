@@ -1,0 +1,39 @@
+<import src="../../templates/modals/modals.wxml"/>
+<view class="mypersoninfo fs-4">
+  <view class="mps-1" style="padding:30rpx;">
+     <text class="lef " style="line-height:128rpx;">头像</text>
+     <view class="rig">
+      <image src="{{avatarUrl}}" class="userinfo-avatar"></image>
+      <image src="https://api.nacy.cc/wxappimg/rig.png" class="mps-1b-rig"></image>
+     </view>
+  </view>
+
+  <view class="mps-1 mps-1s cr-2">
+     <text class="lef">真实姓名</text>
+     <text class="rig cr-6">{{rinfo.name}}</text>
+  </view>
+
+  <view class="mps-1 mps-1s cr-2">
+     <text class="lef">身份证号</text>
+     <text class="rig cr-6">{{rinfo.idcard}}</text>
+  </view>
+
+  <view class="mps-1 mps-1s cr-2" bindtap='updateMyPhone'>
+     <text class="lef mps-1a">手机号</text>
+     <view class="rig mps-1b cr-6">
+       <text >{{rinfo.contact_moblie}}</text>
+       <image src="https://api.nacy.cc/wxappimg/rig.png" class="mps-1b-rig"></image>
+     </view>
+  </view>
+
+  <view class="mps-1 mps-1s cr-2">
+     <text class="lef">所属站点</text>
+     <text class="rig cr-6">{{rinfo.site}}</text>
+  </view>
+
+  <view class="mps-1 mps-1s cr-2">
+     <text class="lef">职务</text>
+     <text class="rig cr-6">{{rinfo.describe}}</text>
+  </view>
+ <template is="modals" data="{{modalshow}}"></template>
+</view>

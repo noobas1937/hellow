@@ -1,0 +1,4 @@
+<view class="guide">
+ <view class="gd-1 cr-1 bg-9 fs-2" bindtap='goLuckSward'>奋斗夺宝</view>
+ <view class="gd-2 cr-1 bg-2 fs-2" bindtap='goMyIdentity'>立即认证</view>
+</view>

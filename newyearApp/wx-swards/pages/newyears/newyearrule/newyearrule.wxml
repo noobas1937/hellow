@@ -1,0 +1,11 @@
+
+<view class="rule">
+  <text class="fs-8 cr-11 rule-1">2018踢踢抽奖活动规则</text>
+  <view class="fs-3 cr-1 rule-2">
+      <text class="in-line">1、活动当天，整点开启抽奖。时间分别为14:00、15:00、16:00、17:00、18:00。</text>
+      <text class="in-line">2、抽奖劵每场抽奖限用一张，且仅在抽奖活动当天使用有效，逾期作废。</text>
+      <text class="in-line">3、同一手机号同一客户端即视为同一用户，抽奖劵不可赠送或交易，盗取他人抽奖券代抽，即视为无效。</text>
+      <text class="in-line">4、活动奖品最终按活动当天的具体规则发放到个人手中。</text>
+      <text class="in-line">5、 本次抽奖活动的最终解释权归本平台所有。</text>
+  </view>
+</view>

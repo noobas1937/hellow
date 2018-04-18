@@ -1,0 +1,72 @@
+<view class="nyawards-container">
+   <view class="ndc-rule" bindtap='goRule'></view>
+  <!-- <block wx:if="{{flagw1==true}}">
+ <view class="ndc-begin cr-1 fs-3 cr-2" hidden="{{flagw}}">
+     开始倒计时：<text class="fs-5 cr-5" >{{num1<10?('0'+num1):num1}}：{{num2<10?('0'+num2):num2}}：{{num3<10?('0'+num3):num3}}</text>
+   </view>
+   <view class="ndc-begin cr-1 fs-3 cr-2" hidden="{{flagy}}">
+     结束倒计时：<text class="fs-5 cr-5">{{num1s<10?('0'+num1s):num1s}}：{{num2s<10?('0'+num2s):num2s}}：{{num3s<10?('0'+num3s):num3s}}</text>
+   </view>
+  </block>
+
+   <block wx:elif="{{flagw1==false}}">
+  
+   <view class="ndc-begin cr-5 fs-3 " hidden="{{flagy}}">
+         <text> {{txt}}  </text>
+   </view>
+  </block>-->
+   
+    <view class="ndc-begin cr-1 fs-3 cr-2" hidden="{{flagt==false?false:true}}">
+     {{txt}}：<text class="fs-5 cr-5" >{{num1<10?('0'+num1):num1}}：{{num2<10?('0'+num2):num2}}：{{num3<10?('0'+num3):num3}}</text>
+   </view>
+
+    <view class="ndc-begin cr-1 fs-3 cr-2" hidden="{{flagt==true?false:true}}">
+     <text class="fs-5 cr-5" >活动还未开始</text>
+   </view>
+
+
+
+   <view class="awardmenu fs-2 cr-11" >
+     <view wx:for="{{uinfo}}">
+     <text class="adm-1">{{item.employee_name}}</text>
+     <text class="adm-2">{{item.minute}}分钟前 砸中了“{{item.award_name}}“</text>
+     </view>
+     <text class="adm-3" bindtap='goMenu'>查看名单></text>
+   </view>
+
+   <view class="juan">
+      <image class="juan-img" src="../../image/juan.png"></image>
+      <text class="fs-5 cr-1 juan-txt">X{{mytickets}}</text>
+   </view>
+
+   <view class="egg-con {{img_url1?'grey2':''}}">
+      <view wx:for="{{[1,1,1]}}" class="allegg" wx:for-index="idx">
+      <image src='{{ids==idx&&img_url1?img_url1:img_url}}' class="egg" bindtap="getMyTool" data-info="{{idx}}"></image>
+       <view class="chuizi {{img_url=='../../image/greyegg.png'?'grey1':'gold1'}}" animation="{{ids==idx?animationData:animationData1}}" bindtap="getMyRotate"  hidden="{{ids==idx?false:true}}" style="{{asb}}">
+       
+       </view>
+      </view>
+   </view>
+ 
+  <view class="cover" hidden="{{flags}}">
+        <view class='cover-1'>
+        </view>
+       <view class="sf-sw">
+          <view hidden="{{flag1s}}">
+           <text class="fs-8 cr-5 sf-sw-f1">{{swf}}</text>
+           <view class="fs-4 cr-11 sf-sw-f2" bindtap='closeInfo'><text>关闭</text></view>
+          </view>
+          
+          <view hidden="{{flag2s}}">
+           <image src="../../image/tit.png" class="sf-sw-f4"></image>
+           <text class="fs-6 cr-5 sf-sw-f3">{{swinfo.prize}}</text>
+           <view class="fs-4 cr-11 sf-sw-f2" bindtap="findMyOwnSw"><text>查看奖品</text></view>
+          </view>
+
+       </view>
+  </view>
+
+
+   
+   
+</view>

@@ -1,0 +1,160 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-province_id" class="control-label col-xs-12 col-sm-2">省:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-province_id" data-rule="required" data-source="dictionary/index" class="form-control selectpage" name="row[province_id]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-city_id" class="control-label col-xs-12 col-sm-2">市:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-city_id" data-rule="required" data-source="dictionary/index" class="form-control selectpage" name="row[city_id]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">标题:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-subtitle" class="control-label col-xs-12 col-sm-2">副标题:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-subtitle" data-rule="required" class="form-control" name="row[subtitle]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-price_single" class="control-label col-xs-12 col-sm-2">售价:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price_single" data-rule="required" class="form-control" name="row[price_single]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-price_original" class="control-label col-xs-12 col-sm-2">原价:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price_original" data-rule="required" class="form-control" name="row[price_original]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-pac_num" class="control-label col-xs-12 col-sm-2">份数:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-pac_num" data-rule="" class="form-control" name="row[pac_num]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-units" class="control-label col-xs-12 col-sm-2">计量单位:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-units" data-rule="required" class="form-control" name="row[units]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-inventory" class="control-label col-xs-12 col-sm-2">库存:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-inventory" data-rule="required" class="form-control" name="row[inventory]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-favorite_count" class="control-label col-xs-12 col-sm-2">收藏量:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-favorite_count" data-rule="" class="form-control" name="row[favorite_count]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-share_count" class="control-label col-xs-12 col-sm-2">分享量:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-share_count" data-rule="" class="form-control" name="row[share_count]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-from_sale" class="control-label col-xs-12 col-sm-2">是否下架:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-from_sale" data-rule="required" class="form-control selectpicker" name="row[from_sale]">
+                {foreach name="from_sale" item="vo"}
+                <option value="{$key}" {in name="key" value="未下架"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-is_hot" class="control-label col-xs-12 col-sm-2">是否热卖:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-is_hot" data-rule="required" class="form-control selectpicker" name="row[sale_hot]">
+                {foreach name="is_hot" item="vo"}
+                <option value="{$key}" {in name="key" value="非热卖"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-rec_yn" class="control-label col-xs-12 col-sm-2">是否推荐:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-rec_yn" data-rule="required" class="form-control selectpicker" name="row[rec_yn]">
+                {foreach name="rec_yn" item="vo"}
+                <option value="{$key}" {in name="key" value="不推荐"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-show_yn" class="control-label col-xs-12 col-sm-2">是否前台显示:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-show_yn" data-rule="required" class="form-control selectpicker" name="row[show_yn]">
+                {foreach name="rec_yn" item="vo"}
+                <option value="{$key}" {in name="key" value="显示"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-sale_num" class="control-label col-xs-12 col-sm-2">销量:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-sale_num" data-rule="" class="form-control" name="row[sale_num]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-seq" class="control-label col-xs-12 col-sm-2">排序:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-seq" data-rule="" class="form-control" name="row[seq]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group sr-only">
+        <label for="c-product_id" class="control-label col-xs-12 col-sm-2">product_id</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-product_id" data-rule="required" class="form-control" name="row[product_id]" type="text" value="{$productid}">
+        </div>
+    </div>
+
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

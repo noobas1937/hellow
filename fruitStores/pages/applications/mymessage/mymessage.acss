@@ -1,0 +1,31 @@
+.msg-container{
+   
+}
+.msg-1{
+     padding:0 30rpx;
+    height:70rpx
+}
+.msg-1 text{
+    float:right;
+    line-height: 70rpx;
+}
+.msg-2{
+     padding:30rpx;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.msg-2b{
+    margin-top:16rpx;
+}
+.msg-2c{
+    margin-top:16rpx;
+    line-height: 50rpx;
+}
+.msg-img{
+    width:42rpx;
+    height: 42rpx;
+    position: absolute;
+    right:30rpx;
+    top:20rpx;
+}

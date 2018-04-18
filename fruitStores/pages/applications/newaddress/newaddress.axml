@@ -1,0 +1,55 @@
+<view class="newaddress">
+ <view class="nwa-1">
+   <view class="nwa-1a">
+     <text>收货人：</text>
+     <input type="text" placeholder="" auto-focus  onBlur="getName" value="{{upa?upa.name:' '}}"/>
+   </view>
+   <view class="nwa-1a">
+     <text>手机号码：</text>
+     <input type="" placeholder="" auto-focus onBlur="getMobile"  value="{{upa?upa.mobile:' '}}"/>
+    </view>
+    
+   <view class="nwa-1a" onTap="selectArea">
+      <text>所在地区:</text>
+      <input type="" placeholder="" value="{{tarea?tarea:' '}}"/>
+   </view>
+   
+  <view a:if="{{open==1}}">
+  <view class="selectarea">
+   <view class="cancelBtn" onTap="cancelBtn">
+     <text>取消</text>
+   </view>
+   <view class="msureBtn" onTap="msureBtn">
+     <text>确定</text>
+   </view>
+   <picker-view onChange="getPCA">
+     <picker-view-column>
+        <view a:for="{{prolist}}">{{item.name}} </view>
+     </picker-view-column>
+      <picker-view-column>
+        <view a:for="{{citlist}}">{{item.name}} </view>
+      </picker-view-column>
+       <picker-view-column>
+        <view a:for="{{arelist}}">{{item.name}} </view>
+     </picker-view-column>
+    </picker-view>
+  </view>
+</view>
+
+   <view class="nwa-1d">
+     <text>详细地址：</text>
+     <textarea placeholder="街道、楼牌号等" onBlur="getAddress"  value="{{upa?upa.address:' '}}"/>
+   </view>
+   <view class="nwa-1c">
+     <view>
+        <text>默认地址</text>
+        <view class="{{flag?'box1':'box'}}" onTap="setAddress"></view>
+      </view>
+     <text class="nwa-1c2">注：每次下单时默认使用此地址</text>
+   </view>
+  </view>
+
+  <view class="nwa-2" onTap="returnMaddress">
+    <text>保存</text>
+  </view>
+</view>

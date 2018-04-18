@@ -1,0 +1,140 @@
+
+<view class="h-container">
+
+  <view class='h-header'>
+   <view class='h-search fs-2'>
+     <view class="h-sl cr-1">
+       <text>{{cityname}}</text>
+     </view>
+     <view class="h-sr">
+       <input type="" placeholder="请输入商品名称" auto-focus text onFocus="goSearch"/>
+     </view>
+    </view>
+  
+   <view class='h-banner'>
+     
+ <!--   
+   <swiper indicator-dots="{{false}}" autoplay="{{true}}" interval="4000" duration="1000" circular="true">
+     <block  a:for="{{newitem1}}">
+      <swiper-item>
+        <image src="{{item.img_url}}" mode="widthFix"  class="banimg" a:for-index="{{item.id}}" data-info="{{item.id}}" onTap="goBannerItem"/>
+      </swiper-item>
+      <block>
+    </swiper> 
+   
+  </view>
+-->
+  <view class='h-sort'>
+     <view class='h-so1 fs-2' onTap="gotext" a:for="{{classitem}}">
+       <image src="{{item.img_url}}" mode="aspectFit" />
+       <text>{{item.title}}</text>
+     </view>
+  </view>
+
+<!--
+   <view class='h-headline fs-2'>
+
+     <image src="../../img/hline.png" mode="aspectFit" />
+   
+     <swiper indicator-dots="{{indicatorDots}}" vertical="true" autoplay="true" interval="3000" duration="1000" circular="true" onChange="getNewIndex">
+      <block  a:for="{{newitem4}}">
+      <swiper-item>
+        <text>{{item.title}}</text>
+      </swiper-item>
+      </block>
+    </swiper>
+   
+  </view>
+-->
+</view>
+
+ <view class="s-food">
+    <view class="sf-1" a:for="{{newitem2}}">
+      <image src="{{item.img_url}}" mode="widthFix" class="sf-img"  onTap="toNewCustom"/>
+    </view>
+  </view>
+
+
+<view class="new-item">
+  <view class="nt-header">
+    <view class="nt-1">
+    <view class="nt-line"></view>
+    <view class="nt-2">新</view>
+    <text>新品首发</text>
+    <view class="nt-line"></view>
+   </view>
+  </view>
+  <image src="{{newitem3[0].img_url}}" mode="aspectFit" class="nt-img1"/>
+  <view class="nt-food">
+     
+     
+     <view class="ntf-1" a:for="{{newitem}}" data-info="{{item.id}}" onTap="goNewestItem">
+     
+       <image src="{{item.img_url}}" mode="widthFix" class="ntf-img"/>
+       <text class="ntf-2 fs-3">{{item.subtitle}}</text>
+       <text class="ntf-3 fs-1">{{item.title}}</text>
+       <view class="ntf-4">
+         <text class="ntf-41">￥</text>
+         <text class="ntf-42">{{item.price_single}}</text>
+         <text class="ntf-43">/{{item.units}}</text>
+        </view>
+        <view class="ntf-5">
+          <text>立省6.8元</text>
+        </view>
+     </view>
+  </view>
+</view>
+
+<view class='hot-singleItem'>
+  <view class="nt-header">
+    <view class="nt-1">
+    <view class="nt-line"></view>
+    <view class="nt-2">hot</view>
+    <text>热卖单品</text>
+    <view class="nt-line"></view>
+   </view>
+  </view>
+ <block a:for="{{hotitem}}" >
+  <view class="hot-item">
+   <image src="{{item.img_url}}" mode="widthFix" class="hot-imgs"   onTap="goItemDel"   a:for-index="{{item.id}}"  data-info="{{item.id}}"/>
+   <view class="hot-del">
+     <text class="hd-1 fs-7">{{item.subtitle}}</text>
+     <text class="hd-2 fs-2">{{item.title}}</text>
+     <view class="ntf-4">
+         <text class="ntf-41">￥</text>
+         <text class="ntf-42">{{item.price_single}}</text>
+         <text class="ntf-43">/{{item.units}}</text>
+     </view>
+    </view>
+    <image src="../../img/carts.png" mode="aspectFit" class="hot-cart"  a:for-index="{{item.id}}"  data-info1="{{item.id}}" onTap="addCart" />
+  </view>
+</block>
+</view>
+
+
+
+
+
+  <view class="navbar">
+    <view class="{{navid==idx?'nb-2':'nb-1'}}{{item.id}}  nb-1" a:for="{{nav}}" a:for-index="idx" data-info="{{idx}}" onTap="changeBg">
+      <text>{{item.name}}</text>
+    </view>
+    <view class="cartnum">
+      <text>{{cartnum}}</text>
+    </view>
+  </view>
+
+
+
+<view class="ms-cover" hidden="{{flagd}}">
+   <view class="ms-color"></view>
+   <view class="ms-select bg-1">
+     <text class="mss-1">请选择城市</text>
+     <view class="mss-2 bg-1" a:for="{{saddress}}" a:for-index="idx" data-info="{{idx}}" onTap="selectCity">
+        <text>{{item.name}}</text>
+     </view>
+
+   </view>
+  </view>
+
+</view>

@@ -1,0 +1,70 @@
+/* pages/welfare_more/welfare_more.wxss */
+.container{
+  position: relative;
+  font-size: 24rpx;
+  background-color: #572391;
+}
+.activity-body{
+  padding: 0 30rpx;
+}
+.activity-process>text,.activity-goods>text{
+  font-size: 30rpx;
+  color: #ffffff;
+}
+.process-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #572391;
+  border-radius: 8rpx;
+  box-shadow: 4rpx 10rpx 5rpx #411471;
+  padding:30rpx; 
+}
+.process-item{
+  display: inherit;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 50%;
+  background-color: #914edb;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+}
+.process-item>text:first-of-type{
+  color: #572391;
+  font-size: 36rpx;
+  margin-top: 10rpx;
+}
+.process-item>text:last-of-type{
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
+}
+
+.welfare-list{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #572391;
+}
+.welfare-item{
+  width: 44%;
+  background-color: #ffffff;
+}
+.welfare-item>image{
+  width: 100%;
+}
+.welfare-details{
+  padding: 20rpx;
+}
+.welfare-details>text:first-of-type{
+  display: block;
+  font-size: 30rpx;
+}
+.btn-welfare{
+  display: block;
+  background-color: #f9d14d;
+  color:#572391;
+  padding: 10rpx 0;
+  text-align: center;
+}

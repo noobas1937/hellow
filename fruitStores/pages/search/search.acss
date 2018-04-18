@@ -1,0 +1,149 @@
+.sort-container{
+    width:100%;
+    padding-bottom:50rpx;
+}
+.sh-search{
+    padding:16rpx 30rpx;
+    border-bottom:solid 1px #939393;
+}
+.h-sr{
+   width:690rpx;
+   height:60rpx;
+   display: flex;
+   flex-direction: row;
+    margin:0 auto;
+   
+    background-color:#f0f0f0;
+    border-radius:26rpx;
+    position: relative;
+}
+.h-sr input{
+    width:540rpx;
+    height:100%;
+    border:none;
+    border-radius:26rpx;
+    text-align: left;
+    background-color:#f0f0f0;
+    background:url('../../img/search.png')no-repeat center;
+    background-position: 30rpx 15rpx;
+    background-size: 30rpx;
+    padding-left:90rpx;
+    
+}
+
+
+
+
+.sh-submit{
+  width:144rpx;
+  height:60rpx;
+  border-radius: 0 26rpx 26rpx 0;
+  text-align: center;
+  line-height: 60rpx;
+
+}
+.sh-cancel{
+   position: absolute;
+   top:6rpx;
+   right:144rpx;
+}
+.sh-cancel image{
+    width:48rpx;
+    height:48rpx;
+}
+
+.his-search{
+   padding: 30rpx;
+   display: flex;
+   flex-direction: column;
+}
+.hot-search{
+    padding: 30rpx; 
+}
+
+.his-1b{
+    float:right;
+}
+.his-2{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.his-2a{
+   height:48rpx;
+   width:160rpx;
+   text-align: center;
+   line-height: 48rpx;
+   border-radius: 26rpx;
+   border: solid 1rpx #cccccc;
+   margin-top:34rpx;
+   margin-right:16rpx;
+}
+.his-2as1{
+   margin-right:10rpx;  
+}
+.his-2as2{
+   margin-right:0rpx;  
+}
+.hot-search{
+    margin-top:20rpx;
+}
+
+
+
+
+
+.shc-r{
+  width:100%;
+ 
+}
+.shc-1a{
+   height:122rpx;
+   width:100%; 
+   line-height: 122rpx;
+   text-align: center;
+}
+
+
+
+
+.hot-item{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  border-bottom:1rpx solid #cccccc; 
+  padding:0 0 22rpx 0;
+}
+.hot-del{
+    display: flex;
+    flex-direction: column;
+    padding:0 0 0 45rpx;
+    overflow: hidden;
+}
+.hot-cart{
+    width:48rpx;
+    height:48rpx;
+    position: absolute;
+    bottom:38rpx;
+    right:30rpx;
+}
+.hd-1{
+    margin-top:48rpx;
+   
+}
+.hd-2{
+    margin-top:18rpx;
+}
+.hot-imgs{
+    width:220rpx;
+    height:220rpx;
+    margin:36rpx 0 0 30rpx;
+}
+.ntf-4s{
+    margin:40rpx 0 14rpx 0;
+}
+.shc-rtit{
+    padding:0 30rpx;
+    height:80rpx;
+    line-height: 80rpx;
+}

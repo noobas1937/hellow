@@ -1,0 +1,309 @@
+<view class="morder">
+  <view class="mo-nav">
+    <block a:for="{{navs}}">
+        <view class="mon-1 {{orderStstus==item.id?'mon-ac':'mon-dis'}}" onTap="getOrderInfo" data-info="{{item.id}}">
+          <text>{{item.name}}</text>
+        </view>
+    </block>
+  </view>
+
+  <view hidden="{{orderStstus==0?false:true}}">
+     <view class="waitfund" a:for="{{allorder}}" >
+        <view class="owf-1">
+          <text class="owf-1a">订单号：{{item.pay_no}}</text>
+          <text class="owf-1b">{{item.status_text}}</text>
+        </view>
+        <view class="owf-2">
+           <image src="{{item.item.img_url}}" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">{{item.item.subtitle}}</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥{{item.item.price_single}}</text>
+             <text class="owf-2a3">￥{{item.item.price_original}}</text>
+             <text class="owf-2a4">x{{item.item_num}}</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥{{item.money}} （免运费）</text>
+        </view>
+        <view class="owf-4">
+           
+            <view class="gopay">
+              <text>去支付</text>
+            </view>
+            <view class="cancelorder" onTap="cancelOrder">
+             <text>取消订单</text>
+            </view>
+        </view>
+      </view>
+  </view>
+ 
+  <view hidden="{{orderStstus==1?false:true}}">
+     <view class="waitfund" a:for="{{wo0}}">
+        <view class="owf-1">
+         <text class="owf-1a">订单号：{{item.pay_no}}</text>
+          <text class="owf-1b">{{item.status_text}}</text>
+        </view>
+        <view class="owf-2">
+           <image src="{{item.item.img_url}}" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">{{item.item.subtitle}}</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥{{item.item.price_single}}</text>
+             <text class="owf-2a3">￥{{item.item.price_original}}</text>
+             <text class="owf-2a4">x{{item.item_num}}</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+        <view class="owf-4">
+           
+            <view class="gopay">
+              <text>去支付</text>
+            </view>
+            <view class="cancelorder" onTap="cancelOrder">
+             <text>取消订单</text>
+            </view>
+        </view>
+      </view>
+      
+  </view>
+
+  <view hidden="{{orderStstus==2?false:true}}">
+    
+    <view class="waitfund"  a:for="{{wo1}}" a:for-index="idx">
+        <view class="owf-1">
+          <text class="owf-1a">订单号：{{item.pay_no}}</text>
+          <text class="owf-1b">{{item.status_text}}</text>
+        </view>
+        <view class="owf-2" onTap="orderdel" data-info="{{item.sn2}}">
+           <image src="{{item.item.img_url}}" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">{{item.item.subtitle}}</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥{{item.item.price_single}}</text>
+             <text class="owf-2a3">￥{{item.item.price_original}}</text>
+             <text class="owf-2a4">x{{item.item_num}}</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+        <view class="owf-4">
+          
+            <view class="hrorder" onTap="hrOrder">
+              <text>取消订单</text>
+            </view>
+            <view class="cancelorder" onTap="cancelOrder">
+             <text>等待商家接单</text>
+            </view>
+        </view>
+      </view>
+
+      <view class="waitfund">
+        <view class="owf-1">
+          <text class="owf-1a">订单号：15412232131541</text>
+          <text class="owf-1b">待收货</text>
+        </view>
+        <view class="owf-2" onTap="orderdel">
+           <image src="../../../img/straberry.png" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥69</text>
+             <text class="owf-2a3">￥112</text>
+             <text class="owf-2a4">x99</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+        <view class="owf-4">
+          
+            <view class="hrorder">
+              <text>商家已接单</text>
+            </view>
+            
+        </view>
+      </view>
+
+      <view class="waitfund">
+        <view class="owf-1">
+          <text class="owf-1a">订单号：15412232131541</text>
+          <text class="owf-1b">待收货</text>
+        </view>
+        <view class="owf-2" onTap="orderdel">
+           <image src="../../../img/straberry.png" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥69</text>
+             <text class="owf-2a3">￥112</text>
+             <text class="owf-2a4">x99</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+        <view class="owf-4">
+          
+            <view class="gopay1" onTap="contactRider">
+              <text>联系骑手</text>
+            </view>
+            <view class="cancelorder" onTap="cancelOrder">
+             <text>骑手（刘雯）已接单</text>
+            </view>
+        </view>
+      </view>
+
+  </view>
+
+  <view hidden="{{orderStstus==3?false:true}}">
+    
+    <view class="waitfund"  a:for="{{wo2}}">
+        <view class="owf-1">
+         <text class="owf-1a">订单号：{{item.pay_no}}</text>
+          <text class="owf-1b">{{item.status_text}}</text>
+        </view>
+        <view class="owf-2" onTap="orderdel" data-info="{{item.sn2}}">
+           <image src="{{item.item.img_url}}" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">{{item.item.subtitle}}</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥{{item.item.price_single}}</text>
+             <text class="owf-2a3">￥{{item.item.price_original}}</text>
+             <text class="owf-2a4">x{{item.item_num}}</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+        <view class="owf-4">
+            <view class="gopay">
+              <text>去评价</text>
+            </view>
+            <view class="cancelorder" onTap="cancelOrder">
+             <text>取消订单</text>
+            </view>
+        </view>
+      </view>
+
+  </view>
+
+  <view hidden="{{orderStstus==4?false:true}}">
+    
+     <view class="waitfund"  a:for="{{wo3}}">
+        <view class="owf-1">
+          <text class="owf-1a">订单号：{{item.pay_no}}</text>
+          <text class="owf-1b">{{item.status_text}}</text>
+        </view>
+        <view class="owf-2" onTap="orderdel" data-info="{{item.sn2}}">
+           <image src="{{item.item.img_url}}" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">{{item.item.subtitle}}</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥{{item.item.price_single}}</text>
+             <text class="owf-2a3">￥{{item.item.price_original}}</text>
+             <text class="owf-2a4">x{{item.item_num}}</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+       
+      </view>
+
+    <view class="waitfund">
+        <view class="owf-1">
+          <text class="owf-1a">订单号：15412232131541</text>
+          <text class="owf-1b">退款成功</text>
+        </view>
+        <view class="owf-2" onTap="orderdel">
+           <image src="../../../img/straberry.png" mode="aspectFit" class="owf-2img"/>
+           <view class="owf-2a">
+             <text class="owf-2a1">精选草莓单品125g*4盒三天内采摘新鲜包邮免运费多买多送</text>
+             <view class="owf-2a5">
+             <text class="owf-2a2">￥69</text>
+             <text class="owf-2a3">￥112</text>
+             <text class="owf-2a4">x99</text>
+            </view>
+           </view>
+           
+        </view>
+        <view class="owf-3">
+          <text>共1件商品  总金额：￥130.90 （免运费）</text>
+        </view>
+       
+      </view>
+
+  </view>
+
+ <view class="ms-cover" hidden="{{flag}}">
+   <view class="ms-color"></view>
+   <view class="ms-select">
+      <view class="mss-top">
+        <text>是否取消该订单</text>
+      </view>
+      <view class="mss-bottom">
+        <view class="mss-b1 mss-b2"  onTap="cancelOrder1">
+          <text>否</text>
+        </view>
+        <view class="mss-b1 mss-b3"  onTap="cancelOrder2">
+          <text>是</text>
+        </view>
+      </view>
+   </view>
+  </view>
+  
+  <view class="ms-cover" hidden="{{flag1}}">
+   <view class="ms-color"></view>
+   <view class="ms-select">
+      <view class="mss-top1">
+        <text class="mss-top1a">联系骑手张小三</text>
+        <text class="mss-top1b">13545621689</text>
+      </view>
+      <view class="mss-bottom">
+        <view class="mss-b1 mss-b2"  onTap="contactRider1">
+          <text>取消</text>
+        </view>
+        <view class="mss-b1 mss-b3"  onTap="contactRider2">
+          <text>确定</text>
+        </view>
+      </view>
+   </view>
+  </view>
+  
+  <view class="ms-cover" hidden="{{flag2}}">
+   <view class="ms-color"></view>
+   <view class="ms-select">
+      <view class="mss-top1">
+        <text class="mss-top2a">是否取消订单</text>
+        <text class="mss-top2b">退款金额<text class="returnMoney">85元</text>，将在1-3个工作日内原路返回您的支付宝账号里</text>
+      </view>
+      <view class="mss-bottom">
+        <view class="mss-b1 mss-b2"  onTap="returnMoney1">
+          <text>取消</text>
+        </view>
+        <view class="mss-b1 mss-b3"  onTap="returnMoney2">
+          <text>确定</text>
+        </view>
+      </view>
+   </view>
+ </view>
+
+</view>

@@ -1,0 +1,47 @@
+<div class="panel panel-default panel-intro">
+    {:build_heading()}
+
+    <div class="panel-body">
+        <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade active in" id="one">
+                <div class="widget-body no-padding">
+                    <div id="toolbar" class="toolbar">
+                        {:build_toolbar()}
+                        <button id="plupload-local" class="btn btn-primary plupload" data-input-id="c-local" data-url="{:url('ajax/excel')}"><i class="fa fa-upload"></i> 导入Excel</button>
+                        <!--<div class="dropdown btn-group {:$auth->check('rider/multi')?'':'hide'}">-->
+                            <!--<a class="btn btn-primary btn-more dropdown-toggle btn-disabled disabled" data-toggle="dropdown"><i class="fa fa-cog"></i> {:__('More')}</a>-->
+                            <!--<ul class="dropdown-menu text-left" role="menu">-->
+                                <!--<li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=normal"><i class="fa fa-eye"></i> {:__('Set to normal')}</a></li>-->
+                                <!--<li><a class="btn btn-link btn-multi btn-disabled disabled" href="javascript:;" data-params="status=hidden"><i class="fa fa-eye-slash"></i> {:__('Set to hidden')}</a></li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    </div>
+                    <table id="table" class="table table-striped table-bordered table-hover"
+                           data-operate-edit="{:$auth->check('rider/edit')}"
+                           data-operate-del="{:$auth->check('rider/del')}"
+                           data-operate-detail="{:$auth->check('order/riderorder/index')}"
+                           width="100%">
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">导入成功</h4>
+            </div>
+            <div class="modal-body" id="modal-text">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">确定</button>
+
+            </div>
+        </div>
+    </div>
+</div>

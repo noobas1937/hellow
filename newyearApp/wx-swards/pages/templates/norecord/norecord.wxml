@@ -1,0 +1,8 @@
+<template name="norecord">
+ <view class="no-record" hidden="{{showr}}">
+      <view class="no-record-content">
+          <image src="../../../image/norec.png" alt="" class="no-record-img"></image>
+          <text class="no-record-title cr-6 fs-2">暂无记录</text>
+      </view>
+  </view>
+</template>

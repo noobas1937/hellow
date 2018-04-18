@@ -1,0 +1,108 @@
+page {
+	padding: 15px;
+	background:#370d5f;
+}
+.list-header{
+	display: block;
+	width: 100%;
+	text-align: center;
+	
+}
+.header-pic{
+   display: flex;
+   flex-direction: column;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin:0 auto;
+  border:solid 3rpx #ffd13e;
+}
+.uname{
+   color:#ffd13e;
+   margin:18rpx 0 18rpx 0;
+}
+.uscore{
+  display: block;
+  padding:10rpx 0;
+  width:200rpx;
+  background:#400561;
+  color:#ffffff;
+  margin-top:18rpx;
+  margin:0 auto;
+  border-radius:20rpx;
+}
+.header-name{
+	font-size: 20px;
+}
+.list-container{
+	
+	border: 1px solid #ccc;
+	background-color: #eee;
+	text-align: left;
+	border-radius: 5px;
+	margin-top: 15rpx;
+}
+.list-item{
+	display: block;
+	padding: 0 0;
+}
+
+.list-btn{
+	padding:10rpx 30rpx;
+	background:#8b799d;
+	color:#ffffff;
+  text-align: left;
+  margin:46rpx 0 0 0;
+}
+.hl{
+   pointer-events: none;	
+}
+.award-list{
+	display: flex;
+	flex-direction: row;
+	padding:15rpx;
+}
+.award-list image{
+   width:120rpx;
+   height:120rpx;
+   border: 1rpx solid #999999; 
+}
+.al-name{
+  display: flex;
+  flex-direction: column;
+  margin-left:18rpx;
+  width:400rpx;
+}
+.al-num{
+  display: flex;
+  flex-direction: column;
+}
+.aln-1{
+  font-weight: bold;
+  padding:20rpx 0 24rpx 0;
+}
+
+.aln-3{
+  display: block;
+  width:120rpx;
+  height:60rpx;
+  background:#d8271d;
+  text-align: center;
+  line-height:60rpx;
+  margin-top:10rpx;
+  margin-bottom:10rpx;
+}
+.begin-awards{
+  width:270rpx;
+  height:70rpx;
+  color:#aa0702;
+  background:linear-gradient(-180deg,#fecc37,#a14921);
+  line-height: 70rpx;
+  text-align: center;
+  margin:0 auto;
+  border-radius:30rpx;
+  font-weight: bold;
+  margin-top:80rpx;
+}

@@ -1,0 +1,67 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <div class="form-group">
+        <label for="c-name" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-number" class="control-label col-xs-12 col-sm-2">{:__('Number')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-number" data-rule="required" class="form-control" name="row[number]" type="number" value="0">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-award_image" class="control-label col-xs-12 col-sm-2">图片:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="form-inline">
+                <input id="c-award_image" data-rule="required" class="form-control" size="50" name="row[img_id]" type="text" value="">
+                <span><button type="button" id="plupload-award_image" class="btn btn-danger plupload" data-url="{:url('/admin/ajax/qiniu/act/1')}" data-input-id="c-award_image" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-award_image"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                <!--<span><button type="button" id="fachoose-award_image" class="btn btn-primary fachoose" data-input-id="c-award_image" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>-->
+                <span class="msg-box n-right" for="c-award_image"></span>
+                <ul class="row list-inline plupload-preview" id="p-award_image"></ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-probability" class="control-label col-xs-12 col-sm-2">{:__('Probability')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-probability" data-rule="required" class="form-control" name="row[probability]" type="number" value="0">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-level" class="control-label col-xs-12 col-sm-2">{:__('Level')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-level" data-rule="required" class="form-control" name="row[level]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-type" class="control-label col-xs-12 col-sm-2">{:__('Type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+
+            <select  id="c-type" data-rule="required" class="form-control selectpicker" name="row[type]">
+                {foreach name="type" item="vo"}
+                <option value="{$key}" {in name="key" value="实物"}selected{/in}>{$vo}</option>
+                {/foreach}
+            </select>
+
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-credits" class="control-label col-xs-12 col-sm-2">积分(积分类型填):</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-credits" data-rule="required" class="form-control" name="row[credits]" type="text" value="0">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

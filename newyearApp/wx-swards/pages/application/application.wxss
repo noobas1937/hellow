@@ -1,0 +1,183 @@
+page{
+    background:#dbdbdb;
+}
+
+.app-right{
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-left: 12px solid #ffffff;
+    border-bottom: 6px solid transparent;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  margin:0 auto;
+  border:solid 3rpx #ffd13e;
+ 
+}
+.app-as{
+  background: url('https://api.nacy.cc/wxappimg/appbg.png')no-repeat;
+  background-size: cover;
+}
+.app-1{
+    
+    display: flex;
+    flex-direction: row;
+    padding:24rpx 0 24rpx 30rpx;
+   
+   
+}
+.app-1a{
+    margin-left:20rpx;
+    width:490rpx;
+}
+.app-1a1{
+    width:100%;
+    margin-top:20rpx;
+    display: flex;
+    flex-direction: row;
+}
+.app-identy{
+    display: block;
+    padding:6rpx 10rpx;
+    margin-left:16rpx;
+    
+}
+.app-tel{
+    display: block;
+    line-height: 50rpx;
+    margin-left:16rpx;
+}
+.app-1b{
+   margin:40rpx 0 0 0;
+   height:48rpx;
+   padding:0 18rpx;
+   line-height: 48rpx;
+   background:linear-gradient(90deg,#ff4e00,#ffbb00);
+   border-radius:22rpx 0 0 22rpx;  
+}
+.app-2{
+   padding-left:30rpx;
+}
+.app-2a{
+   
+    padding:25rpx 0 25rpx 25rpx;
+    line-height: 50rpx;
+}
+.app-2a image{
+   width:50rpx;
+   height:50rpx;
+   vertical-align: middle;
+   
+}
+.app-2a1{
+    margin-left:70rpx;
+}
+.app-3{
+    padding-left:30rpx;
+    margin-top:40rpx;
+}
+.app-2a3{
+   line-height: 100rpx;
+   padding: 0 30rpx;
+}
+.app-rig{
+    
+    width:40rpx;
+    height:40rpx;
+    vertical-align: middle;
+    float:right;
+}
+.app-rig2{
+   float:right;
+}
+.app-rig1{
+    width:40rpx;
+    height:40rpx;
+    margin-top:35rpx;
+    vertical-align: middle;
+    float:right;
+}
+.app-4{
+    
+    margin-top:40rpx; 
+}
+.app-4-img{
+   width:52rpx;
+   height:48rpx;
+   vertical-align: middle;
+   margin-right:30rpx;
+   
+}
+.app-5{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  background: #8644ca;
+  
+}
+.app-5a{
+  width:25%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding:30rpx 0 30rpx 0;
+}
+.app-5a-img{
+  width:58rpx;
+  height:46rpx;
+  margin:0 auto;
+}
+.app-5a-text{
+  margin-top:16rpx;
+  text-align: center;
+}
+.app-1a2{
+  display: flex;
+  flex-direction: row;
+  margin-top:16rpx;
+}
+.app-1a2-img{
+  width:20rpx;
+  height:20rpx;
+  vertical-align: middle;
+  margin:20rpx 10rpx 0 10rpx;
+}
+.app-1a2-2{
+  line-height: 50rpx;
+  margin-left:10rpx;
+}
+.app-dj-img{
+  width:180rpx;
+  height:340rpx;
+  position: fixed;
+  right:36rpx;
+  top:0rpx;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+.app-dj-txt{
+   margin-top:210rpx;
+   color:#ff6800;
+}
+.app-dj-txt1{
+ color:#ff6800;
+}
+.app-new-list{
+  float:right;
+}
+.app-new-list-2{
+  margin-top:35rpx;
+}
+.app-new-4{
+  background: #fff;
+  margin-top:0;
+}
+.app-new-4-mon{
+  margin-left:20rpx;
+}

@@ -1,0 +1,79 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-start_date" class="control-label col-xs-12 col-sm-2">{:__('Start_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-start_date" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[start_date]" type="text" value="{$row.start_date}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-end_date" class="control-label col-xs-12 col-sm-2">{:__('End_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-end_date" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[end_date]" type="text" value="{$row.end_date}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="{$row.title}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-credits" class="control-label col-xs-12 col-sm-2">{:__('Credits')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-credits" data-rule="required" class="form-control" name="row[credits]" type="number" value="{$row.credits}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">活动类型:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[type]', ['1'=>'抽奖活动', '2'=>'夺宝活动','4'=>'自定义'],$row['type'])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">是否热门:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[ishot]', ['0'=>'非热门', '1'=>'热门'],$row['ishot'])}
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-with_people" class="control-label col-xs-12 col-sm-2">原价(仅用于夺宝活动):</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price" class="form-control" type="number" value="{$row.with_people*$row.credits/1.4|intval}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-with_people" class="control-label col-xs-12 col-sm-2">总份数(仅用于夺宝活动):</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-with_people" class="form-control" name="row[with_people]" type="number" value="{$row.with_people}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-frequency" class="control-label col-xs-12 col-sm-2">每人可用夺宝券(仅用于夺宝活动):</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-frequency" class="form-control" name="row[frequency]" type="number" value="{$row.frequency}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-left_with_people" class="control-label col-xs-12 col-sm-2">剩余分数:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-left_with_people" data-rule="required" class="form-control" name="row[left_with_people]" type="number" value="{$row.left_with_people}">
+        </div>
+    </div>
+    <!--<div class="form-group">-->
+        <!--<label for="c-frequency" class="control-label col-xs-12 col-sm-2">{:__('Frequency')}(0不限):</label>-->
+        <!--<div class="col-xs-12 col-sm-8">-->
+            <!--<input id="c-frequency" data-rule="required" class="form-control" name="row[frequency]" type="number" value="{$row.frequency}">-->
+        <!--</div>-->
+    <!--</div>-->
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,23 @@
+
+<view class="failprize">
+
+  <view class="fp-1 bg-1">
+     <image class="fp-1-img" src="{{glswd.award[0].img_id}}"></image>
+     <view class="fp-1-con">
+       <text class="fp-1-con-1 bg-9 cr-1 fs-2">第{{glswd.draw.id}}期</text>
+       <text class="fp-1-con-2 cr-2 fs-5">{{glswd.award[0].name}}</text>
+     </view>
+  </view>
+
+  <view class="fp-container bg-1">
+   <view class="fp-2 bg-8"> 
+      <image  class="fp-2-img" src="/image/happy.png"></image>
+      <text  class="fp-2-sta fs-5 cr-2">很遗憾，筹集失败</text>
+      <text class="fp-2-tit fs-2 cr-6">呼朋唤友齐开奖：记得把夺宝活动推荐给其他同事，集齐开奖总份数才能开奖哦！</text>
+   </view>
+  </view>
+  <view class="fp-3 fs-3 bg-1">
+    <text>已投入奋斗金将原路退还至个人账户，可在“<text class="cr-11 gointer" bindtap="goMyIntegration">我的奋斗金</text>”页面查看退还详情</text>
+  </view>
+
+</view>

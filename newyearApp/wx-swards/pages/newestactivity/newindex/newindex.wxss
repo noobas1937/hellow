@@ -1,0 +1,103 @@
+/*page{
+  background:url('https://api.nacy.cc/wxappimg/newac.jpg')no-repeat;
+  background-size: cover;
+  position: relative;
+}*/
+.nac-1{
+  width:550rpx;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  
+  position: absolute;
+  left:50%;
+  top:160rpx;
+  margin-left: -200rpx;
+ 
+}
+.nac-1a{
+  width:400rpx;
+  height:60rpx;
+  background: #fdf4d2;
+  border-radius: 10rpx; 
+}
+.nac-1b{
+  width:150rpx;
+  height:60rpx; 
+}
+.nac-2{
+  width:400rpx;
+  height:60rpx;
+  text-align: center;
+  line-height: 60rpx;
+  position: absolute;
+  left:50%;
+  top:220rpx;
+  margin-left: -200rpx;
+}
+.nac-3{
+   width:540rpx;
+   height:540rpx;
+   border-radius: 50%;
+   position: absolute;
+   left:50%;
+   top:500rpx;
+   margin-left: -270rpx;
+}
+
+.cover{
+    width:100%;
+    height:100%;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 9999;
+
+}
+.cover-1{
+    width:100%;
+    height:100%;
+    background: #000;
+    opacity: 0.4;
+    position: fixed;
+    left:0;
+    top:0;
+   z-index: 9999;
+}
+.cover-2{
+    width:540rpx;
+    height:464rpx;
+    background: #fff;
+    background: url('https://api.nacy.cc/wxappimg/acend.png')no-repeat;
+    background-size:cover;
+    border-radius: 14rpx;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: fixed;
+    left:50%;
+    top:50%;
+    margin:-232rpx 0 0 -270rpx;
+    z-index: 9999;
+}
+.cov-2{
+   display: block;
+   margin-top:300rpx;
+}
+.cov-3{
+  width:200rpx;
+  height:60rpx;
+  margin: 526rpx 0 0 275rpx;
+ 
+}
+.fas{
+  pointer-events: none;
+}
+
+
+
+.n-imgs{
+  width:100%;
+  outline-width:0px;  
+  vertical-align:top;  
+}

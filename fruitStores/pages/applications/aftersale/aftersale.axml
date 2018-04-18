@@ -1,0 +1,40 @@
+<view class="aftersale bg-8">
+  <view class="afs-1 bg-5">
+      <image src="../../../img/circle.png" mode="widthFix" />
+      <text class="fs-2 cr-1">亲爱的踢踢果粉们，在遇到问题时，请记得第一
+时间联系我们哦！</text>
+  </view>
+  <view class="afs-2 bg-1">
+    <view class="afs-2a" a:for="{{titles}}" a:for-index="idx" data-infos="{{idx}}" onTap="getDeail">
+     <text class="fs-4 cr-2">{{item}}</text>
+     <image src="{{idx==oid?img2:img1}}" mode="aspectFit" />  
+     <view hidden="{{idx!=oid}}" class="afs-2a3 fs-2 cr-6">
+       <text>1、一键申请售后</text>
+       <text>在商品签收后的12小时内，如发现商品质量问题，
+         可进入【待评价】→点击查看商品订单详情→点击“申请售后”按钮，
+         提供问题的详细描述+清晰照片，踢踢客服将火速为您处理。</text>
+       <text>2、微信客服</text>
+       <text>任何售前、售中、售后问题，您均可通过文字+照片的方式，
+         发送到【踢踢果园】微信公众号，我们将尽快为您解决问题和疑惑。
+         微信客服时间：每日9:30-17:30</text>
+        <text>3、电话客服</text>
+        <text>如遇任何问题，您均可拨打踢踢客服热线：
+          400-077-8527，我们将竭诚为您排忧解难。客服热线时间:</text>
+         <text>每日08:00—22:00</text>  
+     </view>
+    </view>
+
+     
+   
+  </view>
+  <view class="afs-3 bg-1">
+    <text class="afs-3a fs-3 cr-5">温馨提示</text>
+    <text class="afs-3b cr-6 fs-2">1、订单如含赠品，退货时若不满赠送条件需将赠品一同退回；如赠品已经拆封或食用，将不予退换货；</text>
+    <text class="afs-3b cr-6 fs-2">2、与售后客服沟通后，所有符合退换货条件的，我们将亲自上门取件，免费提供退换货服务；</text>
+    <text class="afs-3b cr-6 fs-2">3、水果是大自然的产物，不同的采摘批次可能会造成水果们的长相、口感存在小小差异，但是它们的健康美味可都殊途同归哦！ </text>
+    <text class="afs-3b cr-6 fs-2">4、建议您最好是当场验货，这样的话，客服可以更及时、更迅速地为您处理可能存在的订单问题呢！</text>
+  </view>
+  <view class="afs-4">
+
+  </view>
+</view>

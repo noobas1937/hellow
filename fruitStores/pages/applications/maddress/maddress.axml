@@ -1,0 +1,26 @@
+<view class="maddress">
+ <view class="ma-uesrinfo"  a:for="{{addlist}}"  a:for-index="idx">
+   <view class="mau-1"  data-info="{{idx}}" onTap="setMyAddress">
+     <view class="mau-1a">
+       <text class="mau-1a1">{{item.name}}</text>
+       <text class="mau-1a2">{{item.mobile}}</text>
+      </view>
+      <text class="mau-1b">{{item.address}}</text>
+   </view>
+   <view class="mau-2">
+     <view class="mau-2a">
+       <view class="{{item.is_default==0?'checkbox1':'checkbox2'}}" onTap="goBlance"  data-pri="{{item.id}}"></view>
+       
+      </view>
+      <text class="{{item.is_default==0?'mau-2a2':'mau-2a21'}}">默认地址</text>
+     <view  class="mau-2b">
+       <image src="../../../img/xiugai.png" mode="aspectFit" class="mau-2b1" onTap="updateAddress"  a:key="*this" data-info="{{idx}}"/>
+       <image src="../../../img/delete.png" mode="aspectFit" class="mau-2b2" onTap="deleteAddress" a:key="*this" data-info="{{item.id}}"/>
+     </view>
+   </view>
+  </view>
+  <view class="procover"></view>
+  <view class="newaddress" onTap="goNewAddress">
+    <text>+新建地址</text>
+  </view>
+</view>

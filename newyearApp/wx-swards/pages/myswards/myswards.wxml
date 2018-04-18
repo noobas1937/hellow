@@ -1,0 +1,138 @@
+<import src="../templates/norecord/norecord.wxml"/>
+<view class="swadrs-list">
+
+   <view wx:for="{{glswd}}">
+
+
+   <view wx:if="{{item.draw.type==-2}}" class="ssl-1ist" bindtap='goFailPrize' data-info="{{item.draw.id}}">
+     <view class="ssl-1" >
+      <text class="cr-2 fs-3 ssl-1a">第{{item.award[0].lucky_draw_id}}期</text>
+      <text class="cr-6 fs-2 ssl-1b">开奖时间：{{item.draw.end_date}}</text>
+      <text class="cr-1 ssl-1gs fs-3 bg-2">筹集失败</text>
+      <image src="../../image/rig.png" mode="aspectFill"  class="ssl-1d"/>
+    </view>
+
+    <view class="ssl-2">
+      <image src="{{item.award[0].img_id}}" mode="aspectFill" class="ssl-2a"/>
+      <view class="ssl-2b" style="width:450rpx;">
+        <text class="ssl-2b1 cr-2 fs-6">{{item.award[0].name}}</text>
+        <progress percent="{{item.apply_people/item.with_people*100}}" activeColor="#ffa800" backgroundColor="#bdbdbd" stroke-width="6" active show-info="{{false}}" />
+        <text class="ssl-2b2 cr-6 fs-1">使用积分：{{item.costPoints}}积分</text>
+        
+        <text class="ssl-2b4 cr-6 fs-1" hidden='{{true}}'>幸运号:{{item.lucker.lucky_number}}</text>
+      </view>
+    </view>
+   </view>
+
+   <view wx:else="{{item.draw.type!=-2}}">
+  
+
+
+
+  <view class="ssl-1ist" bindtap="getPrizeDetail" wx:if="{{item.is_apply==1}}" data-info="{{item.draw.id}}">
+
+    <view class="ssl-1">
+      <text class="cr-2 fs-3 ssl-1a">第{{item.award[0].lucky_draw_id}}期</text>
+      <text class="cr-6 fs-2 ssl-1b">开奖时间：{{item.draw.end_date}}</text>
+      <text class="cr-1 ssl-1c fs-3">已中奖{{item.award.lucky_draw_id}}</text>
+      <image src="../../image/rig.png" mode="aspectFill"  class="ssl-1d"/>
+    </view>
+
+    <view class="ssl-2 bg-1">
+      <image src="{{item.award[0].img_id}}" mode="aspectFill" class="ssl-2a"/>
+      <view class="ssl-2b">
+        <text class="ssl-2b1 cr-2 fs-6">{{item.award[0].name}}</text>
+        <text class="ssl-2b2 cr-6 fs-1">使用积分：{{item.draw.credits}}积分</text>
+        <text class="ssl-2b3 cr-6 fs-1">获奖者：{{item.lucker.lucky_name}}</text>
+        <text class="ssl-2b4 cr-6 fs-1">幸运号：{{item.lucker.lucky_number}}</text>
+      </view>
+    </view>
+
+  </view>
+
+<view class="ssl-1ist" bindtap="noPriceDetail" wx:elif="{{item.is_apply==2}}" data-info="{{item.draw.id}}">
+
+    <view class="ssl-1">
+      <text class="cr-2 fs-3 ssl-1a">第{{item.award[0].lucky_draw_id}}期</text>
+      <text class="cr-6 fs-2 ssl-1b">开奖时间：{{item.draw.end_date}}</text>
+      <text class="cr-1 ssl-1c fs-3">未中奖</text>
+      <image src="../../image/rig.png" mode="aspectFill"  class="ssl-1d"/>
+    </view>
+
+    <view class="ssl-2">
+      <image src="{{item.award[0].img_id}}" mode="aspectFill" class="ssl-2a"/>
+      <view class="ssl-2b">
+        <text class="ssl-2b1 cr-2 fs-6">{{item.award[0].name}}</text>
+        <text class="ssl-2b2 cr-6 fs-1">使用积分：{{item.draw.credits}}积分</text>
+        <text class="ssl-2b3 cr-6 fs-1">获奖者：{{item.lucker.lucky_name}}</text>
+        <text class="ssl-2b4 cr-6 fs-1">幸运号：{{item.lucker.lucky_number}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+   <view class="ssl-1ist"  bindtap="waitPrizeDetail" wx:elif="{{item.is_apply==3&&item.draw.left_with_people==0}}" data-info="{{item.draw.id}}">
+
+    <view class="ssl-1">
+      <text class="cr-2 fs-3 ssl-1a">第{{item.award[0].lucky_draw_id}}期</text>
+      <text class="cr-6 fs-2 ssl-1b">开奖时间：{{item.draw.end_date}}</text>
+      <text class="cr-1 ssl-1c fs-3">待开奖</text>
+      <image src="../../image/rig.png" mode="aspectFill"  class="ssl-1d"/>
+    </view>
+
+    <view class="ssl-2">
+      <image src="{{item.award[0].img_id}}" mode="aspectFill" class="ssl-2a"/>
+      <view class="ssl-2b" >
+        <text class="ssl-2b1 cr-2 fs-6">{{item.award[0].name}}</text>
+        <view class="ss1-c1 fs-6">距离<text class="fs-7 cr-1 all-time">{{item.draw.day}}</text>天<text class="fs-7 cr-1 all-time">{{item.draw.hour}}</text>时<text class="fs-7 cr-1 all-time">{{item.draw.minute}}</text>分</view>
+        <text class="ssl-2b2 cr-6 fs-1">使用积分：{{item.draw.credits}}积分</text>
+     
+        <text class="ssl-2b4 cr-6 fs-1" hidden="{{true}}">幸运号：{{item.lucker.lucky_number}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+
+
+
+   <view class="ssl-1ist" bindtap="goRaise"  wx:else="{{item.is_apply==3&&item.draw.left_with_people>0}}" data-info="{{item.draw.id}}">
+
+    <view class="ssl-1">
+      <text class="cr-2 fs-3 ssl-1a">第{{item.award[0].lucky_draw_id}}期</text>
+      <text class="cr-6 fs-2 ssl-1b">开奖时间：{{item.draw.end_date}}</text>
+      <text class="cr-1 ssl-1c fs-3">筹集中</text>
+      <image src="../../image/rig.png" mode="aspectFill"  class="ssl-1d"/>
+    </view>
+
+    <view class="ssl-2">
+      <image src="{{item.award[0].img_id}}" mode="aspectFill" class="ssl-2a"/>
+      <view class="ssl-2b" style="width:450rpx;">
+        <text class="ssl-2b1 cr-2 fs-6">{{item.award[0].name}}</text>
+        <progress percent="{{item.apply_people/item.with_people*100}}" activeColor="#ffa800" backgroundColor="#bdbdbd" stroke-width="6" active show-info="{{false}}" />
+        <text class="ssl-2b2 cr-6 fs-1">使用积分：{{item.costPoints}}积分</text>
+        
+        <text class="ssl-2b4 cr-6 fs-1" hidden='{{true}}'>幸运号:{{item.lucker.lucky_number}}</text>
+      </view>
+    </view>
+
+  </view>
+
+
+ 
+
+ 
+     </view>
+  </view>
+ 
+
+  
+     <template is="norecord" data="{{showr}}"></template>
+ 
+</view>
+
+
+
+

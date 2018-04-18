@@ -1,0 +1,75 @@
+page{
+ background: #dbdbdb;
+}
+.goodluck-list{
+  width:100%;
+  
+}
+.gdl{
+  padding:24rpx 20rpx;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 24rpx;
+}
+.gdl-1{
+   width:166rpx;
+   height:166rpx;
+  
+}
+.gdl-2{
+  display: flex;
+  flex-direction: column;
+  margin-left:44rpx;
+}
+.gdl-2a{
+  width:485rpx;
+  height:100rpx;
+  display: inline-block;
+  line-height: 50rpx;
+  overflow: hidden;
+ /* display: -webkit-box;
+  -webkit-column-count:3; 
+  */
+  
+}
+.gdl-2b{
+  
+}
+.gdl-2b-1{
+  float:left;
+}
+.gdl-2b-2{
+  float:left;
+}
+.gdl-1a{
+  width:164rpx;
+  height:164rpx;
+  
+}
+.gdl-2b-1{
+  
+}
+.gdl-2b-2{
+  display: block;
+  width:180rpx;
+  height:52rpx;
+  text-align: center;
+  line-height: 52rpx;
+  background: #ff0000;
+  border-radius: 14rpx;
+  margin-top: 10rpx;
+}
+.gdl-2b-2s{
+  float:left;
+  display: block;
+  width:180rpx;
+  height:52rpx;
+  text-align: center;
+  line-height: 52rpx;
+  background: #bdbdbd;
+  border-radius: 14rpx;
+  margin-top: 10rpx;
+}
+.gd-b{
+  pointer-events: none;
+}

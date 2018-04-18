@@ -1,0 +1,34 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-employee_id" class="control-label col-xs-12 col-sm-2">{:__('Employee_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-employee_id" data-rule="required" data-source="employee/index" class="form-control selectpage" name="row[employee_id]" type="text" value="{$row.employee_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-award_id" class="control-label col-xs-12 col-sm-2">{:__('Award_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-award_id" data-rule="required" data-source="award/index" class="form-control selectpage" name="row[award_id]" type="text" value="{$row.award_id}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_date" class="control-label col-xs-12 col-sm-2">{:__('Create_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_date" data-rule="required" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_date]" type="text" value="{$row.create_date}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-lucky_draw_id" class="control-label col-xs-12 col-sm-2">{:__('Lucky_draw_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-lucky_draw_id" data-rule="required" data-source="lucky/draw/index" class="form-control selectpage" name="row[lucky_draw_id]" type="text" value="{$row.lucky_draw_id}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

@@ -1,0 +1,13 @@
+<template name='modals'>
+   <view class="modal-container bg-1" hidden="{{modalshow}}" >
+     <view class="modal-cover"></view>
+     <view class="modal-content">
+         <text class="fs-4 cr-2 modal-content-headtit">请先完成员工身份认证</text>
+         <text class="fs-2 cr-6 modal-content-contit">本程序仅供踢踢科技内部员工使用，非员工无法通过认证</text>
+         <view class="modal-content-click fs-4">
+             <text  class="modal-content-clclick bg-5 cr-1 lef" bindtap="goHello">随便逛逛</text>
+             <text  class="modal-content-msclick bg-9 cr-1 rig" bindtap="goIdentity">立即认证</text>
+         </view>
+     </view>
+   </view>
+</template>

@@ -1,0 +1,64 @@
+<!--
+<view class="set-phone bg-8">
+
+  <view class="sep-1 bg-1">
+    <view class="sep-1a sep-1b">
+      <view class="sep-1a1 fs-3"><text>手机号码</text></view>
+      <input type="number" placeholder="请输入手机号"   bindblur="getCelNumer"/>
+
+    </view>
+    <view class="sep-1a">
+      <view class="sep-1a1 fs-3"><text>验证码</text></view>
+      <button class="sep-1a2 fs-3 bg-5 cr-1" catchtap="getIcode" disabled="{{flag1}}"><text>{{num1?num1:num}}</text></button>
+      <input type="" placeholder="" bindblur="getCode" style="width:50%;"/>
+    </view>
+  </view>
+  <view class="stp-codes fs-1 cr-5">
+    
+    <text hidden="{{true}}">验证码输入错误</text>
+  </view>
+  <view class="stp-ms fs-6 bg-5 cr-1" bindtap="setMobile">
+    <text>确定</text>
+  </view>
+
+
+
+</view>
+-->
+
+
+<view class="identity">
+
+ <view class="idt-1 bg-1 fs-2">
+   <text class="cr-2 idt-1-1">真实姓名</text>
+   <text class="cr-6 idt-1-2">{{uname}}</text>
+ </view>
+
+ <view class="idt-1 bg-1 fs-2">
+   <text class="cr-2  idt-1-1">所属部门</text>
+   <text class="cr-6 idt-1-2">{{site}}</text>
+ </view>
+
+ <view  class="idt-1 bg-1 fs-2">
+   <text class="cr-2  idt-1-1">手机号</text>
+   <input class="idt-1b fs-2 cr-6" bindblur="getCelNumer" value="{{celnumber}}"></input>
+   <button class="sep-1a2 bg-9 cr-1" catchtap="getIcode" disabled="{{flag1}}">{{num1?num1:num}}</button>
+ </view>
+
+ <view class="idt-1 bg-1 fs-2">
+  <text class="cr-2 idt-1-1">验证码</text>
+  <input class="idt-1b fs-2 cr-6" placeholder='请输入验证码' bindblur='getCode' bindinput='' value="{{}}"></input>
+ </view>
+
+ <view class="exp-text">
+   <text class="cr-5 fs-2">如姓名、站点、手机号码信息不正确，请联系站长或公司人事部门申请修改，修改完成后进入程序认证再次认证.</text>
+ </view>
+
+ <view class="idt-2 cr-1 bg-9" bindtap='setMobile'>
+   <text>确认提交</text>
+ </view>
+
+ 
+</view>
+
+

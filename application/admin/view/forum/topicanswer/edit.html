@@ -1,0 +1,56 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+
+    <div class="form-group">
+        <label for="c-answer" class="control-label col-xs-12 col-sm-2">{:__('Answer')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-answer" class="form-control " rows="5" name="row[answer]" cols="50">{$row.answer}</textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-best_yn" class="control-label col-xs-12 col-sm-2">{:__('Best_yn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select  id="c-best_yn" data-rule="required" class="form-control selectpicker" name="row[best_yn]">
+                {foreach name="best_yn" item="vo"}
+                <option value="{$key}" {in name="key" value="$row.best_yn"}selected{/in} >{$vo}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-r_yn" class="control-label col-xs-12 col-sm-2">{:__('R_yn')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <select  id="c-r_yn" data-rule="required" class="form-control selectpicker" name="row[r_yn]">
+                {foreach name="best_yn" item="vo"}
+                <option value="{$key}" {in name="key" value="$row.r_yn"}selected{/in} >{$vo}</option>
+                {/foreach}
+            </select>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-favorite_count" class="control-label col-xs-12 col-sm-2">{:__('Favorite_count')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-favorite_count" class="form-control" name="row[favorite_count]" type="number" value="{$row.favorite_count}">
+        </div>
+    </div>
+
+    <div class="form-group sr-only">
+        <label for="c-update_date" class="control-label col-xs-12 col-sm-2">{:__('Update_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[update_date]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group sr-only">
+        <label for="c-update_by" class="control-label col-xs-12 col-sm-2">{:__('Update_by')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_by" class="form-control" name="row[update_by]" type="number" value="{:session('admin.id')}">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

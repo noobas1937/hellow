@@ -1,0 +1,9 @@
+*
+!.gitignore
+!index.php
+
+!.htaccess
+!admin.php
+!index.php
+!robots.txt
+!statics

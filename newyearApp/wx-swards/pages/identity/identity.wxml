@@ -1,0 +1,18 @@
+<view class="identity">
+ <view class="id-header">
+    <image src="../../image/ides.jpg" class="id-img"></image>
+ </view>
+ <view class="idt-1 bg-1">
+  <image src="../../image/idt.png" class="idt-1a"></image>
+  <input class="idt-1b fs-2 cr-6" placeholder='请输入身份证号码' bindblur='getIdCard' value="{{idcard}}"></input>
+ </view>
+
+ <view class="idt-2 cr-1 bg-9" bindtap='msIdentity'>
+   <text>激活</text>
+ </view>
+ 
+ <view class="fs-3 cr-5 explain">
+    <text>请输入本人身份证号，并仔细确认是否有误，如仍然无法激活，请联系站长。请务必在入职后3天内完成激活，以免影响次月工资发放及参与夺宝活动。</text>
+   
+ </view>
+</view>

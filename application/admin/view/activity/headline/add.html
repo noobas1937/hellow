@@ -1,0 +1,88 @@
+<form id="add-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-site_id" class="control-label col-xs-12 col-sm-2">{:__('Site_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-site_id" data-rule="required" data-source="site/index" class="form-control selectpage" name="row[site_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-shop_id" class="control-label col-xs-12 col-sm-2">{:__('Shop_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-shop_id" data-rule="required" data-source="shop/index" class="form-control selectpage" name="row[shop_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-data_type" class="control-label col-xs-12 col-sm-2">{:__('Data_type')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-data_type" class="form-control" name="row[data_type]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-title" class="form-control" name="row[title]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-province_id" class="control-label col-xs-12 col-sm-2">{:__('Province_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-province_id" data-rule="required" data-source="province/index" class="form-control selectpage" name="row[province_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-city_id" class="control-label col-xs-12 col-sm-2">{:__('City_id')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-city_id" data-rule="required" data-source="city/index" class="form-control selectpage" name="row[city_id]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-url" class="control-label col-xs-12 col-sm-2">{:__('Url')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-url" class="form-control" name="row[url]" type="text">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-detail" class="control-label col-xs-12 col-sm-2">{:__('Detail')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-detail" class="form-control " rows="5" name="row[detail]" cols="50"></textarea>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_date" class="control-label col-xs-12 col-sm-2">{:__('Create_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[create_date]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-create_by" class="control-label col-xs-12 col-sm-2">{:__('Create_by')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-create_by" class="form-control" name="row[create_by]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-update_date" class="control-label col-xs-12 col-sm-2">{:__('Update_date')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_date" class="form-control datetimepicker" data-date-format="YYYY-MM-DD HH:mm:ss" data-use-current="true" name="row[update_date]" type="text" value="{:date('Y-m-d H:i:s')}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-update_by" class="control-label col-xs-12 col-sm-2">{:__('Update_by')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-update_by" class="form-control" name="row[update_by]" type="number">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-seq" class="control-label col-xs-12 col-sm-2">{:__('Seq')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-seq" class="form-control" name="row[seq]" type="number">
+        </div>
+    </div>
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

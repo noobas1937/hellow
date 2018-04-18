@@ -1,0 +1,49 @@
+.aftersale{
+    width:100%;
+}
+.afs-1{
+    padding:30rpx;
+    display: flex;
+    flex-direction: row;
+}
+.afs-1 image{
+    width:100rpx!important;
+    height:100rpx!important;
+    vertical-align: middle;
+    margin-right:15rpx;
+}
+.afs-1 text{
+    line-height: 40rpx;
+}
+.afs-2{
+    width:100%;
+    line-height: 30rpx;
+   
+}
+.afs-2a{
+ 
+  border-bottom:3rpx solid #cccccc;
+  padding:25rpx 30rpx;
+ 
+}
+.afs-2a image{
+    width:36rpx;
+    height:36rpx;
+    float:right;
+    vertical-align: middle;
+}
+.afs-2a3{
+    padding:30rpx 0;
+    display: flex;
+    flex-direction: column;
+    line-height:50rpx;
+}
+.afs-3{
+    padding:30rpx;
+    margin-top:20rpx;
+    display: flex;
+    flex-direction: column;
+}
+.afs-3b{
+    line-height: 50rpx;
+}
